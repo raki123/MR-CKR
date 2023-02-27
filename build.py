@@ -111,11 +111,7 @@ basic_context = Context("basic_context", namespace_manager)
 inter_concepts = []
 eq_inter_concepts = []
 for concept in concepts:
-    # basic_context.add_axiom((BNode("INTER" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):]), RDF.type, OWL.Class))
     inter_concepts.append(BNode("INTER" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):]))
-    # basic_context.add_axiom((BNode("EQINTER" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):]), RDF.type, OWL.Class))
-    # eq_inter_concepts.append(BNode("EQINTER" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):]))
-    # basic_context.add_axiom((BNode("EQINTER" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):]), OWL.equivalentClass, BNode("INTER" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):])))
 
 for i in range(len(concepts)):
     basic_context.add_axiom((inter_concepts[i], OWL.intersectionOf, BNode("INTER1" + str(concepts[i])[len('http://semantic.bosch.com/drivingscene/v02/'):])))
@@ -123,22 +119,6 @@ for i in range(len(concepts)):
     basic_context.add_axiom((BNode("INTER1" + str(concepts[i])[len('http://semantic.bosch.com/drivingscene/v02/'):]), RDF.rest, BNode("INTER2" + str(concepts[i])[len('http://semantic.bosch.com/drivingscene/v02/'):])))
     basic_context.add_axiom((BNode("INTER2" + str(concepts[i])[len('http://semantic.bosch.com/drivingscene/v02/'):]), RDF.first, dontdel_concepts[i]))
     basic_context.add_axiom((BNode("INTER2" + str(concepts[i])[len('http://semantic.bosch.com/drivingscene/v02/'):]), RDF.rest, RDF.nil))
-
-# union_concepts = []
-# eq_union_concepts = []
-# for concept in concepts:
-#     # basic_context.add_axiom((BNode("UNION" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):]), RDF.type, OWL.Class))
-#     union_concepts.append(BNode("UNION" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):]))
-#     # basic_context.add_axiom((BNode("EQUNION" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):]), RDF.type, OWL.Class))
-#     # eq_union_concepts.append(BNode("EQUNION" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):]))
-#     # basic_context.add_axiom((BNode("EQUNION" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):]), OWL.equivalentClass, BNode("UNION" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):])))
-
-# for i in range(len(concepts)):
-#     basic_context.add_axiom((union_concepts[i], OWL.unionOf, BNode("UNION1" + str(concepts[i])[len('http://semantic.bosch.com/drivingscene/v02/'):])))
-#     basic_context.add_axiom((BNode("UNION1" + str(concepts[i])[len('http://semantic.bosch.com/drivingscene/v02/'):]), RDF.first, inter_concepts[i]))
-#     basic_context.add_axiom((BNode("UNION1" + str(concepts[i])[len('http://semantic.bosch.com/drivingscene/v02/'):]), RDF.rest, BNode("UNION2" + str(concepts[i])[len('http://semantic.bosch.com/drivingscene/v02/'):])))
-#     basic_context.add_axiom((BNode("UNION2" + str(concepts[i])[len('http://semantic.bosch.com/drivingscene/v02/'):]), RDF.first, add_concepts[i]))
-#     basic_context.add_axiom((BNode("UNION2" + str(concepts[i])[len('http://semantic.bosch.com/drivingscene/v02/'):]), RDF.rest, RDF.nil))
 
 for i in range(len(concepts)):
     basic_context.add_axiom((original_concepts[i], RDF.type, OWL.Class))
@@ -174,4 +154,50 @@ for indiv in non_scene_individuals[:1]:
 mrckr.add_context(basic_context)
 mrckr.add_relation("similarity", basic_context, change_context)
 
+# add the contexts for diagnoses
+gliding_context = Context("gliding_diagnosis", namespace_manager)
+mrckr.add_context(gliding_context)
+mrckr.add_relation("similarity", gliding_context, basic_context)
+
+# children_context = Context("children_diagnosis", namespace_manager)
+# mrckr.add_context(children_context)
+# mrckr.add_relation("similarity", children_context, basic_context)
+
+# rolling_no_human_context = Context("rolling_no_human_diagnosis", namespace_manager)
+# mrckr.add_context(rolling_no_human_context)
+# mrckr.add_relation("similarity", rolling_no_human_context, basic_context)
+
+# sign_and_smoke_context = Context("sign_and_smoke_diagnosis", namespace_manager)
+# mrckr.add_context(sign_and_smoke_context)
+# mrckr.add_relation("similarity", sign_and_smoke_context, basic_context)
+
+# sign_and_stop_line_context = Context("sign_and_stop_line_diagnosis", namespace_manager)
+# mrckr.add_context(sign_and_stop_line_context)
+# mrckr.add_relation("similarity", sign_and_stop_line_context, basic_context)
+
 mrckr.to_file("./MR_CKR")
+with open("./MR_CKR/extra.lp", 'w') as extra_constraints:
+    for i in range(len(concepts)):
+        extra_constraints.write(f':~ instd(X,"{del_concepts[i][len("http://example.org/exchange/"):]}",Context,"main"). [1,X,"{del_concepts[i][len("http://example.org/exchange/"):]}",Context]\n')
+        extra_constraints.write(f':~ instd(X,"{add_concepts[i][len("http://example.org/exchange/"):]}",Context,"main"). [1,X,"{add_concepts[i][len("http://example.org/exchange/"):]}",Context]\n')
+    # ensure we find a diagnosis in each context
+    extra_constraints.write(f'found_gliding :- instd(X, "GlidingOnWheels", "{gliding_context.name}", "main").\n')
+    extra_constraints.write(f':- not found_gliding.\n')
+    
+    # extra_constraints.write(f'found_children :- instd(X, "Child", "{children_context.name}", "main").\n')
+    # extra_constraints.write(f':- not found_children.\n')
+    
+    # extra_constraints.write(f'found_rolling_no_human_1 :- instd(X, "RollingContainer", "{rolling_no_human_context.name}", "main").\n')
+    # extra_constraints.write(f':- not found_rolling_no_human_1.\n')
+    # extra_constraints.write(f'found_rolling_no_human_2 :- instd(X, "Human", "{rolling_no_human_context.name}", "main").\n')
+    # extra_constraints.write(f':- found_rolling_no_human_2.\n')
+    
+    # extra_constraints.write(f'found_sign_and_smoke_1 :- instd(X, "Sign", "{sign_and_smoke_context.name}", "main").\n')
+    # extra_constraints.write(f':- not found_sign_and_smoke_1.\n')
+    # extra_constraints.write(f'found_sign_and_smoke_2 :- instd(Y, "Smoke", "{sign_and_smoke_context.name}", "main").\n')
+    # extra_constraints.write(f':- not found_sign_and_smoke_2.\n')
+    
+    # extra_constraints.write(f'found_sign_and_stop_line_1 :- instd(X, "Sign", "{sign_and_stop_line_context.name}", "main").\n')
+    # extra_constraints.write(f':- not found_sign_and_stop_line_2.\n')
+    # extra_constraints.write(f'found_sign_and_stop_line_2 :- instd(X, "StopLineMarking", "{sign_and_stop_line_context.name}", "main").\n')
+    # extra_constraints.write(f':- not found_sign_and_stop_line_2.\n')
