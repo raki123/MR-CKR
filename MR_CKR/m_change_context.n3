@@ -1,0 +1,3716 @@
+@prefix : <http://www.semanticweb.org/rkiesel/ontologies/2023/0/untitled-ontology-10#> .
+@prefix exch: <http://example.org/exchange/> .
+@prefix ns3: <http://dkm.fbk.eu/ckr/meta#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns3:hasAxiomType a owl:AnnotationProperty .
+
+exch:EXAddress a owl:Class .
+
+exch:EXAdult a owl:Class .
+
+exch:EXAmbulance a owl:Class .
+
+exch:EXAnimal a owl:Class .
+
+exch:EXAnimalEvent a owl:Class .
+
+exch:EXAnimalInAir a owl:Class .
+
+exch:EXAnimalOnGround a owl:Class .
+
+exch:EXAnimalWithRider a owl:Class .
+
+exch:EXAnimalWithoutRider a owl:Class .
+
+exch:EXBarrier a owl:Class .
+
+exch:EXBendyBus a owl:Class .
+
+exch:EXBicycle a owl:Class .
+
+exch:EXBicycleRack a owl:Class .
+
+exch:EXBird a owl:Class .
+
+exch:EXBuilding a owl:Class .
+
+exch:EXBus a owl:Class .
+
+exch:EXCar a owl:Class .
+
+exch:EXChangingLaneLeft a owl:Class .
+
+exch:EXChangingLaneRight a owl:Class .
+
+exch:EXChild a owl:Class .
+
+exch:EXCity a owl:Class .
+
+exch:EXConstructionSign a owl:Class .
+
+exch:EXConstructionVehicle a owl:Class .
+
+exch:EXConstructionWorker a owl:Class .
+
+exch:EXCountry a owl:Class .
+
+exch:EXCounty a owl:Class .
+
+exch:EXCycle a owl:Class .
+
+exch:EXDebris a owl:Class .
+
+exch:EXDriveway a owl:Class .
+
+exch:EXDrivingStraightForward a owl:Class .
+
+exch:EXEmergencyVehicle a owl:Class .
+
+exch:EXExhaust a owl:Class .
+
+exch:EXFrame a owl:Class .
+
+exch:EXGlidingOnWheels a owl:Class .
+
+exch:EXGround a owl:Class .
+
+exch:EXHuman a owl:Class .
+
+exch:EXLaneLineMarking a owl:Class .
+
+exch:EXLeftTurn a owl:Class .
+
+exch:EXLosingControl a owl:Class .
+
+exch:EXLyingDown a owl:Class .
+
+exch:EXMediumSizedTruck a owl:Class .
+
+exch:EXMotorcycle a owl:Class .
+
+exch:EXMotorizedScooter a owl:Class .
+
+exch:EXMovableObject a owl:Class .
+
+exch:EXNeighborhood a owl:Class .
+
+exch:EXParked a owl:Class .
+
+exch:EXPedestrian a owl:Class .
+
+exch:EXPedestrianEvent a owl:Class .
+
+exch:EXPedestrianMoving a owl:Class .
+
+exch:EXPedestrianStationary a owl:Class .
+
+exch:EXPedestrianWithObject a owl:Class .
+
+exch:EXPedestrianWithStroller a owl:Class .
+
+exch:EXPedestrianWithWheelchair a owl:Class .
+
+exch:EXPedicab a owl:Class .
+
+exch:EXPersonalMobilityVehicle a owl:Class .
+
+exch:EXPickupTruck a owl:Class .
+
+exch:EXPoliceOfficer a owl:Class .
+
+exch:EXPoliceVehicle a owl:Class .
+
+exch:EXPushableOrPullableObject a owl:Class .
+
+exch:EXPylon a owl:Class .
+
+exch:EXRailwayVehicle a owl:Class .
+
+exch:EXRain a owl:Class .
+
+exch:EXReflection a owl:Class .
+
+exch:EXReversing a owl:Class .
+
+exch:EXRightTurn a owl:Class .
+
+exch:EXRigidBus a owl:Class .
+
+exch:EXRoad a owl:Class .
+
+exch:EXRoadBarrier a owl:Class .
+
+exch:EXRoadMarking a owl:Class .
+
+exch:EXRoadSign a owl:Class .
+
+exch:EXRollingContainer a owl:Class .
+
+exch:EXRunning a owl:Class .
+
+exch:EXSemiTruck a owl:Class .
+
+exch:EXSequence a owl:Class .
+
+exch:EXSidewalk a owl:Class .
+
+exch:EXSign a owl:Class .
+
+exch:EXSitting a owl:Class .
+
+exch:EXSmoke a owl:Class .
+
+exch:EXStanding a owl:Class .
+
+exch:EXState a owl:Class .
+
+exch:EXStaticObject a owl:Class .
+
+exch:EXStopLineMarking a owl:Class .
+
+exch:EXStopped a owl:Class .
+
+exch:EXStreet a owl:Class .
+
+exch:EXSubwayTram a owl:Class .
+
+exch:EXTemporaryConstructionBarrier a owl:Class .
+
+exch:EXTowedObject a owl:Class .
+
+exch:EXTowedVehicle a owl:Class .
+
+exch:EXTowingObject a owl:Class .
+
+exch:EXTowingVehicle a owl:Class .
+
+exch:EXTrafficCone a owl:Class .
+
+exch:EXTrailer a owl:Class .
+
+exch:EXTrain a owl:Class .
+
+exch:EXTrolly a owl:Class .
+
+exch:EXTruck a owl:Class .
+
+exch:EXUTurn a owl:Class .
+
+exch:EXVegetation a owl:Class .
+
+exch:EXVehicle a owl:Class .
+
+exch:EXVehicleEvent a owl:Class .
+
+exch:EXVehicleMoving a owl:Class .
+
+exch:EXVehicleNotSignaling a owl:Class .
+
+exch:EXVehicleSignaling a owl:Class .
+
+exch:EXVehicleStationary a owl:Class .
+
+exch:EXVehicleTurning a owl:Class .
+
+exch:EXVehicleWithRider a owl:Class .
+
+exch:EXVehicleWithoutRider a owl:Class .
+
+exch:EXViolatingTrafficRule a owl:Class .
+
+exch:EXWalking a owl:Class .
+
+exch:EXWeatherEvent a owl:Class .
+
+:change_context_axiom_0 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDAddress .
+
+:change_context_axiom_1 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELAddress .
+
+:change_context_axiom_10 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDAnimalInAir .
+
+:change_context_axiom_100 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPedestrianWithObject .
+
+:change_context_axiom_101 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPedestrianWithObject .
+
+:change_context_axiom_102 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPedestrianWithStroller .
+
+:change_context_axiom_103 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPedestrianWithStroller .
+
+:change_context_axiom_104 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPedestrianWithWheelchair .
+
+:change_context_axiom_105 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPedestrianWithWheelchair .
+
+:change_context_axiom_106 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPedicab .
+
+:change_context_axiom_107 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPedicab .
+
+:change_context_axiom_108 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPersonalMobilityVehicle .
+
+:change_context_axiom_109 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPersonalMobilityVehicle .
+
+:change_context_axiom_11 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELAnimalInAir .
+
+:change_context_axiom_110 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPickupTruck .
+
+:change_context_axiom_111 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPickupTruck .
+
+:change_context_axiom_112 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPoliceOfficer .
+
+:change_context_axiom_113 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPoliceOfficer .
+
+:change_context_axiom_114 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPoliceVehicle .
+
+:change_context_axiom_115 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPoliceVehicle .
+
+:change_context_axiom_116 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPushableOrPullableObject .
+
+:change_context_axiom_117 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPushableOrPullableObject .
+
+:change_context_axiom_118 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPylon .
+
+:change_context_axiom_119 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPylon .
+
+:change_context_axiom_12 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDAnimalOnGround .
+
+:change_context_axiom_120 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDRailwayVehicle .
+
+:change_context_axiom_121 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELRailwayVehicle .
+
+:change_context_axiom_122 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDRain .
+
+:change_context_axiom_123 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELRain .
+
+:change_context_axiom_124 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDReflection .
+
+:change_context_axiom_125 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELReflection .
+
+:change_context_axiom_126 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDReversing .
+
+:change_context_axiom_127 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELReversing .
+
+:change_context_axiom_128 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDRightTurn .
+
+:change_context_axiom_129 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELRightTurn .
+
+:change_context_axiom_13 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELAnimalOnGround .
+
+:change_context_axiom_130 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDRigidBus .
+
+:change_context_axiom_131 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELRigidBus .
+
+:change_context_axiom_132 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDRoad .
+
+:change_context_axiom_133 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELRoad .
+
+:change_context_axiom_134 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDRoadBarrier .
+
+:change_context_axiom_135 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELRoadBarrier .
+
+:change_context_axiom_136 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDRoadMarking .
+
+:change_context_axiom_137 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELRoadMarking .
+
+:change_context_axiom_138 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDRoadSign .
+
+:change_context_axiom_139 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELRoadSign .
+
+:change_context_axiom_14 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDAnimalWithRider .
+
+:change_context_axiom_140 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDRollingContainer .
+
+:change_context_axiom_141 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELRollingContainer .
+
+:change_context_axiom_142 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDRunning .
+
+:change_context_axiom_143 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELRunning .
+
+:change_context_axiom_144 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDSemiTruck .
+
+:change_context_axiom_145 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELSemiTruck .
+
+:change_context_axiom_146 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDSequence .
+
+:change_context_axiom_147 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELSequence .
+
+:change_context_axiom_148 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDSidewalk .
+
+:change_context_axiom_149 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELSidewalk .
+
+:change_context_axiom_15 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELAnimalWithRider .
+
+:change_context_axiom_150 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDSign .
+
+:change_context_axiom_151 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELSign .
+
+:change_context_axiom_152 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDSitting .
+
+:change_context_axiom_153 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELSitting .
+
+:change_context_axiom_154 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDSmoke .
+
+:change_context_axiom_155 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELSmoke .
+
+:change_context_axiom_156 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDStanding .
+
+:change_context_axiom_157 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELStanding .
+
+:change_context_axiom_158 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDState .
+
+:change_context_axiom_159 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELState .
+
+:change_context_axiom_16 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDAnimalWithoutRider .
+
+:change_context_axiom_160 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDStaticObject .
+
+:change_context_axiom_161 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELStaticObject .
+
+:change_context_axiom_162 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDStopLineMarking .
+
+:change_context_axiom_163 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELStopLineMarking .
+
+:change_context_axiom_164 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDStopped .
+
+:change_context_axiom_165 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELStopped .
+
+:change_context_axiom_166 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDStreet .
+
+:change_context_axiom_167 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELStreet .
+
+:change_context_axiom_168 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDSubwayTram .
+
+:change_context_axiom_169 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELSubwayTram .
+
+:change_context_axiom_17 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELAnimalWithoutRider .
+
+:change_context_axiom_170 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDTemporaryConstructionBarrier .
+
+:change_context_axiom_171 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELTemporaryConstructionBarrier .
+
+:change_context_axiom_172 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDTowedObject .
+
+:change_context_axiom_173 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELTowedObject .
+
+:change_context_axiom_174 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDTowedVehicle .
+
+:change_context_axiom_175 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELTowedVehicle .
+
+:change_context_axiom_176 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDTowingObject .
+
+:change_context_axiom_177 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELTowingObject .
+
+:change_context_axiom_178 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDTowingVehicle .
+
+:change_context_axiom_179 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELTowingVehicle .
+
+:change_context_axiom_18 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDBarrier .
+
+:change_context_axiom_180 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDTrafficCone .
+
+:change_context_axiom_181 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELTrafficCone .
+
+:change_context_axiom_182 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDTrailer .
+
+:change_context_axiom_183 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELTrailer .
+
+:change_context_axiom_184 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDTrain .
+
+:change_context_axiom_185 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELTrain .
+
+:change_context_axiom_186 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDTrolly .
+
+:change_context_axiom_187 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELTrolly .
+
+:change_context_axiom_188 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDTruck .
+
+:change_context_axiom_189 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELTruck .
+
+:change_context_axiom_19 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELBarrier .
+
+:change_context_axiom_190 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDUTurn .
+
+:change_context_axiom_191 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELUTurn .
+
+:change_context_axiom_192 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDVegetation .
+
+:change_context_axiom_193 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELVegetation .
+
+:change_context_axiom_194 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDVehicle .
+
+:change_context_axiom_195 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELVehicle .
+
+:change_context_axiom_196 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDVehicleEvent .
+
+:change_context_axiom_197 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELVehicleEvent .
+
+:change_context_axiom_198 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDVehicleMoving .
+
+:change_context_axiom_199 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELVehicleMoving .
+
+:change_context_axiom_2 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDAdult .
+
+:change_context_axiom_20 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDBendyBus .
+
+:change_context_axiom_200 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDVehicleNotSignaling .
+
+:change_context_axiom_201 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELVehicleNotSignaling .
+
+:change_context_axiom_202 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDVehicleSignaling .
+
+:change_context_axiom_203 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELVehicleSignaling .
+
+:change_context_axiom_204 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDVehicleStationary .
+
+:change_context_axiom_205 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELVehicleStationary .
+
+:change_context_axiom_206 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDVehicleTurning .
+
+:change_context_axiom_207 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELVehicleTurning .
+
+:change_context_axiom_208 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDVehicleWithRider .
+
+:change_context_axiom_209 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELVehicleWithRider .
+
+:change_context_axiom_21 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELBendyBus .
+
+:change_context_axiom_210 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDVehicleWithoutRider .
+
+:change_context_axiom_211 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELVehicleWithoutRider .
+
+:change_context_axiom_212 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDViolatingTrafficRule .
+
+:change_context_axiom_213 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELViolatingTrafficRule .
+
+:change_context_axiom_214 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDWalking .
+
+:change_context_axiom_215 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELWalking .
+
+:change_context_axiom_216 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDWeatherEvent .
+
+:change_context_axiom_217 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELWeatherEvent .
+
+:change_context_axiom_218 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDAddress .
+
+:change_context_axiom_219 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELAddress .
+
+:change_context_axiom_22 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDBicycle .
+
+:change_context_axiom_220 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDAdult .
+
+:change_context_axiom_221 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELAdult .
+
+:change_context_axiom_222 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDAmbulance .
+
+:change_context_axiom_223 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELAmbulance .
+
+:change_context_axiom_224 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDAnimal .
+
+:change_context_axiom_225 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELAnimal .
+
+:change_context_axiom_226 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDAnimalEvent .
+
+:change_context_axiom_227 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELAnimalEvent .
+
+:change_context_axiom_228 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDAnimalInAir .
+
+:change_context_axiom_229 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELAnimalInAir .
+
+:change_context_axiom_23 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELBicycle .
+
+:change_context_axiom_230 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDAnimalOnGround .
+
+:change_context_axiom_231 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELAnimalOnGround .
+
+:change_context_axiom_232 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDAnimalWithRider .
+
+:change_context_axiom_233 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELAnimalWithRider .
+
+:change_context_axiom_234 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDAnimalWithoutRider .
+
+:change_context_axiom_235 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELAnimalWithoutRider .
+
+:change_context_axiom_236 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDBarrier .
+
+:change_context_axiom_237 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELBarrier .
+
+:change_context_axiom_238 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDBendyBus .
+
+:change_context_axiom_239 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELBendyBus .
+
+:change_context_axiom_24 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDBicycleRack .
+
+:change_context_axiom_240 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDBicycle .
+
+:change_context_axiom_241 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELBicycle .
+
+:change_context_axiom_242 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDBicycleRack .
+
+:change_context_axiom_243 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELBicycleRack .
+
+:change_context_axiom_244 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDBird .
+
+:change_context_axiom_245 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELBird .
+
+:change_context_axiom_246 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDBuilding .
+
+:change_context_axiom_247 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELBuilding .
+
+:change_context_axiom_248 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDBus .
+
+:change_context_axiom_249 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELBus .
+
+:change_context_axiom_25 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELBicycleRack .
+
+:change_context_axiom_250 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDCar .
+
+:change_context_axiom_251 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELCar .
+
+:change_context_axiom_252 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDChangingLaneLeft .
+
+:change_context_axiom_253 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELChangingLaneLeft .
+
+:change_context_axiom_254 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDChangingLaneRight .
+
+:change_context_axiom_255 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELChangingLaneRight .
+
+:change_context_axiom_256 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDChild .
+
+:change_context_axiom_257 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELChild .
+
+:change_context_axiom_258 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDCity .
+
+:change_context_axiom_259 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELCity .
+
+:change_context_axiom_26 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDBird .
+
+:change_context_axiom_260 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDConstructionSign .
+
+:change_context_axiom_261 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELConstructionSign .
+
+:change_context_axiom_262 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDConstructionVehicle .
+
+:change_context_axiom_263 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELConstructionVehicle .
+
+:change_context_axiom_264 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDConstructionWorker .
+
+:change_context_axiom_265 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELConstructionWorker .
+
+:change_context_axiom_266 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDCountry .
+
+:change_context_axiom_267 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELCountry .
+
+:change_context_axiom_268 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDCounty .
+
+:change_context_axiom_269 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELCounty .
+
+:change_context_axiom_27 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELBird .
+
+:change_context_axiom_270 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDCycle .
+
+:change_context_axiom_271 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELCycle .
+
+:change_context_axiom_272 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDDebris .
+
+:change_context_axiom_273 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELDebris .
+
+:change_context_axiom_274 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDDriveway .
+
+:change_context_axiom_275 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELDriveway .
+
+:change_context_axiom_276 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDDrivingStraightForward .
+
+:change_context_axiom_277 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELDrivingStraightForward .
+
+:change_context_axiom_278 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDEmergencyVehicle .
+
+:change_context_axiom_279 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELEmergencyVehicle .
+
+:change_context_axiom_28 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDBuilding .
+
+:change_context_axiom_280 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDExhaust .
+
+:change_context_axiom_281 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELExhaust .
+
+:change_context_axiom_282 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDFrame .
+
+:change_context_axiom_283 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELFrame .
+
+:change_context_axiom_284 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDGlidingOnWheels .
+
+:change_context_axiom_285 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELGlidingOnWheels .
+
+:change_context_axiom_286 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDGround .
+
+:change_context_axiom_287 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELGround .
+
+:change_context_axiom_288 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDHuman .
+
+:change_context_axiom_289 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELHuman .
+
+:change_context_axiom_29 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELBuilding .
+
+:change_context_axiom_290 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDLaneLineMarking .
+
+:change_context_axiom_291 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELLaneLineMarking .
+
+:change_context_axiom_292 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDLeftTurn .
+
+:change_context_axiom_293 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELLeftTurn .
+
+:change_context_axiom_294 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDLosingControl .
+
+:change_context_axiom_295 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELLosingControl .
+
+:change_context_axiom_296 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDLyingDown .
+
+:change_context_axiom_297 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELLyingDown .
+
+:change_context_axiom_298 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDMediumSizedTruck .
+
+:change_context_axiom_299 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELMediumSizedTruck .
+
+:change_context_axiom_3 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELAdult .
+
+:change_context_axiom_30 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDBus .
+
+:change_context_axiom_300 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDMotorcycle .
+
+:change_context_axiom_301 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELMotorcycle .
+
+:change_context_axiom_302 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDMotorizedScooter .
+
+:change_context_axiom_303 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELMotorizedScooter .
+
+:change_context_axiom_304 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDMovableObject .
+
+:change_context_axiom_305 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELMovableObject .
+
+:change_context_axiom_306 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDNeighborhood .
+
+:change_context_axiom_307 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELNeighborhood .
+
+:change_context_axiom_308 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDParked .
+
+:change_context_axiom_309 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELParked .
+
+:change_context_axiom_31 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELBus .
+
+:change_context_axiom_310 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPedestrian .
+
+:change_context_axiom_311 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPedestrian .
+
+:change_context_axiom_312 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPedestrianEvent .
+
+:change_context_axiom_313 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPedestrianEvent .
+
+:change_context_axiom_314 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPedestrianMoving .
+
+:change_context_axiom_315 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPedestrianMoving .
+
+:change_context_axiom_316 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPedestrianStationary .
+
+:change_context_axiom_317 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPedestrianStationary .
+
+:change_context_axiom_318 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPedestrianWithObject .
+
+:change_context_axiom_319 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPedestrianWithObject .
+
+:change_context_axiom_32 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDCar .
+
+:change_context_axiom_320 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPedestrianWithStroller .
+
+:change_context_axiom_321 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPedestrianWithStroller .
+
+:change_context_axiom_322 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPedestrianWithWheelchair .
+
+:change_context_axiom_323 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPedestrianWithWheelchair .
+
+:change_context_axiom_324 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPedicab .
+
+:change_context_axiom_325 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPedicab .
+
+:change_context_axiom_326 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPersonalMobilityVehicle .
+
+:change_context_axiom_327 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPersonalMobilityVehicle .
+
+:change_context_axiom_328 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPickupTruck .
+
+:change_context_axiom_329 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPickupTruck .
+
+:change_context_axiom_33 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELCar .
+
+:change_context_axiom_330 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPoliceOfficer .
+
+:change_context_axiom_331 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPoliceOfficer .
+
+:change_context_axiom_332 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPoliceVehicle .
+
+:change_context_axiom_333 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPoliceVehicle .
+
+:change_context_axiom_334 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPushableOrPullableObject .
+
+:change_context_axiom_335 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPushableOrPullableObject .
+
+:change_context_axiom_336 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDPylon .
+
+:change_context_axiom_337 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELPylon .
+
+:change_context_axiom_338 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDRailwayVehicle .
+
+:change_context_axiom_339 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELRailwayVehicle .
+
+:change_context_axiom_34 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDChangingLaneLeft .
+
+:change_context_axiom_340 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDRain .
+
+:change_context_axiom_341 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELRain .
+
+:change_context_axiom_342 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDReflection .
+
+:change_context_axiom_343 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELReflection .
+
+:change_context_axiom_344 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDReversing .
+
+:change_context_axiom_345 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELReversing .
+
+:change_context_axiom_346 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDRightTurn .
+
+:change_context_axiom_347 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELRightTurn .
+
+:change_context_axiom_348 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDRigidBus .
+
+:change_context_axiom_349 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELRigidBus .
+
+:change_context_axiom_35 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELChangingLaneLeft .
+
+:change_context_axiom_350 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDRoad .
+
+:change_context_axiom_351 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELRoad .
+
+:change_context_axiom_352 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDRoadBarrier .
+
+:change_context_axiom_353 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELRoadBarrier .
+
+:change_context_axiom_354 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDRoadMarking .
+
+:change_context_axiom_355 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELRoadMarking .
+
+:change_context_axiom_356 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDRoadSign .
+
+:change_context_axiom_357 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELRoadSign .
+
+:change_context_axiom_358 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDRollingContainer .
+
+:change_context_axiom_359 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELRollingContainer .
+
+:change_context_axiom_36 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDChangingLaneRight .
+
+:change_context_axiom_360 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDRunning .
+
+:change_context_axiom_361 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELRunning .
+
+:change_context_axiom_362 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDSemiTruck .
+
+:change_context_axiom_363 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELSemiTruck .
+
+:change_context_axiom_364 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDSequence .
+
+:change_context_axiom_365 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELSequence .
+
+:change_context_axiom_366 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDSidewalk .
+
+:change_context_axiom_367 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELSidewalk .
+
+:change_context_axiom_368 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDSign .
+
+:change_context_axiom_369 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELSign .
+
+:change_context_axiom_37 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELChangingLaneRight .
+
+:change_context_axiom_370 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDSitting .
+
+:change_context_axiom_371 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELSitting .
+
+:change_context_axiom_372 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDSmoke .
+
+:change_context_axiom_373 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELSmoke .
+
+:change_context_axiom_374 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDStanding .
+
+:change_context_axiom_375 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELStanding .
+
+:change_context_axiom_376 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDState .
+
+:change_context_axiom_377 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELState .
+
+:change_context_axiom_378 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDStaticObject .
+
+:change_context_axiom_379 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELStaticObject .
+
+:change_context_axiom_38 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDChild .
+
+:change_context_axiom_380 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDStopLineMarking .
+
+:change_context_axiom_381 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELStopLineMarking .
+
+:change_context_axiom_382 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDStopped .
+
+:change_context_axiom_383 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELStopped .
+
+:change_context_axiom_384 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDStreet .
+
+:change_context_axiom_385 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELStreet .
+
+:change_context_axiom_386 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDSubwayTram .
+
+:change_context_axiom_387 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELSubwayTram .
+
+:change_context_axiom_388 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDTemporaryConstructionBarrier .
+
+:change_context_axiom_389 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELTemporaryConstructionBarrier .
+
+:change_context_axiom_39 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELChild .
+
+:change_context_axiom_390 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDTowedObject .
+
+:change_context_axiom_391 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELTowedObject .
+
+:change_context_axiom_392 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDTowedVehicle .
+
+:change_context_axiom_393 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELTowedVehicle .
+
+:change_context_axiom_394 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDTowingObject .
+
+:change_context_axiom_395 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELTowingObject .
+
+:change_context_axiom_396 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDTowingVehicle .
+
+:change_context_axiom_397 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELTowingVehicle .
+
+:change_context_axiom_398 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDTrafficCone .
+
+:change_context_axiom_399 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELTrafficCone .
+
+:change_context_axiom_4 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDAmbulance .
+
+:change_context_axiom_40 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDCity .
+
+:change_context_axiom_400 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDTrailer .
+
+:change_context_axiom_401 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELTrailer .
+
+:change_context_axiom_402 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDTrain .
+
+:change_context_axiom_403 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELTrain .
+
+:change_context_axiom_404 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDTrolly .
+
+:change_context_axiom_405 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELTrolly .
+
+:change_context_axiom_406 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDTruck .
+
+:change_context_axiom_407 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELTruck .
+
+:change_context_axiom_408 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDUTurn .
+
+:change_context_axiom_409 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELUTurn .
+
+:change_context_axiom_41 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELCity .
+
+:change_context_axiom_410 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDVegetation .
+
+:change_context_axiom_411 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELVegetation .
+
+:change_context_axiom_412 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDVehicle .
+
+:change_context_axiom_413 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELVehicle .
+
+:change_context_axiom_414 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDVehicleEvent .
+
+:change_context_axiom_415 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELVehicleEvent .
+
+:change_context_axiom_416 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDVehicleMoving .
+
+:change_context_axiom_417 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELVehicleMoving .
+
+:change_context_axiom_418 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDVehicleNotSignaling .
+
+:change_context_axiom_419 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELVehicleNotSignaling .
+
+:change_context_axiom_42 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDConstructionSign .
+
+:change_context_axiom_420 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDVehicleSignaling .
+
+:change_context_axiom_421 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELVehicleSignaling .
+
+:change_context_axiom_422 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDVehicleStationary .
+
+:change_context_axiom_423 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELVehicleStationary .
+
+:change_context_axiom_424 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDVehicleTurning .
+
+:change_context_axiom_425 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELVehicleTurning .
+
+:change_context_axiom_426 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDVehicleWithRider .
+
+:change_context_axiom_427 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELVehicleWithRider .
+
+:change_context_axiom_428 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDVehicleWithoutRider .
+
+:change_context_axiom_429 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELVehicleWithoutRider .
+
+:change_context_axiom_43 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELConstructionSign .
+
+:change_context_axiom_430 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDViolatingTrafficRule .
+
+:change_context_axiom_431 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELViolatingTrafficRule .
+
+:change_context_axiom_432 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDWalking .
+
+:change_context_axiom_433 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELWalking .
+
+:change_context_axiom_434 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTADDWeatherEvent .
+
+:change_context_axiom_435 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DONTDELWeatherEvent .
+
+:change_context_axiom_44 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDConstructionVehicle .
+
+:change_context_axiom_45 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELConstructionVehicle .
+
+:change_context_axiom_46 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDConstructionWorker .
+
+:change_context_axiom_47 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELConstructionWorker .
+
+:change_context_axiom_48 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDCountry .
+
+:change_context_axiom_49 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELCountry .
+
+:change_context_axiom_5 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELAmbulance .
+
+:change_context_axiom_50 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDCounty .
+
+:change_context_axiom_51 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELCounty .
+
+:change_context_axiom_52 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDCycle .
+
+:change_context_axiom_53 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELCycle .
+
+:change_context_axiom_54 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDDebris .
+
+:change_context_axiom_55 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELDebris .
+
+:change_context_axiom_56 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDDriveway .
+
+:change_context_axiom_57 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELDriveway .
+
+:change_context_axiom_58 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDDrivingStraightForward .
+
+:change_context_axiom_59 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELDrivingStraightForward .
+
+:change_context_axiom_6 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDAnimal .
+
+:change_context_axiom_60 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDEmergencyVehicle .
+
+:change_context_axiom_61 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELEmergencyVehicle .
+
+:change_context_axiom_62 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDExhaust .
+
+:change_context_axiom_63 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELExhaust .
+
+:change_context_axiom_64 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDFrame .
+
+:change_context_axiom_65 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELFrame .
+
+:change_context_axiom_66 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDGlidingOnWheels .
+
+:change_context_axiom_67 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELGlidingOnWheels .
+
+:change_context_axiom_68 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDGround .
+
+:change_context_axiom_69 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELGround .
+
+:change_context_axiom_7 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELAnimal .
+
+:change_context_axiom_70 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDHuman .
+
+:change_context_axiom_71 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELHuman .
+
+:change_context_axiom_72 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDLaneLineMarking .
+
+:change_context_axiom_73 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELLaneLineMarking .
+
+:change_context_axiom_74 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDLeftTurn .
+
+:change_context_axiom_75 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELLeftTurn .
+
+:change_context_axiom_76 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDLosingControl .
+
+:change_context_axiom_77 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELLosingControl .
+
+:change_context_axiom_78 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDLyingDown .
+
+:change_context_axiom_79 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELLyingDown .
+
+:change_context_axiom_8 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDAnimalEvent .
+
+:change_context_axiom_80 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDMediumSizedTruck .
+
+:change_context_axiom_81 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELMediumSizedTruck .
+
+:change_context_axiom_82 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDMotorcycle .
+
+:change_context_axiom_83 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELMotorcycle .
+
+:change_context_axiom_84 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDMotorizedScooter .
+
+:change_context_axiom_85 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELMotorizedScooter .
+
+:change_context_axiom_86 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDMovableObject .
+
+:change_context_axiom_87 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELMovableObject .
+
+:change_context_axiom_88 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDNeighborhood .
+
+:change_context_axiom_89 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELNeighborhood .
+
+:change_context_axiom_9 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELAnimalEvent .
+
+:change_context_axiom_90 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDParked .
+
+:change_context_axiom_91 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELParked .
+
+:change_context_axiom_92 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPedestrian .
+
+:change_context_axiom_93 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPedestrian .
+
+:change_context_axiom_94 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPedestrianEvent .
+
+:change_context_axiom_95 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPedestrianEvent .
+
+:change_context_axiom_96 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPedestrianMoving .
+
+:change_context_axiom_97 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPedestrianMoving .
+
+:change_context_axiom_98 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:ADDPedestrianStationary .
+
+:change_context_axiom_99 a owl:Axiom ;
+    ns3:hasAxiomType ns3:defeasibleTime ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource exch:Named ;
+    owl:annotatedTarget exch:DELPedestrianStationary .
+
+exch:ADDAddress a owl:Class .
+
+exch:ADDAdult a owl:Class .
+
+exch:ADDAmbulance a owl:Class .
+
+exch:ADDAnimal a owl:Class .
+
+exch:ADDAnimalEvent a owl:Class .
+
+exch:ADDAnimalInAir a owl:Class .
+
+exch:ADDAnimalOnGround a owl:Class .
+
+exch:ADDAnimalWithRider a owl:Class .
+
+exch:ADDAnimalWithoutRider a owl:Class .
+
+exch:ADDBarrier a owl:Class .
+
+exch:ADDBendyBus a owl:Class .
+
+exch:ADDBicycle a owl:Class .
+
+exch:ADDBicycleRack a owl:Class .
+
+exch:ADDBird a owl:Class .
+
+exch:ADDBuilding a owl:Class .
+
+exch:ADDBus a owl:Class .
+
+exch:ADDCar a owl:Class .
+
+exch:ADDChangingLaneLeft a owl:Class .
+
+exch:ADDChangingLaneRight a owl:Class .
+
+exch:ADDChild a owl:Class .
+
+exch:ADDCity a owl:Class .
+
+exch:ADDConstructionSign a owl:Class .
+
+exch:ADDConstructionVehicle a owl:Class .
+
+exch:ADDConstructionWorker a owl:Class .
+
+exch:ADDCountry a owl:Class .
+
+exch:ADDCounty a owl:Class .
+
+exch:ADDCycle a owl:Class .
+
+exch:ADDDebris a owl:Class .
+
+exch:ADDDriveway a owl:Class .
+
+exch:ADDDrivingStraightForward a owl:Class .
+
+exch:ADDEmergencyVehicle a owl:Class .
+
+exch:ADDExhaust a owl:Class .
+
+exch:ADDFrame a owl:Class .
+
+exch:ADDGlidingOnWheels a owl:Class .
+
+exch:ADDGround a owl:Class .
+
+exch:ADDHuman a owl:Class .
+
+exch:ADDLaneLineMarking a owl:Class .
+
+exch:ADDLeftTurn a owl:Class .
+
+exch:ADDLosingControl a owl:Class .
+
+exch:ADDLyingDown a owl:Class .
+
+exch:ADDMediumSizedTruck a owl:Class .
+
+exch:ADDMotorcycle a owl:Class .
+
+exch:ADDMotorizedScooter a owl:Class .
+
+exch:ADDMovableObject a owl:Class .
+
+exch:ADDNeighborhood a owl:Class .
+
+exch:ADDParked a owl:Class .
+
+exch:ADDPedestrian a owl:Class .
+
+exch:ADDPedestrianEvent a owl:Class .
+
+exch:ADDPedestrianMoving a owl:Class .
+
+exch:ADDPedestrianStationary a owl:Class .
+
+exch:ADDPedestrianWithObject a owl:Class .
+
+exch:ADDPedestrianWithStroller a owl:Class .
+
+exch:ADDPedestrianWithWheelchair a owl:Class .
+
+exch:ADDPedicab a owl:Class .
+
+exch:ADDPersonalMobilityVehicle a owl:Class .
+
+exch:ADDPickupTruck a owl:Class .
+
+exch:ADDPoliceOfficer a owl:Class .
+
+exch:ADDPoliceVehicle a owl:Class .
+
+exch:ADDPushableOrPullableObject a owl:Class .
+
+exch:ADDPylon a owl:Class .
+
+exch:ADDRailwayVehicle a owl:Class .
+
+exch:ADDRain a owl:Class .
+
+exch:ADDReflection a owl:Class .
+
+exch:ADDReversing a owl:Class .
+
+exch:ADDRightTurn a owl:Class .
+
+exch:ADDRigidBus a owl:Class .
+
+exch:ADDRoad a owl:Class .
+
+exch:ADDRoadBarrier a owl:Class .
+
+exch:ADDRoadMarking a owl:Class .
+
+exch:ADDRoadSign a owl:Class .
+
+exch:ADDRollingContainer a owl:Class .
+
+exch:ADDRunning a owl:Class .
+
+exch:ADDSemiTruck a owl:Class .
+
+exch:ADDSequence a owl:Class .
+
+exch:ADDSidewalk a owl:Class .
+
+exch:ADDSign a owl:Class .
+
+exch:ADDSitting a owl:Class .
+
+exch:ADDSmoke a owl:Class .
+
+exch:ADDStanding a owl:Class .
+
+exch:ADDState a owl:Class .
+
+exch:ADDStaticObject a owl:Class .
+
+exch:ADDStopLineMarking a owl:Class .
+
+exch:ADDStopped a owl:Class .
+
+exch:ADDStreet a owl:Class .
+
+exch:ADDSubwayTram a owl:Class .
+
+exch:ADDTemporaryConstructionBarrier a owl:Class .
+
+exch:ADDTowedObject a owl:Class .
+
+exch:ADDTowedVehicle a owl:Class .
+
+exch:ADDTowingObject a owl:Class .
+
+exch:ADDTowingVehicle a owl:Class .
+
+exch:ADDTrafficCone a owl:Class .
+
+exch:ADDTrailer a owl:Class .
+
+exch:ADDTrain a owl:Class .
+
+exch:ADDTrolly a owl:Class .
+
+exch:ADDTruck a owl:Class .
+
+exch:ADDUTurn a owl:Class .
+
+exch:ADDVegetation a owl:Class .
+
+exch:ADDVehicle a owl:Class .
+
+exch:ADDVehicleEvent a owl:Class .
+
+exch:ADDVehicleMoving a owl:Class .
+
+exch:ADDVehicleNotSignaling a owl:Class .
+
+exch:ADDVehicleSignaling a owl:Class .
+
+exch:ADDVehicleStationary a owl:Class .
+
+exch:ADDVehicleTurning a owl:Class .
+
+exch:ADDVehicleWithRider a owl:Class .
+
+exch:ADDVehicleWithoutRider a owl:Class .
+
+exch:ADDViolatingTrafficRule a owl:Class .
+
+exch:ADDWalking a owl:Class .
+
+exch:ADDWeatherEvent a owl:Class .
+
+exch:DELAddress a owl:Class .
+
+exch:DELAdult a owl:Class .
+
+exch:DELAmbulance a owl:Class .
+
+exch:DELAnimal a owl:Class .
+
+exch:DELAnimalEvent a owl:Class .
+
+exch:DELAnimalInAir a owl:Class .
+
+exch:DELAnimalOnGround a owl:Class .
+
+exch:DELAnimalWithRider a owl:Class .
+
+exch:DELAnimalWithoutRider a owl:Class .
+
+exch:DELBarrier a owl:Class .
+
+exch:DELBendyBus a owl:Class .
+
+exch:DELBicycle a owl:Class .
+
+exch:DELBicycleRack a owl:Class .
+
+exch:DELBird a owl:Class .
+
+exch:DELBuilding a owl:Class .
+
+exch:DELBus a owl:Class .
+
+exch:DELCar a owl:Class .
+
+exch:DELChangingLaneLeft a owl:Class .
+
+exch:DELChangingLaneRight a owl:Class .
+
+exch:DELChild a owl:Class .
+
+exch:DELCity a owl:Class .
+
+exch:DELConstructionSign a owl:Class .
+
+exch:DELConstructionVehicle a owl:Class .
+
+exch:DELConstructionWorker a owl:Class .
+
+exch:DELCountry a owl:Class .
+
+exch:DELCounty a owl:Class .
+
+exch:DELCycle a owl:Class .
+
+exch:DELDebris a owl:Class .
+
+exch:DELDriveway a owl:Class .
+
+exch:DELDrivingStraightForward a owl:Class .
+
+exch:DELEmergencyVehicle a owl:Class .
+
+exch:DELExhaust a owl:Class .
+
+exch:DELFrame a owl:Class .
+
+exch:DELGlidingOnWheels a owl:Class .
+
+exch:DELGround a owl:Class .
+
+exch:DELHuman a owl:Class .
+
+exch:DELLaneLineMarking a owl:Class .
+
+exch:DELLeftTurn a owl:Class .
+
+exch:DELLosingControl a owl:Class .
+
+exch:DELLyingDown a owl:Class .
+
+exch:DELMediumSizedTruck a owl:Class .
+
+exch:DELMotorcycle a owl:Class .
+
+exch:DELMotorizedScooter a owl:Class .
+
+exch:DELMovableObject a owl:Class .
+
+exch:DELNeighborhood a owl:Class .
+
+exch:DELParked a owl:Class .
+
+exch:DELPedestrian a owl:Class .
+
+exch:DELPedestrianEvent a owl:Class .
+
+exch:DELPedestrianMoving a owl:Class .
+
+exch:DELPedestrianStationary a owl:Class .
+
+exch:DELPedestrianWithObject a owl:Class .
+
+exch:DELPedestrianWithStroller a owl:Class .
+
+exch:DELPedestrianWithWheelchair a owl:Class .
+
+exch:DELPedicab a owl:Class .
+
+exch:DELPersonalMobilityVehicle a owl:Class .
+
+exch:DELPickupTruck a owl:Class .
+
+exch:DELPoliceOfficer a owl:Class .
+
+exch:DELPoliceVehicle a owl:Class .
+
+exch:DELPushableOrPullableObject a owl:Class .
+
+exch:DELPylon a owl:Class .
+
+exch:DELRailwayVehicle a owl:Class .
+
+exch:DELRain a owl:Class .
+
+exch:DELReflection a owl:Class .
+
+exch:DELReversing a owl:Class .
+
+exch:DELRightTurn a owl:Class .
+
+exch:DELRigidBus a owl:Class .
+
+exch:DELRoad a owl:Class .
+
+exch:DELRoadBarrier a owl:Class .
+
+exch:DELRoadMarking a owl:Class .
+
+exch:DELRoadSign a owl:Class .
+
+exch:DELRollingContainer a owl:Class .
+
+exch:DELRunning a owl:Class .
+
+exch:DELSemiTruck a owl:Class .
+
+exch:DELSequence a owl:Class .
+
+exch:DELSidewalk a owl:Class .
+
+exch:DELSign a owl:Class .
+
+exch:DELSitting a owl:Class .
+
+exch:DELSmoke a owl:Class .
+
+exch:DELStanding a owl:Class .
+
+exch:DELState a owl:Class .
+
+exch:DELStaticObject a owl:Class .
+
+exch:DELStopLineMarking a owl:Class .
+
+exch:DELStopped a owl:Class .
+
+exch:DELStreet a owl:Class .
+
+exch:DELSubwayTram a owl:Class .
+
+exch:DELTemporaryConstructionBarrier a owl:Class .
+
+exch:DELTowedObject a owl:Class .
+
+exch:DELTowedVehicle a owl:Class .
+
+exch:DELTowingObject a owl:Class .
+
+exch:DELTowingVehicle a owl:Class .
+
+exch:DELTrafficCone a owl:Class .
+
+exch:DELTrailer a owl:Class .
+
+exch:DELTrain a owl:Class .
+
+exch:DELTrolly a owl:Class .
+
+exch:DELTruck a owl:Class .
+
+exch:DELUTurn a owl:Class .
+
+exch:DELVegetation a owl:Class .
+
+exch:DELVehicle a owl:Class .
+
+exch:DELVehicleEvent a owl:Class .
+
+exch:DELVehicleMoving a owl:Class .
+
+exch:DELVehicleNotSignaling a owl:Class .
+
+exch:DELVehicleSignaling a owl:Class .
+
+exch:DELVehicleStationary a owl:Class .
+
+exch:DELVehicleTurning a owl:Class .
+
+exch:DELVehicleWithRider a owl:Class .
+
+exch:DELVehicleWithoutRider a owl:Class .
+
+exch:DELViolatingTrafficRule a owl:Class .
+
+exch:DELWalking a owl:Class .
+
+exch:DELWeatherEvent a owl:Class .
+
+exch:DONTADDAddress a owl:Class .
+
+exch:DONTADDAdult a owl:Class .
+
+exch:DONTADDAmbulance a owl:Class .
+
+exch:DONTADDAnimal a owl:Class .
+
+exch:DONTADDAnimalEvent a owl:Class .
+
+exch:DONTADDAnimalInAir a owl:Class .
+
+exch:DONTADDAnimalOnGround a owl:Class .
+
+exch:DONTADDAnimalWithRider a owl:Class .
+
+exch:DONTADDAnimalWithoutRider a owl:Class .
+
+exch:DONTADDBarrier a owl:Class .
+
+exch:DONTADDBendyBus a owl:Class .
+
+exch:DONTADDBicycle a owl:Class .
+
+exch:DONTADDBicycleRack a owl:Class .
+
+exch:DONTADDBird a owl:Class .
+
+exch:DONTADDBuilding a owl:Class .
+
+exch:DONTADDBus a owl:Class .
+
+exch:DONTADDCar a owl:Class .
+
+exch:DONTADDChangingLaneLeft a owl:Class .
+
+exch:DONTADDChangingLaneRight a owl:Class .
+
+exch:DONTADDChild a owl:Class .
+
+exch:DONTADDCity a owl:Class .
+
+exch:DONTADDConstructionSign a owl:Class .
+
+exch:DONTADDConstructionVehicle a owl:Class .
+
+exch:DONTADDConstructionWorker a owl:Class .
+
+exch:DONTADDCountry a owl:Class .
+
+exch:DONTADDCounty a owl:Class .
+
+exch:DONTADDCycle a owl:Class .
+
+exch:DONTADDDebris a owl:Class .
+
+exch:DONTADDDriveway a owl:Class .
+
+exch:DONTADDDrivingStraightForward a owl:Class .
+
+exch:DONTADDEmergencyVehicle a owl:Class .
+
+exch:DONTADDExhaust a owl:Class .
+
+exch:DONTADDFrame a owl:Class .
+
+exch:DONTADDGlidingOnWheels a owl:Class .
+
+exch:DONTADDGround a owl:Class .
+
+exch:DONTADDHuman a owl:Class .
+
+exch:DONTADDLaneLineMarking a owl:Class .
+
+exch:DONTADDLeftTurn a owl:Class .
+
+exch:DONTADDLosingControl a owl:Class .
+
+exch:DONTADDLyingDown a owl:Class .
+
+exch:DONTADDMediumSizedTruck a owl:Class .
+
+exch:DONTADDMotorcycle a owl:Class .
+
+exch:DONTADDMotorizedScooter a owl:Class .
+
+exch:DONTADDMovableObject a owl:Class .
+
+exch:DONTADDNeighborhood a owl:Class .
+
+exch:DONTADDParked a owl:Class .
+
+exch:DONTADDPedestrian a owl:Class .
+
+exch:DONTADDPedestrianEvent a owl:Class .
+
+exch:DONTADDPedestrianMoving a owl:Class .
+
+exch:DONTADDPedestrianStationary a owl:Class .
+
+exch:DONTADDPedestrianWithObject a owl:Class .
+
+exch:DONTADDPedestrianWithStroller a owl:Class .
+
+exch:DONTADDPedestrianWithWheelchair a owl:Class .
+
+exch:DONTADDPedicab a owl:Class .
+
+exch:DONTADDPersonalMobilityVehicle a owl:Class .
+
+exch:DONTADDPickupTruck a owl:Class .
+
+exch:DONTADDPoliceOfficer a owl:Class .
+
+exch:DONTADDPoliceVehicle a owl:Class .
+
+exch:DONTADDPushableOrPullableObject a owl:Class .
+
+exch:DONTADDPylon a owl:Class .
+
+exch:DONTADDRailwayVehicle a owl:Class .
+
+exch:DONTADDRain a owl:Class .
+
+exch:DONTADDReflection a owl:Class .
+
+exch:DONTADDReversing a owl:Class .
+
+exch:DONTADDRightTurn a owl:Class .
+
+exch:DONTADDRigidBus a owl:Class .
+
+exch:DONTADDRoad a owl:Class .
+
+exch:DONTADDRoadBarrier a owl:Class .
+
+exch:DONTADDRoadMarking a owl:Class .
+
+exch:DONTADDRoadSign a owl:Class .
+
+exch:DONTADDRollingContainer a owl:Class .
+
+exch:DONTADDRunning a owl:Class .
+
+exch:DONTADDSemiTruck a owl:Class .
+
+exch:DONTADDSequence a owl:Class .
+
+exch:DONTADDSidewalk a owl:Class .
+
+exch:DONTADDSign a owl:Class .
+
+exch:DONTADDSitting a owl:Class .
+
+exch:DONTADDSmoke a owl:Class .
+
+exch:DONTADDStanding a owl:Class .
+
+exch:DONTADDState a owl:Class .
+
+exch:DONTADDStaticObject a owl:Class .
+
+exch:DONTADDStopLineMarking a owl:Class .
+
+exch:DONTADDStopped a owl:Class .
+
+exch:DONTADDStreet a owl:Class .
+
+exch:DONTADDSubwayTram a owl:Class .
+
+exch:DONTADDTemporaryConstructionBarrier a owl:Class .
+
+exch:DONTADDTowedObject a owl:Class .
+
+exch:DONTADDTowedVehicle a owl:Class .
+
+exch:DONTADDTowingObject a owl:Class .
+
+exch:DONTADDTowingVehicle a owl:Class .
+
+exch:DONTADDTrafficCone a owl:Class .
+
+exch:DONTADDTrailer a owl:Class .
+
+exch:DONTADDTrain a owl:Class .
+
+exch:DONTADDTrolly a owl:Class .
+
+exch:DONTADDTruck a owl:Class .
+
+exch:DONTADDUTurn a owl:Class .
+
+exch:DONTADDVegetation a owl:Class .
+
+exch:DONTADDVehicle a owl:Class .
+
+exch:DONTADDVehicleEvent a owl:Class .
+
+exch:DONTADDVehicleMoving a owl:Class .
+
+exch:DONTADDVehicleNotSignaling a owl:Class .
+
+exch:DONTADDVehicleSignaling a owl:Class .
+
+exch:DONTADDVehicleStationary a owl:Class .
+
+exch:DONTADDVehicleTurning a owl:Class .
+
+exch:DONTADDVehicleWithRider a owl:Class .
+
+exch:DONTADDVehicleWithoutRider a owl:Class .
+
+exch:DONTADDViolatingTrafficRule a owl:Class .
+
+exch:DONTADDWalking a owl:Class .
+
+exch:DONTADDWeatherEvent a owl:Class .
+
+exch:DONTDELAddress a owl:Class .
+
+exch:DONTDELAdult a owl:Class .
+
+exch:DONTDELAmbulance a owl:Class .
+
+exch:DONTDELAnimal a owl:Class .
+
+exch:DONTDELAnimalEvent a owl:Class .
+
+exch:DONTDELAnimalInAir a owl:Class .
+
+exch:DONTDELAnimalOnGround a owl:Class .
+
+exch:DONTDELAnimalWithRider a owl:Class .
+
+exch:DONTDELAnimalWithoutRider a owl:Class .
+
+exch:DONTDELBarrier a owl:Class .
+
+exch:DONTDELBendyBus a owl:Class .
+
+exch:DONTDELBicycle a owl:Class .
+
+exch:DONTDELBicycleRack a owl:Class .
+
+exch:DONTDELBird a owl:Class .
+
+exch:DONTDELBuilding a owl:Class .
+
+exch:DONTDELBus a owl:Class .
+
+exch:DONTDELCar a owl:Class .
+
+exch:DONTDELChangingLaneLeft a owl:Class .
+
+exch:DONTDELChangingLaneRight a owl:Class .
+
+exch:DONTDELChild a owl:Class .
+
+exch:DONTDELCity a owl:Class .
+
+exch:DONTDELConstructionSign a owl:Class .
+
+exch:DONTDELConstructionVehicle a owl:Class .
+
+exch:DONTDELConstructionWorker a owl:Class .
+
+exch:DONTDELCountry a owl:Class .
+
+exch:DONTDELCounty a owl:Class .
+
+exch:DONTDELCycle a owl:Class .
+
+exch:DONTDELDebris a owl:Class .
+
+exch:DONTDELDriveway a owl:Class .
+
+exch:DONTDELDrivingStraightForward a owl:Class .
+
+exch:DONTDELEmergencyVehicle a owl:Class .
+
+exch:DONTDELExhaust a owl:Class .
+
+exch:DONTDELFrame a owl:Class .
+
+exch:DONTDELGlidingOnWheels a owl:Class .
+
+exch:DONTDELGround a owl:Class .
+
+exch:DONTDELHuman a owl:Class .
+
+exch:DONTDELLaneLineMarking a owl:Class .
+
+exch:DONTDELLeftTurn a owl:Class .
+
+exch:DONTDELLosingControl a owl:Class .
+
+exch:DONTDELLyingDown a owl:Class .
+
+exch:DONTDELMediumSizedTruck a owl:Class .
+
+exch:DONTDELMotorcycle a owl:Class .
+
+exch:DONTDELMotorizedScooter a owl:Class .
+
+exch:DONTDELMovableObject a owl:Class .
+
+exch:DONTDELNeighborhood a owl:Class .
+
+exch:DONTDELParked a owl:Class .
+
+exch:DONTDELPedestrian a owl:Class .
+
+exch:DONTDELPedestrianEvent a owl:Class .
+
+exch:DONTDELPedestrianMoving a owl:Class .
+
+exch:DONTDELPedestrianStationary a owl:Class .
+
+exch:DONTDELPedestrianWithObject a owl:Class .
+
+exch:DONTDELPedestrianWithStroller a owl:Class .
+
+exch:DONTDELPedestrianWithWheelchair a owl:Class .
+
+exch:DONTDELPedicab a owl:Class .
+
+exch:DONTDELPersonalMobilityVehicle a owl:Class .
+
+exch:DONTDELPickupTruck a owl:Class .
+
+exch:DONTDELPoliceOfficer a owl:Class .
+
+exch:DONTDELPoliceVehicle a owl:Class .
+
+exch:DONTDELPushableOrPullableObject a owl:Class .
+
+exch:DONTDELPylon a owl:Class .
+
+exch:DONTDELRailwayVehicle a owl:Class .
+
+exch:DONTDELRain a owl:Class .
+
+exch:DONTDELReflection a owl:Class .
+
+exch:DONTDELReversing a owl:Class .
+
+exch:DONTDELRightTurn a owl:Class .
+
+exch:DONTDELRigidBus a owl:Class .
+
+exch:DONTDELRoad a owl:Class .
+
+exch:DONTDELRoadBarrier a owl:Class .
+
+exch:DONTDELRoadMarking a owl:Class .
+
+exch:DONTDELRoadSign a owl:Class .
+
+exch:DONTDELRollingContainer a owl:Class .
+
+exch:DONTDELRunning a owl:Class .
+
+exch:DONTDELSemiTruck a owl:Class .
+
+exch:DONTDELSequence a owl:Class .
+
+exch:DONTDELSidewalk a owl:Class .
+
+exch:DONTDELSign a owl:Class .
+
+exch:DONTDELSitting a owl:Class .
+
+exch:DONTDELSmoke a owl:Class .
+
+exch:DONTDELStanding a owl:Class .
+
+exch:DONTDELState a owl:Class .
+
+exch:DONTDELStaticObject a owl:Class .
+
+exch:DONTDELStopLineMarking a owl:Class .
+
+exch:DONTDELStopped a owl:Class .
+
+exch:DONTDELStreet a owl:Class .
+
+exch:DONTDELSubwayTram a owl:Class .
+
+exch:DONTDELTemporaryConstructionBarrier a owl:Class .
+
+exch:DONTDELTowedObject a owl:Class .
+
+exch:DONTDELTowedVehicle a owl:Class .
+
+exch:DONTDELTowingObject a owl:Class .
+
+exch:DONTDELTowingVehicle a owl:Class .
+
+exch:DONTDELTrafficCone a owl:Class .
+
+exch:DONTDELTrailer a owl:Class .
+
+exch:DONTDELTrain a owl:Class .
+
+exch:DONTDELTrolly a owl:Class .
+
+exch:DONTDELTruck a owl:Class .
+
+exch:DONTDELUTurn a owl:Class .
+
+exch:DONTDELVegetation a owl:Class .
+
+exch:DONTDELVehicle a owl:Class .
+
+exch:DONTDELVehicleEvent a owl:Class .
+
+exch:DONTDELVehicleMoving a owl:Class .
+
+exch:DONTDELVehicleNotSignaling a owl:Class .
+
+exch:DONTDELVehicleSignaling a owl:Class .
+
+exch:DONTDELVehicleStationary a owl:Class .
+
+exch:DONTDELVehicleTurning a owl:Class .
+
+exch:DONTDELVehicleWithRider a owl:Class .
+
+exch:DONTDELVehicleWithoutRider a owl:Class .
+
+exch:DONTDELViolatingTrafficRule a owl:Class .
+
+exch:DONTDELWalking a owl:Class .
+
+exch:DONTDELWeatherEvent a owl:Class .
+
+exch:Named a owl:Class .
+

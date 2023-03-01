@@ -1,0 +1,2411 @@
+@prefix exch: <http://example.org/exchange/> .
+@prefix ns1: <http://semantic.bosch.com/drivingscene/v02/> .
+@prefix ns3: <http://dkm.fbk.eu/ckr/meta#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns3:hasAxiomType a owl:AnnotationProperty .
+
+<http://semantic.bosch.com/drivingscene/v02/data/a066bab0-a7ef-4702-a098-f1b4f5a8fcb3> a exch:Named .
+
+exch:ADDAddress a owl:Class ;
+    rdfs:subClassOf ns1:Address .
+
+exch:ADDAdult a owl:Class ;
+    rdfs:subClassOf ns1:Adult .
+
+exch:ADDAmbulance a owl:Class ;
+    rdfs:subClassOf ns1:Ambulance .
+
+exch:ADDAnimal a owl:Class ;
+    rdfs:subClassOf ns1:Animal .
+
+exch:ADDAnimalEvent a owl:Class ;
+    rdfs:subClassOf ns1:AnimalEvent .
+
+exch:ADDAnimalInAir a owl:Class ;
+    rdfs:subClassOf ns1:AnimalInAir .
+
+exch:ADDAnimalOnGround a owl:Class ;
+    rdfs:subClassOf ns1:AnimalOnGround .
+
+exch:ADDAnimalWithRider a owl:Class ;
+    rdfs:subClassOf ns1:AnimalWithRider .
+
+exch:ADDAnimalWithoutRider a owl:Class ;
+    rdfs:subClassOf ns1:AnimalWithoutRider .
+
+exch:ADDBarrier a owl:Class ;
+    rdfs:subClassOf ns1:Barrier .
+
+exch:ADDBendyBus a owl:Class ;
+    rdfs:subClassOf ns1:BendyBus .
+
+exch:ADDBicycle a owl:Class ;
+    rdfs:subClassOf ns1:Bicycle .
+
+exch:ADDBicycleRack a owl:Class ;
+    rdfs:subClassOf ns1:BicycleRack .
+
+exch:ADDBird a owl:Class ;
+    rdfs:subClassOf ns1:Bird .
+
+exch:ADDBuilding a owl:Class ;
+    rdfs:subClassOf ns1:Building .
+
+exch:ADDBus a owl:Class ;
+    rdfs:subClassOf ns1:Bus .
+
+exch:ADDCar a owl:Class ;
+    rdfs:subClassOf ns1:Car .
+
+exch:ADDChangingLaneLeft a owl:Class ;
+    rdfs:subClassOf ns1:ChangingLaneLeft .
+
+exch:ADDChangingLaneRight a owl:Class ;
+    rdfs:subClassOf ns1:ChangingLaneRight .
+
+exch:ADDChild a owl:Class ;
+    rdfs:subClassOf ns1:Child .
+
+exch:ADDCity a owl:Class ;
+    rdfs:subClassOf ns1:City .
+
+exch:ADDConstructionSign a owl:Class ;
+    rdfs:subClassOf ns1:ConstructionSign .
+
+exch:ADDConstructionVehicle a owl:Class ;
+    rdfs:subClassOf ns1:ConstructionVehicle .
+
+exch:ADDConstructionWorker a owl:Class ;
+    rdfs:subClassOf ns1:ConstructionWorker .
+
+exch:ADDCountry a owl:Class ;
+    rdfs:subClassOf ns1:Country .
+
+exch:ADDCounty a owl:Class ;
+    rdfs:subClassOf ns1:County .
+
+exch:ADDCycle a owl:Class ;
+    rdfs:subClassOf ns1:Cycle .
+
+exch:ADDDebris a owl:Class ;
+    rdfs:subClassOf ns1:Debris .
+
+exch:ADDDriveway a owl:Class ;
+    rdfs:subClassOf ns1:Driveway .
+
+exch:ADDDrivingStraightForward a owl:Class ;
+    rdfs:subClassOf ns1:DrivingStraightForward .
+
+exch:ADDEmergencyVehicle a owl:Class ;
+    rdfs:subClassOf ns1:EmergencyVehicle .
+
+exch:ADDExhaust a owl:Class ;
+    rdfs:subClassOf ns1:Exhaust .
+
+exch:ADDFrame a owl:Class ;
+    rdfs:subClassOf ns1:Frame .
+
+exch:ADDGlidingOnWheels a owl:Class ;
+    rdfs:subClassOf ns1:GlidingOnWheels .
+
+exch:ADDGround a owl:Class ;
+    rdfs:subClassOf ns1:Ground .
+
+exch:ADDHuman a owl:Class ;
+    rdfs:subClassOf ns1:Human .
+
+exch:ADDLaneLineMarking a owl:Class ;
+    rdfs:subClassOf ns1:LaneLineMarking .
+
+exch:ADDLeftTurn a owl:Class ;
+    rdfs:subClassOf ns1:LeftTurn .
+
+exch:ADDLosingControl a owl:Class ;
+    rdfs:subClassOf ns1:LosingControl .
+
+exch:ADDLyingDown a owl:Class ;
+    rdfs:subClassOf ns1:LyingDown .
+
+exch:ADDMediumSizedTruck a owl:Class ;
+    rdfs:subClassOf ns1:MediumSizedTruck .
+
+exch:ADDMotorcycle a owl:Class ;
+    rdfs:subClassOf ns1:Motorcycle .
+
+exch:ADDMotorizedScooter a owl:Class ;
+    rdfs:subClassOf ns1:MotorizedScooter .
+
+exch:ADDMovableObject a owl:Class ;
+    rdfs:subClassOf ns1:MovableObject .
+
+exch:ADDNeighborhood a owl:Class ;
+    rdfs:subClassOf ns1:Neighborhood .
+
+exch:ADDParked a owl:Class ;
+    rdfs:subClassOf ns1:Parked .
+
+exch:ADDPedestrian a owl:Class ;
+    rdfs:subClassOf ns1:Pedestrian .
+
+exch:ADDPedestrianEvent a owl:Class ;
+    rdfs:subClassOf ns1:PedestrianEvent .
+
+exch:ADDPedestrianMoving a owl:Class ;
+    rdfs:subClassOf ns1:PedestrianMoving .
+
+exch:ADDPedestrianStationary a owl:Class ;
+    rdfs:subClassOf ns1:PedestrianStationary .
+
+exch:ADDPedestrianWithObject a owl:Class ;
+    rdfs:subClassOf ns1:PedestrianWithObject .
+
+exch:ADDPedestrianWithStroller a owl:Class ;
+    rdfs:subClassOf ns1:PedestrianWithStroller .
+
+exch:ADDPedestrianWithWheelchair a owl:Class ;
+    rdfs:subClassOf ns1:PedestrianWithWheelchair .
+
+exch:ADDPedicab a owl:Class ;
+    rdfs:subClassOf ns1:Pedicab .
+
+exch:ADDPersonalMobilityVehicle a owl:Class ;
+    rdfs:subClassOf ns1:PersonalMobilityVehicle .
+
+exch:ADDPickupTruck a owl:Class ;
+    rdfs:subClassOf ns1:PickupTruck .
+
+exch:ADDPoliceOfficer a owl:Class ;
+    rdfs:subClassOf ns1:PoliceOfficer .
+
+exch:ADDPoliceVehicle a owl:Class ;
+    rdfs:subClassOf ns1:PoliceVehicle .
+
+exch:ADDPushableOrPullableObject a owl:Class ;
+    rdfs:subClassOf ns1:PushableOrPullableObject .
+
+exch:ADDPylon a owl:Class ;
+    rdfs:subClassOf ns1:Pylon .
+
+exch:ADDRailwayVehicle a owl:Class ;
+    rdfs:subClassOf ns1:RailwayVehicle .
+
+exch:ADDRain a owl:Class ;
+    rdfs:subClassOf ns1:Rain .
+
+exch:ADDReflection a owl:Class ;
+    rdfs:subClassOf ns1:Reflection .
+
+exch:ADDReversing a owl:Class ;
+    rdfs:subClassOf ns1:Reversing .
+
+exch:ADDRightTurn a owl:Class ;
+    rdfs:subClassOf ns1:RightTurn .
+
+exch:ADDRigidBus a owl:Class ;
+    rdfs:subClassOf ns1:RigidBus .
+
+exch:ADDRoad a owl:Class ;
+    rdfs:subClassOf ns1:Road .
+
+exch:ADDRoadBarrier a owl:Class ;
+    rdfs:subClassOf ns1:RoadBarrier .
+
+exch:ADDRoadMarking a owl:Class ;
+    rdfs:subClassOf ns1:RoadMarking .
+
+exch:ADDRoadSign a owl:Class ;
+    rdfs:subClassOf ns1:RoadSign .
+
+exch:ADDRollingContainer a owl:Class ;
+    rdfs:subClassOf ns1:RollingContainer .
+
+exch:ADDRunning a owl:Class ;
+    rdfs:subClassOf ns1:Running .
+
+exch:ADDSemiTruck a owl:Class ;
+    rdfs:subClassOf ns1:SemiTruck .
+
+exch:ADDSequence a owl:Class ;
+    rdfs:subClassOf ns1:Sequence .
+
+exch:ADDSidewalk a owl:Class ;
+    rdfs:subClassOf ns1:Sidewalk .
+
+exch:ADDSign a owl:Class ;
+    rdfs:subClassOf ns1:Sign .
+
+exch:ADDSitting a owl:Class ;
+    rdfs:subClassOf ns1:Sitting .
+
+exch:ADDSmoke a owl:Class ;
+    rdfs:subClassOf ns1:Smoke .
+
+exch:ADDStanding a owl:Class ;
+    rdfs:subClassOf ns1:Standing .
+
+exch:ADDState a owl:Class ;
+    rdfs:subClassOf ns1:State .
+
+exch:ADDStaticObject a owl:Class ;
+    rdfs:subClassOf ns1:StaticObject .
+
+exch:ADDStopLineMarking a owl:Class ;
+    rdfs:subClassOf ns1:StopLineMarking .
+
+exch:ADDStopped a owl:Class ;
+    rdfs:subClassOf ns1:Stopped .
+
+exch:ADDStreet a owl:Class ;
+    rdfs:subClassOf ns1:Street .
+
+exch:ADDSubwayTram a owl:Class ;
+    rdfs:subClassOf ns1:SubwayTram .
+
+exch:ADDTemporaryConstructionBarrier a owl:Class ;
+    rdfs:subClassOf ns1:TemporaryConstructionBarrier .
+
+exch:ADDTowedObject a owl:Class ;
+    rdfs:subClassOf ns1:TowedObject .
+
+exch:ADDTowedVehicle a owl:Class ;
+    rdfs:subClassOf ns1:TowedVehicle .
+
+exch:ADDTowingObject a owl:Class ;
+    rdfs:subClassOf ns1:TowingObject .
+
+exch:ADDTowingVehicle a owl:Class ;
+    rdfs:subClassOf ns1:TowingVehicle .
+
+exch:ADDTrafficCone a owl:Class ;
+    rdfs:subClassOf ns1:TrafficCone .
+
+exch:ADDTrailer a owl:Class ;
+    rdfs:subClassOf ns1:Trailer .
+
+exch:ADDTrain a owl:Class ;
+    rdfs:subClassOf ns1:Train .
+
+exch:ADDTrolly a owl:Class ;
+    rdfs:subClassOf ns1:Trolly .
+
+exch:ADDTruck a owl:Class ;
+    rdfs:subClassOf ns1:Truck .
+
+exch:ADDUTurn a owl:Class ;
+    rdfs:subClassOf ns1:UTurn .
+
+exch:ADDVegetation a owl:Class ;
+    rdfs:subClassOf ns1:Vegetation .
+
+exch:ADDVehicle a owl:Class ;
+    rdfs:subClassOf ns1:Vehicle .
+
+exch:ADDVehicleEvent a owl:Class ;
+    rdfs:subClassOf ns1:VehicleEvent .
+
+exch:ADDVehicleMoving a owl:Class ;
+    rdfs:subClassOf ns1:VehicleMoving .
+
+exch:ADDVehicleNotSignaling a owl:Class ;
+    rdfs:subClassOf ns1:VehicleNotSignaling .
+
+exch:ADDVehicleSignaling a owl:Class ;
+    rdfs:subClassOf ns1:VehicleSignaling .
+
+exch:ADDVehicleStationary a owl:Class ;
+    rdfs:subClassOf ns1:VehicleStationary .
+
+exch:ADDVehicleTurning a owl:Class ;
+    rdfs:subClassOf ns1:VehicleTurning .
+
+exch:ADDVehicleWithRider a owl:Class ;
+    rdfs:subClassOf ns1:VehicleWithRider .
+
+exch:ADDVehicleWithoutRider a owl:Class ;
+    rdfs:subClassOf ns1:VehicleWithoutRider .
+
+exch:ADDViolatingTrafficRule a owl:Class ;
+    rdfs:subClassOf ns1:ViolatingTrafficRule .
+
+exch:ADDWalking a owl:Class ;
+    rdfs:subClassOf ns1:Walking .
+
+exch:ADDWeatherEvent a owl:Class ;
+    rdfs:subClassOf ns1:WeatherEvent .
+
+exch:DELAddress a owl:Class .
+
+exch:DELAdult a owl:Class .
+
+exch:DELAmbulance a owl:Class .
+
+exch:DELAnimal a owl:Class .
+
+exch:DELAnimalEvent a owl:Class .
+
+exch:DELAnimalInAir a owl:Class .
+
+exch:DELAnimalOnGround a owl:Class .
+
+exch:DELAnimalWithRider a owl:Class .
+
+exch:DELAnimalWithoutRider a owl:Class .
+
+exch:DELBarrier a owl:Class .
+
+exch:DELBendyBus a owl:Class .
+
+exch:DELBicycle a owl:Class .
+
+exch:DELBicycleRack a owl:Class .
+
+exch:DELBird a owl:Class .
+
+exch:DELBuilding a owl:Class .
+
+exch:DELBus a owl:Class .
+
+exch:DELCar a owl:Class .
+
+exch:DELChangingLaneLeft a owl:Class .
+
+exch:DELChangingLaneRight a owl:Class .
+
+exch:DELChild a owl:Class .
+
+exch:DELCity a owl:Class .
+
+exch:DELConstructionSign a owl:Class .
+
+exch:DELConstructionVehicle a owl:Class .
+
+exch:DELConstructionWorker a owl:Class .
+
+exch:DELCountry a owl:Class .
+
+exch:DELCounty a owl:Class .
+
+exch:DELCycle a owl:Class .
+
+exch:DELDebris a owl:Class .
+
+exch:DELDriveway a owl:Class .
+
+exch:DELDrivingStraightForward a owl:Class .
+
+exch:DELEmergencyVehicle a owl:Class .
+
+exch:DELExhaust a owl:Class .
+
+exch:DELFrame a owl:Class .
+
+exch:DELGlidingOnWheels a owl:Class .
+
+exch:DELGround a owl:Class .
+
+exch:DELHuman a owl:Class .
+
+exch:DELLaneLineMarking a owl:Class .
+
+exch:DELLeftTurn a owl:Class .
+
+exch:DELLosingControl a owl:Class .
+
+exch:DELLyingDown a owl:Class .
+
+exch:DELMediumSizedTruck a owl:Class .
+
+exch:DELMotorcycle a owl:Class .
+
+exch:DELMotorizedScooter a owl:Class .
+
+exch:DELMovableObject a owl:Class .
+
+exch:DELNeighborhood a owl:Class .
+
+exch:DELParked a owl:Class .
+
+exch:DELPedestrian a owl:Class .
+
+exch:DELPedestrianEvent a owl:Class .
+
+exch:DELPedestrianMoving a owl:Class .
+
+exch:DELPedestrianStationary a owl:Class .
+
+exch:DELPedestrianWithObject a owl:Class .
+
+exch:DELPedestrianWithStroller a owl:Class .
+
+exch:DELPedestrianWithWheelchair a owl:Class .
+
+exch:DELPedicab a owl:Class .
+
+exch:DELPersonalMobilityVehicle a owl:Class .
+
+exch:DELPickupTruck a owl:Class .
+
+exch:DELPoliceOfficer a owl:Class .
+
+exch:DELPoliceVehicle a owl:Class .
+
+exch:DELPushableOrPullableObject a owl:Class .
+
+exch:DELPylon a owl:Class .
+
+exch:DELRailwayVehicle a owl:Class .
+
+exch:DELRain a owl:Class .
+
+exch:DELReflection a owl:Class .
+
+exch:DELReversing a owl:Class .
+
+exch:DELRightTurn a owl:Class .
+
+exch:DELRigidBus a owl:Class .
+
+exch:DELRoad a owl:Class .
+
+exch:DELRoadBarrier a owl:Class .
+
+exch:DELRoadMarking a owl:Class .
+
+exch:DELRoadSign a owl:Class .
+
+exch:DELRollingContainer a owl:Class .
+
+exch:DELRunning a owl:Class .
+
+exch:DELSemiTruck a owl:Class .
+
+exch:DELSequence a owl:Class .
+
+exch:DELSidewalk a owl:Class .
+
+exch:DELSign a owl:Class .
+
+exch:DELSitting a owl:Class .
+
+exch:DELSmoke a owl:Class .
+
+exch:DELStanding a owl:Class .
+
+exch:DELState a owl:Class .
+
+exch:DELStaticObject a owl:Class .
+
+exch:DELStopLineMarking a owl:Class .
+
+exch:DELStopped a owl:Class .
+
+exch:DELStreet a owl:Class .
+
+exch:DELSubwayTram a owl:Class .
+
+exch:DELTemporaryConstructionBarrier a owl:Class .
+
+exch:DELTowedObject a owl:Class .
+
+exch:DELTowedVehicle a owl:Class .
+
+exch:DELTowingObject a owl:Class .
+
+exch:DELTowingVehicle a owl:Class .
+
+exch:DELTrafficCone a owl:Class .
+
+exch:DELTrailer a owl:Class .
+
+exch:DELTrain a owl:Class .
+
+exch:DELTrolly a owl:Class .
+
+exch:DELTruck a owl:Class .
+
+exch:DELUTurn a owl:Class .
+
+exch:DELVegetation a owl:Class .
+
+exch:DELVehicle a owl:Class .
+
+exch:DELVehicleEvent a owl:Class .
+
+exch:DELVehicleMoving a owl:Class .
+
+exch:DELVehicleNotSignaling a owl:Class .
+
+exch:DELVehicleSignaling a owl:Class .
+
+exch:DELVehicleStationary a owl:Class .
+
+exch:DELVehicleTurning a owl:Class .
+
+exch:DELVehicleWithRider a owl:Class .
+
+exch:DELVehicleWithoutRider a owl:Class .
+
+exch:DELViolatingTrafficRule a owl:Class .
+
+exch:DELWalking a owl:Class .
+
+exch:DELWeatherEvent a owl:Class .
+
+exch:DONTADDAddress a owl:Class .
+
+exch:DONTADDAdult a owl:Class .
+
+exch:DONTADDAmbulance a owl:Class .
+
+exch:DONTADDAnimal a owl:Class .
+
+exch:DONTADDAnimalEvent a owl:Class .
+
+exch:DONTADDAnimalInAir a owl:Class .
+
+exch:DONTADDAnimalOnGround a owl:Class .
+
+exch:DONTADDAnimalWithRider a owl:Class .
+
+exch:DONTADDAnimalWithoutRider a owl:Class .
+
+exch:DONTADDBarrier a owl:Class .
+
+exch:DONTADDBendyBus a owl:Class .
+
+exch:DONTADDBicycle a owl:Class .
+
+exch:DONTADDBicycleRack a owl:Class .
+
+exch:DONTADDBird a owl:Class .
+
+exch:DONTADDBuilding a owl:Class .
+
+exch:DONTADDBus a owl:Class .
+
+exch:DONTADDCar a owl:Class .
+
+exch:DONTADDChangingLaneLeft a owl:Class .
+
+exch:DONTADDChangingLaneRight a owl:Class .
+
+exch:DONTADDChild a owl:Class .
+
+exch:DONTADDCity a owl:Class .
+
+exch:DONTADDConstructionSign a owl:Class .
+
+exch:DONTADDConstructionVehicle a owl:Class .
+
+exch:DONTADDConstructionWorker a owl:Class .
+
+exch:DONTADDCountry a owl:Class .
+
+exch:DONTADDCounty a owl:Class .
+
+exch:DONTADDCycle a owl:Class .
+
+exch:DONTADDDebris a owl:Class .
+
+exch:DONTADDDriveway a owl:Class .
+
+exch:DONTADDDrivingStraightForward a owl:Class .
+
+exch:DONTADDEmergencyVehicle a owl:Class .
+
+exch:DONTADDExhaust a owl:Class .
+
+exch:DONTADDFrame a owl:Class .
+
+exch:DONTADDGlidingOnWheels a owl:Class .
+
+exch:DONTADDGround a owl:Class .
+
+exch:DONTADDHuman a owl:Class .
+
+exch:DONTADDLaneLineMarking a owl:Class .
+
+exch:DONTADDLeftTurn a owl:Class .
+
+exch:DONTADDLosingControl a owl:Class .
+
+exch:DONTADDLyingDown a owl:Class .
+
+exch:DONTADDMediumSizedTruck a owl:Class .
+
+exch:DONTADDMotorcycle a owl:Class .
+
+exch:DONTADDMotorizedScooter a owl:Class .
+
+exch:DONTADDMovableObject a owl:Class .
+
+exch:DONTADDNeighborhood a owl:Class .
+
+exch:DONTADDParked a owl:Class .
+
+exch:DONTADDPedestrian a owl:Class .
+
+exch:DONTADDPedestrianEvent a owl:Class .
+
+exch:DONTADDPedestrianMoving a owl:Class .
+
+exch:DONTADDPedestrianStationary a owl:Class .
+
+exch:DONTADDPedestrianWithObject a owl:Class .
+
+exch:DONTADDPedestrianWithStroller a owl:Class .
+
+exch:DONTADDPedestrianWithWheelchair a owl:Class .
+
+exch:DONTADDPedicab a owl:Class .
+
+exch:DONTADDPersonalMobilityVehicle a owl:Class .
+
+exch:DONTADDPickupTruck a owl:Class .
+
+exch:DONTADDPoliceOfficer a owl:Class .
+
+exch:DONTADDPoliceVehicle a owl:Class .
+
+exch:DONTADDPushableOrPullableObject a owl:Class .
+
+exch:DONTADDPylon a owl:Class .
+
+exch:DONTADDRailwayVehicle a owl:Class .
+
+exch:DONTADDRain a owl:Class .
+
+exch:DONTADDReflection a owl:Class .
+
+exch:DONTADDReversing a owl:Class .
+
+exch:DONTADDRightTurn a owl:Class .
+
+exch:DONTADDRigidBus a owl:Class .
+
+exch:DONTADDRoad a owl:Class .
+
+exch:DONTADDRoadBarrier a owl:Class .
+
+exch:DONTADDRoadMarking a owl:Class .
+
+exch:DONTADDRoadSign a owl:Class .
+
+exch:DONTADDRollingContainer a owl:Class .
+
+exch:DONTADDRunning a owl:Class .
+
+exch:DONTADDSemiTruck a owl:Class .
+
+exch:DONTADDSequence a owl:Class .
+
+exch:DONTADDSidewalk a owl:Class .
+
+exch:DONTADDSign a owl:Class .
+
+exch:DONTADDSitting a owl:Class .
+
+exch:DONTADDSmoke a owl:Class .
+
+exch:DONTADDStanding a owl:Class .
+
+exch:DONTADDState a owl:Class .
+
+exch:DONTADDStaticObject a owl:Class .
+
+exch:DONTADDStopLineMarking a owl:Class .
+
+exch:DONTADDStopped a owl:Class .
+
+exch:DONTADDStreet a owl:Class .
+
+exch:DONTADDSubwayTram a owl:Class .
+
+exch:DONTADDTemporaryConstructionBarrier a owl:Class .
+
+exch:DONTADDTowedObject a owl:Class .
+
+exch:DONTADDTowedVehicle a owl:Class .
+
+exch:DONTADDTowingObject a owl:Class .
+
+exch:DONTADDTowingVehicle a owl:Class .
+
+exch:DONTADDTrafficCone a owl:Class .
+
+exch:DONTADDTrailer a owl:Class .
+
+exch:DONTADDTrain a owl:Class .
+
+exch:DONTADDTrolly a owl:Class .
+
+exch:DONTADDTruck a owl:Class .
+
+exch:DONTADDUTurn a owl:Class .
+
+exch:DONTADDVegetation a owl:Class .
+
+exch:DONTADDVehicle a owl:Class .
+
+exch:DONTADDVehicleEvent a owl:Class .
+
+exch:DONTADDVehicleMoving a owl:Class .
+
+exch:DONTADDVehicleNotSignaling a owl:Class .
+
+exch:DONTADDVehicleSignaling a owl:Class .
+
+exch:DONTADDVehicleStationary a owl:Class .
+
+exch:DONTADDVehicleTurning a owl:Class .
+
+exch:DONTADDVehicleWithRider a owl:Class .
+
+exch:DONTADDVehicleWithoutRider a owl:Class .
+
+exch:DONTADDViolatingTrafficRule a owl:Class .
+
+exch:DONTADDWalking a owl:Class .
+
+exch:DONTADDWeatherEvent a owl:Class .
+
+exch:EXAddress a owl:Class .
+
+exch:EXAdult a owl:Class .
+
+exch:EXAmbulance a owl:Class .
+
+exch:EXAnimal a owl:Class .
+
+exch:EXAnimalEvent a owl:Class .
+
+exch:EXAnimalInAir a owl:Class .
+
+exch:EXAnimalOnGround a owl:Class .
+
+exch:EXAnimalWithRider a owl:Class .
+
+exch:EXAnimalWithoutRider a owl:Class .
+
+exch:EXBarrier a owl:Class .
+
+exch:EXBendyBus a owl:Class .
+
+exch:EXBicycle a owl:Class .
+
+exch:EXBicycleRack a owl:Class .
+
+exch:EXBird a owl:Class .
+
+exch:EXBuilding a owl:Class .
+
+exch:EXBus a owl:Class .
+
+exch:EXCar a owl:Class .
+
+exch:EXChangingLaneLeft a owl:Class .
+
+exch:EXChangingLaneRight a owl:Class .
+
+exch:EXChild a owl:Class .
+
+exch:EXCity a owl:Class .
+
+exch:EXConstructionSign a owl:Class .
+
+exch:EXConstructionVehicle a owl:Class .
+
+exch:EXConstructionWorker a owl:Class .
+
+exch:EXCountry a owl:Class .
+
+exch:EXCounty a owl:Class .
+
+exch:EXCycle a owl:Class .
+
+exch:EXDebris a owl:Class .
+
+exch:EXDriveway a owl:Class .
+
+exch:EXDrivingStraightForward a owl:Class .
+
+exch:EXEmergencyVehicle a owl:Class .
+
+exch:EXExhaust a owl:Class .
+
+exch:EXFrame a owl:Class .
+
+exch:EXGlidingOnWheels a owl:Class .
+
+exch:EXGround a owl:Class .
+
+exch:EXHuman a owl:Class .
+
+exch:EXLaneLineMarking a owl:Class .
+
+exch:EXLeftTurn a owl:Class .
+
+exch:EXLosingControl a owl:Class .
+
+exch:EXLyingDown a owl:Class .
+
+exch:EXMediumSizedTruck a owl:Class .
+
+exch:EXMotorcycle a owl:Class .
+
+exch:EXMotorizedScooter a owl:Class .
+
+exch:EXMovableObject a owl:Class .
+
+exch:EXNeighborhood a owl:Class .
+
+exch:EXParked a owl:Class .
+
+exch:EXPedestrian a owl:Class .
+
+exch:EXPedestrianEvent a owl:Class .
+
+exch:EXPedestrianMoving a owl:Class .
+
+exch:EXPedestrianStationary a owl:Class .
+
+exch:EXPedestrianWithObject a owl:Class .
+
+exch:EXPedestrianWithStroller a owl:Class .
+
+exch:EXPedestrianWithWheelchair a owl:Class .
+
+exch:EXPedicab a owl:Class .
+
+exch:EXPersonalMobilityVehicle a owl:Class .
+
+exch:EXPickupTruck a owl:Class .
+
+exch:EXPoliceOfficer a owl:Class .
+
+exch:EXPoliceVehicle a owl:Class .
+
+exch:EXPushableOrPullableObject a owl:Class .
+
+exch:EXPylon a owl:Class .
+
+exch:EXRailwayVehicle a owl:Class .
+
+exch:EXRain a owl:Class .
+
+exch:EXReflection a owl:Class .
+
+exch:EXReversing a owl:Class .
+
+exch:EXRightTurn a owl:Class .
+
+exch:EXRigidBus a owl:Class .
+
+exch:EXRoad a owl:Class .
+
+exch:EXRoadBarrier a owl:Class .
+
+exch:EXRoadMarking a owl:Class .
+
+exch:EXRoadSign a owl:Class .
+
+exch:EXRollingContainer a owl:Class .
+
+exch:EXRunning a owl:Class .
+
+exch:EXSemiTruck a owl:Class .
+
+exch:EXSequence a owl:Class .
+
+exch:EXSidewalk a owl:Class .
+
+exch:EXSign a owl:Class .
+
+exch:EXSitting a owl:Class .
+
+exch:EXSmoke a owl:Class .
+
+exch:EXStanding a owl:Class .
+
+exch:EXState a owl:Class .
+
+exch:EXStaticObject a owl:Class .
+
+exch:EXStopLineMarking a owl:Class .
+
+exch:EXStopped a owl:Class .
+
+exch:EXStreet a owl:Class .
+
+exch:EXSubwayTram a owl:Class .
+
+exch:EXTemporaryConstructionBarrier a owl:Class .
+
+exch:EXTowedObject a owl:Class .
+
+exch:EXTowedVehicle a owl:Class .
+
+exch:EXTowingObject a owl:Class .
+
+exch:EXTowingVehicle a owl:Class .
+
+exch:EXTrafficCone a owl:Class .
+
+exch:EXTrailer a owl:Class .
+
+exch:EXTrain a owl:Class .
+
+exch:EXTrolly a owl:Class .
+
+exch:EXTruck a owl:Class .
+
+exch:EXUTurn a owl:Class .
+
+exch:EXVegetation a owl:Class .
+
+exch:EXVehicle a owl:Class .
+
+exch:EXVehicleEvent a owl:Class .
+
+exch:EXVehicleMoving a owl:Class .
+
+exch:EXVehicleNotSignaling a owl:Class .
+
+exch:EXVehicleSignaling a owl:Class .
+
+exch:EXVehicleStationary a owl:Class .
+
+exch:EXVehicleTurning a owl:Class .
+
+exch:EXVehicleWithRider a owl:Class .
+
+exch:EXVehicleWithoutRider a owl:Class .
+
+exch:EXViolatingTrafficRule a owl:Class .
+
+exch:EXWalking a owl:Class .
+
+exch:EXWeatherEvent a owl:Class .
+
+exch:Named a owl:Class .
+
+exch:DONTDELAddress a owl:Class .
+
+exch:DONTDELAdult a owl:Class .
+
+exch:DONTDELAmbulance a owl:Class .
+
+exch:DONTDELAnimal a owl:Class .
+
+exch:DONTDELAnimalEvent a owl:Class .
+
+exch:DONTDELAnimalInAir a owl:Class .
+
+exch:DONTDELAnimalOnGround a owl:Class .
+
+exch:DONTDELAnimalWithRider a owl:Class .
+
+exch:DONTDELAnimalWithoutRider a owl:Class .
+
+exch:DONTDELBarrier a owl:Class .
+
+exch:DONTDELBendyBus a owl:Class .
+
+exch:DONTDELBicycle a owl:Class .
+
+exch:DONTDELBicycleRack a owl:Class .
+
+exch:DONTDELBird a owl:Class .
+
+exch:DONTDELBuilding a owl:Class .
+
+exch:DONTDELBus a owl:Class .
+
+exch:DONTDELCar a owl:Class .
+
+exch:DONTDELChangingLaneLeft a owl:Class .
+
+exch:DONTDELChangingLaneRight a owl:Class .
+
+exch:DONTDELChild a owl:Class .
+
+exch:DONTDELCity a owl:Class .
+
+exch:DONTDELConstructionSign a owl:Class .
+
+exch:DONTDELConstructionVehicle a owl:Class .
+
+exch:DONTDELConstructionWorker a owl:Class .
+
+exch:DONTDELCountry a owl:Class .
+
+exch:DONTDELCounty a owl:Class .
+
+exch:DONTDELCycle a owl:Class .
+
+exch:DONTDELDebris a owl:Class .
+
+exch:DONTDELDriveway a owl:Class .
+
+exch:DONTDELDrivingStraightForward a owl:Class .
+
+exch:DONTDELEmergencyVehicle a owl:Class .
+
+exch:DONTDELExhaust a owl:Class .
+
+exch:DONTDELFrame a owl:Class .
+
+exch:DONTDELGlidingOnWheels a owl:Class .
+
+exch:DONTDELGround a owl:Class .
+
+exch:DONTDELHuman a owl:Class .
+
+exch:DONTDELLaneLineMarking a owl:Class .
+
+exch:DONTDELLeftTurn a owl:Class .
+
+exch:DONTDELLosingControl a owl:Class .
+
+exch:DONTDELLyingDown a owl:Class .
+
+exch:DONTDELMediumSizedTruck a owl:Class .
+
+exch:DONTDELMotorcycle a owl:Class .
+
+exch:DONTDELMotorizedScooter a owl:Class .
+
+exch:DONTDELMovableObject a owl:Class .
+
+exch:DONTDELNeighborhood a owl:Class .
+
+exch:DONTDELParked a owl:Class .
+
+exch:DONTDELPedestrian a owl:Class .
+
+exch:DONTDELPedestrianEvent a owl:Class .
+
+exch:DONTDELPedestrianMoving a owl:Class .
+
+exch:DONTDELPedestrianStationary a owl:Class .
+
+exch:DONTDELPedestrianWithObject a owl:Class .
+
+exch:DONTDELPedestrianWithStroller a owl:Class .
+
+exch:DONTDELPedestrianWithWheelchair a owl:Class .
+
+exch:DONTDELPedicab a owl:Class .
+
+exch:DONTDELPersonalMobilityVehicle a owl:Class .
+
+exch:DONTDELPickupTruck a owl:Class .
+
+exch:DONTDELPoliceOfficer a owl:Class .
+
+exch:DONTDELPoliceVehicle a owl:Class .
+
+exch:DONTDELPushableOrPullableObject a owl:Class .
+
+exch:DONTDELPylon a owl:Class .
+
+exch:DONTDELRailwayVehicle a owl:Class .
+
+exch:DONTDELRain a owl:Class .
+
+exch:DONTDELReflection a owl:Class .
+
+exch:DONTDELReversing a owl:Class .
+
+exch:DONTDELRightTurn a owl:Class .
+
+exch:DONTDELRigidBus a owl:Class .
+
+exch:DONTDELRoad a owl:Class .
+
+exch:DONTDELRoadBarrier a owl:Class .
+
+exch:DONTDELRoadMarking a owl:Class .
+
+exch:DONTDELRoadSign a owl:Class .
+
+exch:DONTDELRollingContainer a owl:Class .
+
+exch:DONTDELRunning a owl:Class .
+
+exch:DONTDELSemiTruck a owl:Class .
+
+exch:DONTDELSequence a owl:Class .
+
+exch:DONTDELSidewalk a owl:Class .
+
+exch:DONTDELSign a owl:Class .
+
+exch:DONTDELSitting a owl:Class .
+
+exch:DONTDELSmoke a owl:Class .
+
+exch:DONTDELStanding a owl:Class .
+
+exch:DONTDELState a owl:Class .
+
+exch:DONTDELStaticObject a owl:Class .
+
+exch:DONTDELStopLineMarking a owl:Class .
+
+exch:DONTDELStopped a owl:Class .
+
+exch:DONTDELStreet a owl:Class .
+
+exch:DONTDELSubwayTram a owl:Class .
+
+exch:DONTDELTemporaryConstructionBarrier a owl:Class .
+
+exch:DONTDELTowedObject a owl:Class .
+
+exch:DONTDELTowedVehicle a owl:Class .
+
+exch:DONTDELTowingObject a owl:Class .
+
+exch:DONTDELTowingVehicle a owl:Class .
+
+exch:DONTDELTrafficCone a owl:Class .
+
+exch:DONTDELTrailer a owl:Class .
+
+exch:DONTDELTrain a owl:Class .
+
+exch:DONTDELTrolly a owl:Class .
+
+exch:DONTDELTruck a owl:Class .
+
+exch:DONTDELUTurn a owl:Class .
+
+exch:DONTDELVegetation a owl:Class .
+
+exch:DONTDELVehicle a owl:Class .
+
+exch:DONTDELVehicleEvent a owl:Class .
+
+exch:DONTDELVehicleMoving a owl:Class .
+
+exch:DONTDELVehicleNotSignaling a owl:Class .
+
+exch:DONTDELVehicleSignaling a owl:Class .
+
+exch:DONTDELVehicleStationary a owl:Class .
+
+exch:DONTDELVehicleTurning a owl:Class .
+
+exch:DONTDELVehicleWithRider a owl:Class .
+
+exch:DONTDELVehicleWithoutRider a owl:Class .
+
+exch:DONTDELViolatingTrafficRule a owl:Class .
+
+exch:DONTDELWalking a owl:Class .
+
+exch:DONTDELWeatherEvent a owl:Class .
+
+ns1:Address a owl:Class .
+
+ns1:Adult a owl:Class .
+
+ns1:Ambulance a owl:Class .
+
+ns1:Animal a owl:Class .
+
+ns1:AnimalEvent a owl:Class .
+
+ns1:AnimalInAir a owl:Class .
+
+ns1:AnimalOnGround a owl:Class .
+
+ns1:AnimalWithRider a owl:Class .
+
+ns1:AnimalWithoutRider a owl:Class .
+
+ns1:Barrier a owl:Class .
+
+ns1:BendyBus a owl:Class .
+
+ns1:Bicycle a owl:Class .
+
+ns1:BicycleRack a owl:Class .
+
+ns1:Bird a owl:Class .
+
+ns1:Building a owl:Class .
+
+ns1:Bus a owl:Class .
+
+ns1:Car a owl:Class .
+
+ns1:ChangingLaneLeft a owl:Class .
+
+ns1:ChangingLaneRight a owl:Class .
+
+ns1:Child a owl:Class .
+
+ns1:City a owl:Class .
+
+ns1:ConstructionSign a owl:Class .
+
+ns1:ConstructionVehicle a owl:Class .
+
+ns1:ConstructionWorker a owl:Class .
+
+ns1:Country a owl:Class .
+
+ns1:County a owl:Class .
+
+ns1:Cycle a owl:Class .
+
+ns1:Debris a owl:Class .
+
+ns1:Driveway a owl:Class .
+
+ns1:DrivingStraightForward a owl:Class .
+
+ns1:EmergencyVehicle a owl:Class .
+
+ns1:Exhaust a owl:Class .
+
+ns1:Frame a owl:Class .
+
+ns1:GlidingOnWheels a owl:Class .
+
+ns1:Ground a owl:Class .
+
+ns1:Human a owl:Class .
+
+ns1:LaneLineMarking a owl:Class .
+
+ns1:LeftTurn a owl:Class .
+
+ns1:LosingControl a owl:Class .
+
+ns1:LyingDown a owl:Class .
+
+ns1:MediumSizedTruck a owl:Class .
+
+ns1:Motorcycle a owl:Class .
+
+ns1:MotorizedScooter a owl:Class .
+
+ns1:MovableObject a owl:Class .
+
+ns1:Neighborhood a owl:Class .
+
+ns1:Parked a owl:Class .
+
+ns1:Pedestrian a owl:Class .
+
+ns1:PedestrianEvent a owl:Class .
+
+ns1:PedestrianMoving a owl:Class .
+
+ns1:PedestrianStationary a owl:Class .
+
+ns1:PedestrianWithObject a owl:Class .
+
+ns1:PedestrianWithStroller a owl:Class .
+
+ns1:PedestrianWithWheelchair a owl:Class .
+
+ns1:Pedicab a owl:Class .
+
+ns1:PersonalMobilityVehicle a owl:Class .
+
+ns1:PickupTruck a owl:Class .
+
+ns1:PoliceOfficer a owl:Class .
+
+ns1:PoliceVehicle a owl:Class .
+
+ns1:PushableOrPullableObject a owl:Class .
+
+ns1:Pylon a owl:Class .
+
+ns1:RailwayVehicle a owl:Class .
+
+ns1:Rain a owl:Class .
+
+ns1:Reflection a owl:Class .
+
+ns1:Reversing a owl:Class .
+
+ns1:RightTurn a owl:Class .
+
+ns1:RigidBus a owl:Class .
+
+ns1:Road a owl:Class .
+
+ns1:RoadBarrier a owl:Class .
+
+ns1:RoadMarking a owl:Class .
+
+ns1:RoadSign a owl:Class .
+
+ns1:RollingContainer a owl:Class .
+
+ns1:Running a owl:Class .
+
+ns1:SemiTruck a owl:Class .
+
+ns1:Sequence a owl:Class .
+
+ns1:Sidewalk a owl:Class .
+
+ns1:Sign a owl:Class .
+
+ns1:Sitting a owl:Class .
+
+ns1:Smoke a owl:Class .
+
+ns1:Standing a owl:Class .
+
+ns1:State a owl:Class .
+
+ns1:StaticObject a owl:Class .
+
+ns1:StopLineMarking a owl:Class .
+
+ns1:Stopped a owl:Class .
+
+ns1:Street a owl:Class .
+
+ns1:SubwayTram a owl:Class .
+
+ns1:TemporaryConstructionBarrier a owl:Class .
+
+ns1:TowedObject a owl:Class .
+
+ns1:TowedVehicle a owl:Class .
+
+ns1:TowingObject a owl:Class .
+
+ns1:TowingVehicle a owl:Class .
+
+ns1:TrafficCone a owl:Class .
+
+ns1:Trailer a owl:Class .
+
+ns1:Train a owl:Class .
+
+ns1:Trolly a owl:Class .
+
+ns1:Truck a owl:Class .
+
+ns1:UTurn a owl:Class .
+
+ns1:Vegetation a owl:Class .
+
+ns1:Vehicle a owl:Class .
+
+ns1:VehicleEvent a owl:Class .
+
+ns1:VehicleMoving a owl:Class .
+
+ns1:VehicleNotSignaling a owl:Class .
+
+ns1:VehicleSignaling a owl:Class .
+
+ns1:VehicleStationary a owl:Class .
+
+ns1:VehicleTurning a owl:Class .
+
+ns1:VehicleWithRider a owl:Class .
+
+ns1:VehicleWithoutRider a owl:Class .
+
+ns1:ViolatingTrafficRule a owl:Class .
+
+ns1:Walking a owl:Class .
+
+ns1:WeatherEvent a owl:Class .
+
+[] rdfs:subClassOf ns1:Address ;
+    owl:intersectionOf ( exch:EXAddress exch:DONTDELAddress ) .
+
+[] rdfs:subClassOf ns1:Adult ;
+    owl:intersectionOf ( exch:EXAdult exch:DONTDELAdult ) .
+
+[] rdfs:subClassOf ns1:Ambulance ;
+    owl:intersectionOf ( exch:EXAmbulance exch:DONTDELAmbulance ) .
+
+[] rdfs:subClassOf ns1:Animal ;
+    owl:intersectionOf ( exch:EXAnimal exch:DONTDELAnimal ) .
+
+[] rdfs:subClassOf ns1:AnimalEvent ;
+    owl:intersectionOf ( exch:EXAnimalEvent exch:DONTDELAnimalEvent ) .
+
+[] rdfs:subClassOf ns1:AnimalInAir ;
+    owl:intersectionOf ( exch:EXAnimalInAir exch:DONTDELAnimalInAir ) .
+
+[] rdfs:subClassOf ns1:AnimalOnGround ;
+    owl:intersectionOf ( exch:EXAnimalOnGround exch:DONTDELAnimalOnGround ) .
+
+[] rdfs:subClassOf ns1:AnimalWithRider ;
+    owl:intersectionOf ( exch:EXAnimalWithRider exch:DONTDELAnimalWithRider ) .
+
+[] rdfs:subClassOf ns1:AnimalWithoutRider ;
+    owl:intersectionOf ( exch:EXAnimalWithoutRider exch:DONTDELAnimalWithoutRider ) .
+
+[] rdfs:subClassOf ns1:Barrier ;
+    owl:intersectionOf ( exch:EXBarrier exch:DONTDELBarrier ) .
+
+[] rdfs:subClassOf ns1:BendyBus ;
+    owl:intersectionOf ( exch:EXBendyBus exch:DONTDELBendyBus ) .
+
+[] rdfs:subClassOf ns1:Bicycle ;
+    owl:intersectionOf ( exch:EXBicycle exch:DONTDELBicycle ) .
+
+[] rdfs:subClassOf ns1:BicycleRack ;
+    owl:intersectionOf ( exch:EXBicycleRack exch:DONTDELBicycleRack ) .
+
+[] rdfs:subClassOf ns1:Bird ;
+    owl:intersectionOf ( exch:EXBird exch:DONTDELBird ) .
+
+[] rdfs:subClassOf ns1:Building ;
+    owl:intersectionOf ( exch:EXBuilding exch:DONTDELBuilding ) .
+
+[] rdfs:subClassOf ns1:Bus ;
+    owl:intersectionOf ( exch:EXBus exch:DONTDELBus ) .
+
+[] rdfs:subClassOf ns1:Car ;
+    owl:intersectionOf ( exch:EXCar exch:DONTDELCar ) .
+
+[] rdfs:subClassOf ns1:ChangingLaneLeft ;
+    owl:intersectionOf ( exch:EXChangingLaneLeft exch:DONTDELChangingLaneLeft ) .
+
+[] rdfs:subClassOf ns1:ChangingLaneRight ;
+    owl:intersectionOf ( exch:EXChangingLaneRight exch:DONTDELChangingLaneRight ) .
+
+[] rdfs:subClassOf ns1:Child ;
+    owl:intersectionOf ( exch:EXChild exch:DONTDELChild ) .
+
+[] rdfs:subClassOf ns1:City ;
+    owl:intersectionOf ( exch:EXCity exch:DONTDELCity ) .
+
+[] rdfs:subClassOf ns1:ConstructionSign ;
+    owl:intersectionOf ( exch:EXConstructionSign exch:DONTDELConstructionSign ) .
+
+[] rdfs:subClassOf ns1:ConstructionVehicle ;
+    owl:intersectionOf ( exch:EXConstructionVehicle exch:DONTDELConstructionVehicle ) .
+
+[] rdfs:subClassOf ns1:ConstructionWorker ;
+    owl:intersectionOf ( exch:EXConstructionWorker exch:DONTDELConstructionWorker ) .
+
+[] rdfs:subClassOf ns1:Country ;
+    owl:intersectionOf ( exch:EXCountry exch:DONTDELCountry ) .
+
+[] rdfs:subClassOf ns1:County ;
+    owl:intersectionOf ( exch:EXCounty exch:DONTDELCounty ) .
+
+[] rdfs:subClassOf ns1:Cycle ;
+    owl:intersectionOf ( exch:EXCycle exch:DONTDELCycle ) .
+
+[] rdfs:subClassOf ns1:Debris ;
+    owl:intersectionOf ( exch:EXDebris exch:DONTDELDebris ) .
+
+[] rdfs:subClassOf ns1:Driveway ;
+    owl:intersectionOf ( exch:EXDriveway exch:DONTDELDriveway ) .
+
+[] rdfs:subClassOf ns1:DrivingStraightForward ;
+    owl:intersectionOf ( exch:EXDrivingStraightForward exch:DONTDELDrivingStraightForward ) .
+
+[] rdfs:subClassOf ns1:EmergencyVehicle ;
+    owl:intersectionOf ( exch:EXEmergencyVehicle exch:DONTDELEmergencyVehicle ) .
+
+[] rdfs:subClassOf ns1:Exhaust ;
+    owl:intersectionOf ( exch:EXExhaust exch:DONTDELExhaust ) .
+
+[] rdfs:subClassOf ns1:Frame ;
+    owl:intersectionOf ( exch:EXFrame exch:DONTDELFrame ) .
+
+[] rdfs:subClassOf ns1:GlidingOnWheels ;
+    owl:intersectionOf ( exch:EXGlidingOnWheels exch:DONTDELGlidingOnWheels ) .
+
+[] rdfs:subClassOf ns1:Ground ;
+    owl:intersectionOf ( exch:EXGround exch:DONTDELGround ) .
+
+[] rdfs:subClassOf ns1:Human ;
+    owl:intersectionOf ( exch:EXHuman exch:DONTDELHuman ) .
+
+[] rdfs:subClassOf ns1:LaneLineMarking ;
+    owl:intersectionOf ( exch:EXLaneLineMarking exch:DONTDELLaneLineMarking ) .
+
+[] rdfs:subClassOf ns1:LeftTurn ;
+    owl:intersectionOf ( exch:EXLeftTurn exch:DONTDELLeftTurn ) .
+
+[] rdfs:subClassOf ns1:LosingControl ;
+    owl:intersectionOf ( exch:EXLosingControl exch:DONTDELLosingControl ) .
+
+[] rdfs:subClassOf ns1:LyingDown ;
+    owl:intersectionOf ( exch:EXLyingDown exch:DONTDELLyingDown ) .
+
+[] rdfs:subClassOf ns1:MediumSizedTruck ;
+    owl:intersectionOf ( exch:EXMediumSizedTruck exch:DONTDELMediumSizedTruck ) .
+
+[] rdfs:subClassOf ns1:Motorcycle ;
+    owl:intersectionOf ( exch:EXMotorcycle exch:DONTDELMotorcycle ) .
+
+[] rdfs:subClassOf ns1:MotorizedScooter ;
+    owl:intersectionOf ( exch:EXMotorizedScooter exch:DONTDELMotorizedScooter ) .
+
+[] rdfs:subClassOf ns1:MovableObject ;
+    owl:intersectionOf ( exch:EXMovableObject exch:DONTDELMovableObject ) .
+
+[] rdfs:subClassOf ns1:Neighborhood ;
+    owl:intersectionOf ( exch:EXNeighborhood exch:DONTDELNeighborhood ) .
+
+[] rdfs:subClassOf ns1:Parked ;
+    owl:intersectionOf ( exch:EXParked exch:DONTDELParked ) .
+
+[] rdfs:subClassOf ns1:Pedestrian ;
+    owl:intersectionOf ( exch:EXPedestrian exch:DONTDELPedestrian ) .
+
+[] rdfs:subClassOf ns1:PedestrianEvent ;
+    owl:intersectionOf ( exch:EXPedestrianEvent exch:DONTDELPedestrianEvent ) .
+
+[] rdfs:subClassOf ns1:PedestrianMoving ;
+    owl:intersectionOf ( exch:EXPedestrianMoving exch:DONTDELPedestrianMoving ) .
+
+[] rdfs:subClassOf ns1:PedestrianStationary ;
+    owl:intersectionOf ( exch:EXPedestrianStationary exch:DONTDELPedestrianStationary ) .
+
+[] rdfs:subClassOf ns1:PedestrianWithObject ;
+    owl:intersectionOf ( exch:EXPedestrianWithObject exch:DONTDELPedestrianWithObject ) .
+
+[] rdfs:subClassOf ns1:PedestrianWithStroller ;
+    owl:intersectionOf ( exch:EXPedestrianWithStroller exch:DONTDELPedestrianWithStroller ) .
+
+[] rdfs:subClassOf ns1:PedestrianWithWheelchair ;
+    owl:intersectionOf ( exch:EXPedestrianWithWheelchair exch:DONTDELPedestrianWithWheelchair ) .
+
+[] rdfs:subClassOf ns1:Pedicab ;
+    owl:intersectionOf ( exch:EXPedicab exch:DONTDELPedicab ) .
+
+[] rdfs:subClassOf ns1:PersonalMobilityVehicle ;
+    owl:intersectionOf ( exch:EXPersonalMobilityVehicle exch:DONTDELPersonalMobilityVehicle ) .
+
+[] rdfs:subClassOf ns1:PickupTruck ;
+    owl:intersectionOf ( exch:EXPickupTruck exch:DONTDELPickupTruck ) .
+
+[] rdfs:subClassOf ns1:PoliceOfficer ;
+    owl:intersectionOf ( exch:EXPoliceOfficer exch:DONTDELPoliceOfficer ) .
+
+[] rdfs:subClassOf ns1:PoliceVehicle ;
+    owl:intersectionOf ( exch:EXPoliceVehicle exch:DONTDELPoliceVehicle ) .
+
+[] rdfs:subClassOf ns1:PushableOrPullableObject ;
+    owl:intersectionOf ( exch:EXPushableOrPullableObject exch:DONTDELPushableOrPullableObject ) .
+
+[] rdfs:subClassOf ns1:Pylon ;
+    owl:intersectionOf ( exch:EXPylon exch:DONTDELPylon ) .
+
+[] rdfs:subClassOf ns1:RailwayVehicle ;
+    owl:intersectionOf ( exch:EXRailwayVehicle exch:DONTDELRailwayVehicle ) .
+
+[] rdfs:subClassOf ns1:Rain ;
+    owl:intersectionOf ( exch:EXRain exch:DONTDELRain ) .
+
+[] rdfs:subClassOf ns1:Reflection ;
+    owl:intersectionOf ( exch:EXReflection exch:DONTDELReflection ) .
+
+[] rdfs:subClassOf ns1:Reversing ;
+    owl:intersectionOf ( exch:EXReversing exch:DONTDELReversing ) .
+
+[] rdfs:subClassOf ns1:RightTurn ;
+    owl:intersectionOf ( exch:EXRightTurn exch:DONTDELRightTurn ) .
+
+[] rdfs:subClassOf ns1:RigidBus ;
+    owl:intersectionOf ( exch:EXRigidBus exch:DONTDELRigidBus ) .
+
+[] rdfs:subClassOf ns1:Road ;
+    owl:intersectionOf ( exch:EXRoad exch:DONTDELRoad ) .
+
+[] rdfs:subClassOf ns1:RoadBarrier ;
+    owl:intersectionOf ( exch:EXRoadBarrier exch:DONTDELRoadBarrier ) .
+
+[] rdfs:subClassOf ns1:RoadMarking ;
+    owl:intersectionOf ( exch:EXRoadMarking exch:DONTDELRoadMarking ) .
+
+[] rdfs:subClassOf ns1:RoadSign ;
+    owl:intersectionOf ( exch:EXRoadSign exch:DONTDELRoadSign ) .
+
+[] rdfs:subClassOf ns1:RollingContainer ;
+    owl:intersectionOf ( exch:EXRollingContainer exch:DONTDELRollingContainer ) .
+
+[] rdfs:subClassOf ns1:Running ;
+    owl:intersectionOf ( exch:EXRunning exch:DONTDELRunning ) .
+
+[] rdfs:subClassOf ns1:SemiTruck ;
+    owl:intersectionOf ( exch:EXSemiTruck exch:DONTDELSemiTruck ) .
+
+[] rdfs:subClassOf ns1:Sequence ;
+    owl:intersectionOf ( exch:EXSequence exch:DONTDELSequence ) .
+
+[] rdfs:subClassOf ns1:Sidewalk ;
+    owl:intersectionOf ( exch:EXSidewalk exch:DONTDELSidewalk ) .
+
+[] rdfs:subClassOf ns1:Sign ;
+    owl:intersectionOf ( exch:EXSign exch:DONTDELSign ) .
+
+[] rdfs:subClassOf ns1:Sitting ;
+    owl:intersectionOf ( exch:EXSitting exch:DONTDELSitting ) .
+
+[] rdfs:subClassOf ns1:Smoke ;
+    owl:intersectionOf ( exch:EXSmoke exch:DONTDELSmoke ) .
+
+[] rdfs:subClassOf ns1:Standing ;
+    owl:intersectionOf ( exch:EXStanding exch:DONTDELStanding ) .
+
+[] rdfs:subClassOf ns1:State ;
+    owl:intersectionOf ( exch:EXState exch:DONTDELState ) .
+
+[] rdfs:subClassOf ns1:StaticObject ;
+    owl:intersectionOf ( exch:EXStaticObject exch:DONTDELStaticObject ) .
+
+[] rdfs:subClassOf ns1:StopLineMarking ;
+    owl:intersectionOf ( exch:EXStopLineMarking exch:DONTDELStopLineMarking ) .
+
+[] rdfs:subClassOf ns1:Stopped ;
+    owl:intersectionOf ( exch:EXStopped exch:DONTDELStopped ) .
+
+[] rdfs:subClassOf ns1:Street ;
+    owl:intersectionOf ( exch:EXStreet exch:DONTDELStreet ) .
+
+[] rdfs:subClassOf ns1:SubwayTram ;
+    owl:intersectionOf ( exch:EXSubwayTram exch:DONTDELSubwayTram ) .
+
+[] rdfs:subClassOf ns1:TemporaryConstructionBarrier ;
+    owl:intersectionOf ( exch:EXTemporaryConstructionBarrier exch:DONTDELTemporaryConstructionBarrier ) .
+
+[] rdfs:subClassOf ns1:TowedObject ;
+    owl:intersectionOf ( exch:EXTowedObject exch:DONTDELTowedObject ) .
+
+[] rdfs:subClassOf ns1:TowedVehicle ;
+    owl:intersectionOf ( exch:EXTowedVehicle exch:DONTDELTowedVehicle ) .
+
+[] rdfs:subClassOf ns1:TowingObject ;
+    owl:intersectionOf ( exch:EXTowingObject exch:DONTDELTowingObject ) .
+
+[] rdfs:subClassOf ns1:TowingVehicle ;
+    owl:intersectionOf ( exch:EXTowingVehicle exch:DONTDELTowingVehicle ) .
+
+[] rdfs:subClassOf ns1:TrafficCone ;
+    owl:intersectionOf ( exch:EXTrafficCone exch:DONTDELTrafficCone ) .
+
+[] rdfs:subClassOf ns1:Trailer ;
+    owl:intersectionOf ( exch:EXTrailer exch:DONTDELTrailer ) .
+
+[] rdfs:subClassOf ns1:Train ;
+    owl:intersectionOf ( exch:EXTrain exch:DONTDELTrain ) .
+
+[] rdfs:subClassOf ns1:Trolly ;
+    owl:intersectionOf ( exch:EXTrolly exch:DONTDELTrolly ) .
+
+[] rdfs:subClassOf ns1:Truck ;
+    owl:intersectionOf ( exch:EXTruck exch:DONTDELTruck ) .
+
+[] rdfs:subClassOf ns1:UTurn ;
+    owl:intersectionOf ( exch:EXUTurn exch:DONTDELUTurn ) .
+
+[] rdfs:subClassOf ns1:Vegetation ;
+    owl:intersectionOf ( exch:EXVegetation exch:DONTDELVegetation ) .
+
+[] rdfs:subClassOf ns1:Vehicle ;
+    owl:intersectionOf ( exch:EXVehicle exch:DONTDELVehicle ) .
+
+[] rdfs:subClassOf ns1:VehicleEvent ;
+    owl:intersectionOf ( exch:EXVehicleEvent exch:DONTDELVehicleEvent ) .
+
+[] rdfs:subClassOf ns1:VehicleMoving ;
+    owl:intersectionOf ( exch:EXVehicleMoving exch:DONTDELVehicleMoving ) .
+
+[] rdfs:subClassOf ns1:VehicleNotSignaling ;
+    owl:intersectionOf ( exch:EXVehicleNotSignaling exch:DONTDELVehicleNotSignaling ) .
+
+[] rdfs:subClassOf ns1:VehicleSignaling ;
+    owl:intersectionOf ( exch:EXVehicleSignaling exch:DONTDELVehicleSignaling ) .
+
+[] rdfs:subClassOf ns1:VehicleStationary ;
+    owl:intersectionOf ( exch:EXVehicleStationary exch:DONTDELVehicleStationary ) .
+
+[] rdfs:subClassOf ns1:VehicleTurning ;
+    owl:intersectionOf ( exch:EXVehicleTurning exch:DONTDELVehicleTurning ) .
+
+[] rdfs:subClassOf ns1:VehicleWithRider ;
+    owl:intersectionOf ( exch:EXVehicleWithRider exch:DONTDELVehicleWithRider ) .
+
+[] rdfs:subClassOf ns1:VehicleWithoutRider ;
+    owl:intersectionOf ( exch:EXVehicleWithoutRider exch:DONTDELVehicleWithoutRider ) .
+
+[] rdfs:subClassOf ns1:ViolatingTrafficRule ;
+    owl:intersectionOf ( exch:EXViolatingTrafficRule exch:DONTDELViolatingTrafficRule ) .
+
+[] rdfs:subClassOf ns1:Walking ;
+    owl:intersectionOf ( exch:EXWalking exch:DONTDELWalking ) .
+
+[] rdfs:subClassOf ns1:WeatherEvent ;
+    owl:intersectionOf ( exch:EXWeatherEvent exch:DONTDELWeatherEvent ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDAddress exch:DONTADDAddress ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDAdult exch:DONTADDAdult ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDAmbulance exch:DONTADDAmbulance ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDAnimal exch:DONTADDAnimal ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDAnimalEvent exch:DONTADDAnimalEvent ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDAnimalInAir exch:DONTADDAnimalInAir ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDAnimalOnGround exch:DONTADDAnimalOnGround ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDAnimalWithRider exch:DONTADDAnimalWithRider ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDAnimalWithoutRider exch:DONTADDAnimalWithoutRider ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDBarrier exch:DONTADDBarrier ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDBendyBus exch:DONTADDBendyBus ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDBicycle exch:DONTADDBicycle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDBicycleRack exch:DONTADDBicycleRack ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDBird exch:DONTADDBird ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDBuilding exch:DONTADDBuilding ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDBus exch:DONTADDBus ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDCar exch:DONTADDCar ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDChangingLaneLeft exch:DONTADDChangingLaneLeft ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDChangingLaneRight exch:DONTADDChangingLaneRight ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDChild exch:DONTADDChild ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDCity exch:DONTADDCity ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDConstructionSign exch:DONTADDConstructionSign ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDConstructionVehicle exch:DONTADDConstructionVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDConstructionWorker exch:DONTADDConstructionWorker ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDCountry exch:DONTADDCountry ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDCounty exch:DONTADDCounty ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDCycle exch:DONTADDCycle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDDebris exch:DONTADDDebris ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDDriveway exch:DONTADDDriveway ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDDrivingStraightForward exch:DONTADDDrivingStraightForward ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDEmergencyVehicle exch:DONTADDEmergencyVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDExhaust exch:DONTADDExhaust ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDFrame exch:DONTADDFrame ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDGlidingOnWheels exch:DONTADDGlidingOnWheels ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDGround exch:DONTADDGround ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDHuman exch:DONTADDHuman ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDLaneLineMarking exch:DONTADDLaneLineMarking ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDLeftTurn exch:DONTADDLeftTurn ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDLosingControl exch:DONTADDLosingControl ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDLyingDown exch:DONTADDLyingDown ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDMediumSizedTruck exch:DONTADDMediumSizedTruck ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDMotorcycle exch:DONTADDMotorcycle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDMotorizedScooter exch:DONTADDMotorizedScooter ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDMovableObject exch:DONTADDMovableObject ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDNeighborhood exch:DONTADDNeighborhood ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDParked exch:DONTADDParked ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPedestrian exch:DONTADDPedestrian ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPedestrianEvent exch:DONTADDPedestrianEvent ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPedestrianMoving exch:DONTADDPedestrianMoving ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPedestrianStationary exch:DONTADDPedestrianStationary ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPedestrianWithObject exch:DONTADDPedestrianWithObject ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPedestrianWithStroller exch:DONTADDPedestrianWithStroller ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPedestrianWithWheelchair exch:DONTADDPedestrianWithWheelchair ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPedicab exch:DONTADDPedicab ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPersonalMobilityVehicle exch:DONTADDPersonalMobilityVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPickupTruck exch:DONTADDPickupTruck ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPoliceOfficer exch:DONTADDPoliceOfficer ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPoliceVehicle exch:DONTADDPoliceVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPushableOrPullableObject exch:DONTADDPushableOrPullableObject ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDPylon exch:DONTADDPylon ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDRailwayVehicle exch:DONTADDRailwayVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDRain exch:DONTADDRain ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDReflection exch:DONTADDReflection ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDReversing exch:DONTADDReversing ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDRightTurn exch:DONTADDRightTurn ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDRigidBus exch:DONTADDRigidBus ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDRoad exch:DONTADDRoad ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDRoadBarrier exch:DONTADDRoadBarrier ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDRoadMarking exch:DONTADDRoadMarking ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDRoadSign exch:DONTADDRoadSign ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDRollingContainer exch:DONTADDRollingContainer ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDRunning exch:DONTADDRunning ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDSemiTruck exch:DONTADDSemiTruck ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDSequence exch:DONTADDSequence ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDSidewalk exch:DONTADDSidewalk ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDSign exch:DONTADDSign ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDSitting exch:DONTADDSitting ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDSmoke exch:DONTADDSmoke ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDStanding exch:DONTADDStanding ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDState exch:DONTADDState ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDStaticObject exch:DONTADDStaticObject ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDStopLineMarking exch:DONTADDStopLineMarking ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDStopped exch:DONTADDStopped ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDStreet exch:DONTADDStreet ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDSubwayTram exch:DONTADDSubwayTram ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDTemporaryConstructionBarrier exch:DONTADDTemporaryConstructionBarrier ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDTowedObject exch:DONTADDTowedObject ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDTowedVehicle exch:DONTADDTowedVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDTowingObject exch:DONTADDTowingObject ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDTowingVehicle exch:DONTADDTowingVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDTrafficCone exch:DONTADDTrafficCone ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDTrailer exch:DONTADDTrailer ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDTrain exch:DONTADDTrain ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDTrolly exch:DONTADDTrolly ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDTruck exch:DONTADDTruck ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDUTurn exch:DONTADDUTurn ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDVegetation exch:DONTADDVegetation ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDVehicle exch:DONTADDVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDVehicleEvent exch:DONTADDVehicleEvent ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDVehicleMoving exch:DONTADDVehicleMoving ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDVehicleNotSignaling exch:DONTADDVehicleNotSignaling ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDVehicleSignaling exch:DONTADDVehicleSignaling ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDVehicleStationary exch:DONTADDVehicleStationary ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDVehicleTurning exch:DONTADDVehicleTurning ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDVehicleWithRider exch:DONTADDVehicleWithRider ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDVehicleWithoutRider exch:DONTADDVehicleWithoutRider ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDViolatingTrafficRule exch:DONTADDViolatingTrafficRule ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDWalking exch:DONTADDWalking ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDWeatherEvent exch:DONTADDWeatherEvent ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELAddress exch:DONTDELAddress ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELAdult exch:DONTDELAdult ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELAmbulance exch:DONTDELAmbulance ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELAnimal exch:DONTDELAnimal ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELAnimalEvent exch:DONTDELAnimalEvent ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELAnimalInAir exch:DONTDELAnimalInAir ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELAnimalOnGround exch:DONTDELAnimalOnGround ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELAnimalWithRider exch:DONTDELAnimalWithRider ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELAnimalWithoutRider exch:DONTDELAnimalWithoutRider ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELBarrier exch:DONTDELBarrier ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELBendyBus exch:DONTDELBendyBus ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELBicycle exch:DONTDELBicycle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELBicycleRack exch:DONTDELBicycleRack ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELBird exch:DONTDELBird ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELBuilding exch:DONTDELBuilding ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELBus exch:DONTDELBus ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELCar exch:DONTDELCar ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELChangingLaneLeft exch:DONTDELChangingLaneLeft ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELChangingLaneRight exch:DONTDELChangingLaneRight ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELChild exch:DONTDELChild ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELCity exch:DONTDELCity ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELConstructionSign exch:DONTDELConstructionSign ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELConstructionVehicle exch:DONTDELConstructionVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELConstructionWorker exch:DONTDELConstructionWorker ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELCountry exch:DONTDELCountry ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELCounty exch:DONTDELCounty ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELCycle exch:DONTDELCycle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELDebris exch:DONTDELDebris ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELDriveway exch:DONTDELDriveway ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELDrivingStraightForward exch:DONTDELDrivingStraightForward ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELEmergencyVehicle exch:DONTDELEmergencyVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELExhaust exch:DONTDELExhaust ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELFrame exch:DONTDELFrame ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELGlidingOnWheels exch:DONTDELGlidingOnWheels ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELGround exch:DONTDELGround ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELHuman exch:DONTDELHuman ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELLaneLineMarking exch:DONTDELLaneLineMarking ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELLeftTurn exch:DONTDELLeftTurn ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELLosingControl exch:DONTDELLosingControl ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELLyingDown exch:DONTDELLyingDown ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELMediumSizedTruck exch:DONTDELMediumSizedTruck ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELMotorcycle exch:DONTDELMotorcycle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELMotorizedScooter exch:DONTDELMotorizedScooter ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELMovableObject exch:DONTDELMovableObject ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELNeighborhood exch:DONTDELNeighborhood ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELParked exch:DONTDELParked ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPedestrian exch:DONTDELPedestrian ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPedestrianEvent exch:DONTDELPedestrianEvent ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPedestrianMoving exch:DONTDELPedestrianMoving ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPedestrianStationary exch:DONTDELPedestrianStationary ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPedestrianWithObject exch:DONTDELPedestrianWithObject ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPedestrianWithStroller exch:DONTDELPedestrianWithStroller ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPedestrianWithWheelchair exch:DONTDELPedestrianWithWheelchair ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPedicab exch:DONTDELPedicab ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPersonalMobilityVehicle exch:DONTDELPersonalMobilityVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPickupTruck exch:DONTDELPickupTruck ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPoliceOfficer exch:DONTDELPoliceOfficer ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPoliceVehicle exch:DONTDELPoliceVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPushableOrPullableObject exch:DONTDELPushableOrPullableObject ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELPylon exch:DONTDELPylon ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELRailwayVehicle exch:DONTDELRailwayVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELRain exch:DONTDELRain ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELReflection exch:DONTDELReflection ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELReversing exch:DONTDELReversing ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELRightTurn exch:DONTDELRightTurn ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELRigidBus exch:DONTDELRigidBus ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELRoad exch:DONTDELRoad ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELRoadBarrier exch:DONTDELRoadBarrier ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELRoadMarking exch:DONTDELRoadMarking ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELRoadSign exch:DONTDELRoadSign ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELRollingContainer exch:DONTDELRollingContainer ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELRunning exch:DONTDELRunning ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELSemiTruck exch:DONTDELSemiTruck ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELSequence exch:DONTDELSequence ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELSidewalk exch:DONTDELSidewalk ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELSign exch:DONTDELSign ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELSitting exch:DONTDELSitting ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELSmoke exch:DONTDELSmoke ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELStanding exch:DONTDELStanding ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELState exch:DONTDELState ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELStaticObject exch:DONTDELStaticObject ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELStopLineMarking exch:DONTDELStopLineMarking ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELStopped exch:DONTDELStopped ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELStreet exch:DONTDELStreet ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELSubwayTram exch:DONTDELSubwayTram ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELTemporaryConstructionBarrier exch:DONTDELTemporaryConstructionBarrier ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELTowedObject exch:DONTDELTowedObject ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELTowedVehicle exch:DONTDELTowedVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELTowingObject exch:DONTDELTowingObject ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELTowingVehicle exch:DONTDELTowingVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELTrafficCone exch:DONTDELTrafficCone ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELTrailer exch:DONTDELTrailer ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELTrain exch:DONTDELTrain ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELTrolly exch:DONTDELTrolly ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELTruck exch:DONTDELTruck ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELUTurn exch:DONTDELUTurn ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELVegetation exch:DONTDELVegetation ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELVehicle exch:DONTDELVehicle ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELVehicleEvent exch:DONTDELVehicleEvent ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELVehicleMoving exch:DONTDELVehicleMoving ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELVehicleNotSignaling exch:DONTDELVehicleNotSignaling ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELVehicleSignaling exch:DONTDELVehicleSignaling ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELVehicleStationary exch:DONTDELVehicleStationary ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELVehicleTurning exch:DONTDELVehicleTurning ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELVehicleWithRider exch:DONTDELVehicleWithRider ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELVehicleWithoutRider exch:DONTDELVehicleWithoutRider ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELViolatingTrafficRule exch:DONTDELViolatingTrafficRule ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELWalking exch:DONTDELWalking ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELWeatherEvent exch:DONTDELWeatherEvent ) .
+

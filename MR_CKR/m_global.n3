@@ -1,0 +1,30 @@
+@prefix base: <http://www.semanticweb.org/rkiesel/ontologies/2023/0/untitled-ontology-10#> .
+@prefix ckr: <http://dkm.fbk.eu/ckr/meta#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ckr:hasAxiomType a owl:AnnotationProperty .
+
+ckr:prec-c a owl:ObjectProperty .
+
+ckr:prec-t a owl:ObjectProperty .
+
+base: a owl:Ontology ;
+    owl:imports ckr: .
+
+base:gliding_diagnosis a ckr:Context ;
+    ckr:hasModule base:m_gliding_diagnosis ;
+    ckr:prec-t base:basic_context .
+
+base:basic_context a ckr:Context ;
+    ckr:hasModule base:m_basic_context ;
+    ckr:prec-t base:change_context .
+
+base:change_context a ckr:Context ;
+    ckr:hasModule base:m_change_context .
+
+base:m_basic_context a ckr:Module .
+
+base:m_change_context a ckr:Module .
+
+base:m_gliding_diagnosis a ckr:Module .
+

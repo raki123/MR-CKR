@@ -4,7 +4,6 @@ from mr_ckr import *
 from rdflib import Graph, BNode
 from rdflib.namespace import RDF, RDFS, OWL, Namespace, NamespaceManager
 
-from pprint import pprint
 
 
 onto = Graph()

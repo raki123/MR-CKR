@@ -1,0 +1,25 @@
+@prefix base: <http://www.semanticweb.org/rkiesel/ontologies/2023/0/untitled-ontology-10#> .
+@prefix ckr: <http://dkm.fbk.eu/ckr/meta#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ckr:hasAxiomType a owl:AnnotationProperty .
+
+ckr:prec-c a owl:ObjectProperty .
+
+ckr:prec-t a owl:ObjectProperty .
+
+<http://www.semanticweb.org/rkiesel/ontologies/2023/0/untitled-ontology-10#> a owl:Ontology ;
+    owl:imports <http://dkm.fbk.eu/ckr/meta#> .
+
+
+base:basic_context a ckr:Context ;
+    ckr:hasModule base:m_basic_context ;
+    ckr:prec-t base:change_context .
+
+base:change_context a ckr:Context ;
+    ckr:hasModule base:m_change_context .
+
+base:m_basic_context a ckr:Module .
+
+base:m_change_context a ckr:Module .
+
