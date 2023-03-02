@@ -18,5 +18,5 @@ cd ..
 This produces an ASP file called `out.lp`. 
 To combine the MR-CKR represented by `out.lp` with the danger enforcing constraints and the similarity enforcing weak constraints use
 ```
-clingo out.lp MR_CKR/extra.lp
+clingo MR_CKR/extra.lp ckr-datalog-rewriter-d-1.6/out.lp
 ```
