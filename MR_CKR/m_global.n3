@@ -11,10 +11,6 @@ ckr:prec-t a owl:ObjectProperty .
 base: a owl:Ontology ;
     owl:imports ckr: .
 
-base:gliding_diagnosis a ckr:Context ;
-    ckr:hasModule base:m_gliding_diagnosis ;
-    ckr:prec-t base:basic_context .
-
 base:basic_context a ckr:Context ;
     ckr:hasModule base:m_basic_context ;
     ckr:prec-t base:change_context .
@@ -25,6 +21,4 @@ base:change_context a ckr:Context ;
 base:m_basic_context a ckr:Module .
 
 base:m_change_context a ckr:Module .
-
-base:m_gliding_diagnosis a ckr:Module .
 

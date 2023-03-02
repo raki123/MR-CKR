@@ -216,5 +216,5 @@
 :~ instd(X,"ADDWalking",Context,"main"). [1,X,"ADDWalking",Context]
 :~ instd(X,"DELWeatherEvent",Context,"main"). [1,X,"DELWeatherEvent",Context]
 :~ instd(X,"ADDWeatherEvent",Context,"main"). [1,X,"ADDWeatherEvent",Context]
-found_gliding :- instd(X, "GlidingOnWheels", "gliding_diagnosis", "main").
+found_gliding :- instd(X, "GlidingOnWheels", "basic_context", "main").
 :- not found_gliding.

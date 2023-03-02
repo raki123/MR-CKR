@@ -154,9 +154,9 @@ mrckr.add_context(basic_context)
 mrckr.add_relation("similarity", basic_context, change_context)
 
 # add the contexts for diagnoses
-gliding_context = Context("gliding_diagnosis", namespace_manager)
-mrckr.add_context(gliding_context)
-mrckr.add_relation("similarity", gliding_context, basic_context)
+# gliding_context = Context("gliding_diagnosis", namespace_manager)
+# mrckr.add_context(gliding_context)
+# mrckr.add_relation("similarity", gliding_context, basic_context)
 
 # children_context = Context("children_diagnosis", namespace_manager)
 # mrckr.add_context(children_context)
@@ -175,12 +175,13 @@ mrckr.add_relation("similarity", gliding_context, basic_context)
 # mrckr.add_relation("similarity", sign_and_stop_line_context, basic_context)
 
 mrckr.to_file("./MR_CKR")
+
 with open("./MR_CKR/extra.lp", 'w') as extra_constraints:
     for i in range(len(concepts)):
         extra_constraints.write(f':~ instd(X,"{del_concepts[i][len("http://example.org/exchange/"):]}",Context,"main"). [1,X,"{del_concepts[i][len("http://example.org/exchange/"):]}",Context]\n')
         extra_constraints.write(f':~ instd(X,"{add_concepts[i][len("http://example.org/exchange/"):]}",Context,"main"). [1,X,"{add_concepts[i][len("http://example.org/exchange/"):]}",Context]\n')
     # ensure we find a diagnosis in each context
-    extra_constraints.write(f'found_gliding :- instd(X, "GlidingOnWheels", "{gliding_context.name}", "main").\n')
+    extra_constraints.write(f'found_gliding :- instd(X, "GlidingOnWheels", "{basic_context.name}", "main").\n')
     extra_constraints.write(f':- not found_gliding.\n')
     
     # extra_constraints.write(f'found_children :- instd(X, "Child", "{children_context.name}", "main").\n')
