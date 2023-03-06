@@ -11,9 +11,25 @@ ckr:prec-t a owl:ObjectProperty .
 base: a owl:Ontology ;
     owl:imports ckr: .
 
-base:basic_context a ckr:Context ;
-    ckr:hasModule base:m_basic_context ;
-    ckr:prec-t base:change_context .
+base:children_diagnosis a ckr:Context ;
+    ckr:hasModule base:m_children_diagnosis ;
+    ckr:prec-t base:basic_context .
+
+base:gliding_diagnosis a ckr:Context ;
+    ckr:hasModule base:m_gliding_diagnosis ;
+    ckr:prec-t base:basic_context .
+
+base:rolling_no_human_diagnosis a ckr:Context ;
+    ckr:hasModule base:m_rolling_no_human_diagnosis ;
+    ckr:prec-t base:basic_context .
+
+base:sign_and_smoke_diagnosis a ckr:Context ;
+    ckr:hasModule base:m_sign_and_smoke_diagnosis ;
+    ckr:prec-t base:basic_context .
+
+base:sign_and_stop_line_diagnosis a ckr:Context ;
+    ckr:hasModule base:m_sign_and_stop_line_diagnosis ;
+    ckr:prec-t base:basic_context .
 
 base:change_context a ckr:Context ;
     ckr:hasModule base:m_change_context .
@@ -21,4 +37,18 @@ base:change_context a ckr:Context ;
 base:m_basic_context a ckr:Module .
 
 base:m_change_context a ckr:Module .
+
+base:m_children_diagnosis a ckr:Module .
+
+base:m_gliding_diagnosis a ckr:Module .
+
+base:m_rolling_no_human_diagnosis a ckr:Module .
+
+base:m_sign_and_smoke_diagnosis a ckr:Module .
+
+base:m_sign_and_stop_line_diagnosis a ckr:Module .
+
+base:basic_context a ckr:Context ;
+    ckr:hasModule base:m_basic_context ;
+    ckr:prec-t base:change_context .
 
