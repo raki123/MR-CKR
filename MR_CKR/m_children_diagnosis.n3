@@ -1,5 +1,4 @@
-@prefix ns3: <http://dkm.fbk.eu/ckr/meta#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-ns3:hasAxiomType a owl:AnnotationProperty .
+<http://dkm.fbk.eu/ckr/meta#hasAxiomType> a owl:AnnotationProperty .
 

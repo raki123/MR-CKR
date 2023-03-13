@@ -69,7 +69,9 @@ concepts = [ concept for concept in concepts if "Child" in concept \
                                                 or "RollingContainer" in concept \
                                                 or "Sign" in concept \
                                                 or "Smoke" in concept \
-                                                or "StopLineMarking" in concept ]
+                                                or "StopLineMarking" in concept \
+                                                or "Human" in concept \
+                                                or "Car" in concept ]
 # add extra concepts
 original_concepts = []
 for concept in concepts:
@@ -87,11 +89,11 @@ for concept in concepts:
     del_concepts.append(exch.term("DEL" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):]))
 
 
-# add change defaults
+# # add change defaults
 change_context.add_axiom((named_individuals, RDF.type, OWL.Class))
-for i in range(len(concepts)):
-    change_context.add_defeasible("similarity", (named_individuals, RDFS.subClassOf, add_concepts[i]))
-    change_context.add_defeasible("similarity", (named_individuals, RDFS.subClassOf, del_concepts[i]))
+# for i in range(len(concepts)):
+#     change_context.add_defeasible("similarity", (named_individuals, RDFS.subClassOf, add_concepts[i]))
+#     change_context.add_defeasible("similarity", (named_individuals, RDFS.subClassOf, del_concepts[i]))
 
 
 
@@ -106,12 +108,23 @@ for concept in concepts:
     dontadd_concepts.append(exch.term("DONTADD" + str(concept)[len('http://semantic.bosch.com/drivingscene/v02/'):]))
 
 
-# add dontchange defaults
-for i in range(len(concepts)):
-    change_context.add_defeasible("similarity", (named_individuals, RDFS.subClassOf, dontadd_concepts[i]))
-    change_context.add_defeasible("similarity", (named_individuals, RDFS.subClassOf, dontdel_concepts[i]))
+# # add dontchange defaults
+# for i in range(len(concepts)):
+#     change_context.add_defeasible("similarity", (named_individuals, RDFS.subClassOf, dontadd_concepts[i]))
+#     change_context.add_defeasible("similarity", (named_individuals, RDFS.subClassOf, dontdel_concepts[i]))
 
 basic_context = Context("basic_context", namespace_manager)
+
+# add original abox axioms
+for subj, _, concept in abox:
+    try:
+        idx = concepts.index(concept)
+        basic_context.add_axiom((subj, RDF.type, original_concepts[idx]))
+    except:
+        pass
+
+
+
 # build inclusion axioms
 inter_concepts = []
 eq_inter_concepts = []
@@ -153,7 +166,7 @@ for i in range(len(concepts)):
 
 
 basic_context.add_axiom((named_individuals, RDF.type, OWL.Class))
-for indiv in non_scene_individuals[:1]:
+for indiv in non_scene_individuals:
     basic_context.add_axiom((indiv, RDF.type, named_individuals))
 
 mrckr.add_context(basic_context)
@@ -183,6 +196,14 @@ mrckr.add_relation("similarity", sign_and_stop_line_context, basic_context)
 mrckr.to_file("./MR_CKR")
 
 with open("./MR_CKR/extra.lp", 'w') as extra_constraints:
+    # add guesses for addition and deletion
+    for i in range(len(concepts)):
+        extra_constraints.write(f'instd(X,"{del_concepts[i][len("http://example.org/exchange/"):]}",Context,"main") :- instd(X,"Named",Context,"main"), not instd(X,"{dontdel_concepts[i][len("http://example.org/exchange/"):]}",Context,"main").\n')
+        extra_constraints.write(f'instd(X,"{dontdel_concepts[i][len("http://example.org/exchange/"):]}",Context,"main") :- instd(X,"Named",Context,"main"), not instd(X,"{del_concepts[i][len("http://example.org/exchange/"):]}",Context,"main").\n')
+        extra_constraints.write(f'instd(X,"{add_concepts[i][len("http://example.org/exchange/"):]}",Context,"main") :- instd(X,"Named",Context,"main"), not instd(X,"{dontadd_concepts[i][len("http://example.org/exchange/"):]}",Context,"main").\n')
+        extra_constraints.write(f'instd(X,"{dontadd_concepts[i][len("http://example.org/exchange/"):]}",Context,"main") :- instd(X,"Named",Context,"main"), not instd(X,"{add_concepts[i][len("http://example.org/exchange/"):]}",Context,"main").\n')
+
+    # add weak constraints to ensure similarity
     for i in range(len(concepts)):
         extra_constraints.write(f':~ instd(X,"{del_concepts[i][len("http://example.org/exchange/"):]}",Context,"main"). [1,X,"{del_concepts[i][len("http://example.org/exchange/"):]}",Context]\n')
         extra_constraints.write(f':~ instd(X,"{add_concepts[i][len("http://example.org/exchange/"):]}",Context,"main"). [1,X,"{add_concepts[i][len("http://example.org/exchange/"):]}",Context]\n')
@@ -204,6 +225,11 @@ with open("./MR_CKR/extra.lp", 'w') as extra_constraints:
     extra_constraints.write(f':- not found_sign_and_smoke_2.\n')
     
     extra_constraints.write(f'found_sign_and_stop_line_1 :- instd(X, "Sign", "{sign_and_stop_line_context.name}", "main").\n')
-    extra_constraints.write(f':- not found_sign_and_stop_line_2.\n')
+    extra_constraints.write(f':- not found_sign_and_stop_line_1.\n')
     extra_constraints.write(f'found_sign_and_stop_line_2 :- instd(X, "StopLineMarking", "{sign_and_stop_line_context.name}", "main").\n')
     extra_constraints.write(f':- not found_sign_and_stop_line_2.\n')
+
+    extra_constraints.write("#show.\n")
+    for i in range(len(concepts)):
+        extra_constraints.write(f'#show added(X, "{concepts[i][len("http://semantic.bosch.com/drivingscene/v02/"):]}", Context) : instd(X, "{add_concepts[i][len("http://example.org/exchange/"):]}", Context, "main").\n')
+        extra_constraints.write(f'#show deleted(X, "{concepts[i][len("http://semantic.bosch.com/drivingscene/v02/"):]}", Context) : instd(X, "{del_concepts[i][len("http://example.org/exchange/"):]}", Context, "main").\n')
