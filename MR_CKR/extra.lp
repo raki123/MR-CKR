@@ -70,22 +70,6 @@ instd(X,"DONTADDVehicleSignaling",Context,"main") :- instd(X,"Named",Context,"ma
 :~ instd(X,"ADDVehicleNotSignaling",Context,"main"). [1,X,"ADDVehicleNotSignaling",Context]
 :~ instd(X,"DELVehicleSignaling",Context,"main"). [1,X,"DELVehicleSignaling",Context]
 :~ instd(X,"ADDVehicleSignaling",Context,"main"). [1,X,"ADDVehicleSignaling",Context]
-found_gliding :- instd(X, "GlidingOnWheels", "gliding_diagnosis", "main").
-:- not found_gliding.
-found_children :- instd(X, "Child", "children_diagnosis", "main").
-:- not found_children.
-found_rolling_no_human_1 :- instd(X, "RollingContainer", "rolling_no_human_diagnosis", "main").
-:- not found_rolling_no_human_1.
-found_rolling_no_human_2 :- instd(X, "Human", "rolling_no_human_diagnosis", "main").
-:- found_rolling_no_human_2.
-found_sign_and_smoke_1 :- instd(X, "Sign", "sign_and_smoke_diagnosis", "main").
-:- not found_sign_and_smoke_1.
-found_sign_and_smoke_2 :- instd(Y, "Smoke", "sign_and_smoke_diagnosis", "main").
-:- not found_sign_and_smoke_2.
-found_sign_and_stop_line_1 :- instd(X, "Sign", "sign_and_stop_line_diagnosis", "main").
-:- not found_sign_and_stop_line_1.
-found_sign_and_stop_line_2 :- instd(X, "StopLineMarking", "sign_and_stop_line_diagnosis", "main").
-:- not found_sign_and_stop_line_2.
 #show.
 #show added(X, "Car", Context) : instd(X, "ADDCar", Context, "main").
 #show deleted(X, "Car", Context) : instd(X, "DELCar", Context, "main").
@@ -111,3 +95,19 @@ found_sign_and_stop_line_2 :- instd(X, "StopLineMarking", "sign_and_stop_line_di
 #show deleted(X, "VehicleNotSignaling", Context) : instd(X, "DELVehicleNotSignaling", Context, "main").
 #show added(X, "VehicleSignaling", Context) : instd(X, "ADDVehicleSignaling", Context, "main").
 #show deleted(X, "VehicleSignaling", Context) : instd(X, "DELVehicleSignaling", Context, "main").
+found_gliding :- instd(X, "GlidingOnWheels", "gliding_diagnosis", "main").
+:- not found_gliding.
+found_children :- instd(X, "Child", "children_diagnosis", "main").
+:- not found_children.
+found_rolling_no_human_1 :- instd(X, "RollingContainer", "rolling_no_human_diagnosis", "main").
+:- not found_rolling_no_human_1.
+found_rolling_no_human_2 :- instd(X, "Human", "rolling_no_human_diagnosis", "main").
+:- found_rolling_no_human_2.
+found_sign_and_smoke_1 :- instd(X, "Sign", "sign_and_smoke_diagnosis", "main").
+:- not found_sign_and_smoke_1.
+found_sign_and_smoke_2 :- instd(Y, "Smoke", "sign_and_smoke_diagnosis", "main").
+:- not found_sign_and_smoke_2.
+found_sign_and_stop_line_1 :- instd(X, "Sign", "sign_and_stop_line_diagnosis", "main").
+:- not found_sign_and_stop_line_1.
+found_sign_and_stop_line_2 :- instd(X, "StopLineMarking", "sign_and_stop_line_diagnosis", "main").
+:- not found_sign_and_stop_line_2.
