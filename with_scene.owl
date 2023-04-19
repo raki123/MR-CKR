@@ -1,0 +1,3684 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rkiesel/ontologies/2023/0/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/rkiesel/ontologies/2023/0/untitled-ontology-10"
+     xmlns:ns1="http://semantic.bosch.com/drivingscene/v02/"
+     xmlns:ns2="http://semantic.bosch.com/scene/v02/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rkiesel/ontologies/2023/0/untitled-ontology-10">
+        <rdfs:comment>Ontology defining the concept of Scene.</rdfs:comment>
+        <rdfs:label>Driving Scene Ontology</rdfs:label>
+        <rdfs:label>Scene Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semantic.bosch.com/scene/v02/includesType -->
+
+    <owl:AnnotationProperty rdf:about="http://semantic.bosch.com/scene/v02/includesType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semantic.bosch.com/scene/v02/includes -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.bosch.com/scene/v02/includes">
+        <rdfs:domain rdf:resource="http://semantic.bosch.com/scene/v02/Scene"/>
+        <rdfs:label>includes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Adult -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Adult">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Pedestrian"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Adult</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Ambulance -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Ambulance">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/EmergencyVehicle"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Ambulance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Barrier -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Barrier">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/MovableObject"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Barrier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/BendyBus -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/BendyBus">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Bus"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Bendy Bus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Bicycle -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Bicycle">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Cycle"/>
+        <rdfs:isDefinedBy>Lyft</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Bicycle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Bus -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Bus">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Vehicle"/>
+        <rdfs:isDefinedBy>Lyft</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Bus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Car -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Car">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Vehicle"/>
+        <rdfs:isDefinedBy>Lyft</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Car</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Child -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Child">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Pedestrian"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Child</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/ConstructionVehicle -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/ConstructionVehicle">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Vehicle"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Construction Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Cycle -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Cycle">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Vehicle"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Cycle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Debris -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Debris">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/MovableObject"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Debris</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/EmergencyVehicle -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/EmergencyVehicle">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Vehicle"/>
+        <rdfs:isDefinedBy>Lyft</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Emergency Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Frame -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Frame">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/scene/v02/Scene"/>
+        <rdfs:label>Frame</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/GlidingOnWheels -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/GlidingOnWheels">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/scene/v02/FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Human -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Human">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/scene/v02/FeatureOfInterest"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Human</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/LaneLineMarking -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/LaneLineMarking">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/RoadMarking"/>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Lane Line Marking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Motorcycle -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Motorcycle">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Cycle"/>
+        <rdfs:isDefinedBy>Lyft</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Motorcycle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/MovableObject -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/MovableObject">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/scene/v02/FeatureOfInterest"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Movable Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Pedestrian -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Pedestrian">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Human"/>
+        <rdfs:isDefinedBy>Lyft</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Pedestrian</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/PedestrianWithObject -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/PedestrianWithObject">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Pedestrian"/>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Pedestrian with Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/PedestrianWithStroller -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/PedestrianWithStroller">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/PedestrianWithObject"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Pedestrian with Stroller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/PedestrianWithWheelchair -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/PedestrianWithWheelchair">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Pedestrian"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Pedestrian with Wheelchair</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/PersonalMobilityVehicle -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/PersonalMobilityVehicle">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Vehicle"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>PandaSet</rdfs:isDefinedBy>
+        <rdfs:label>Personal Mobility Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/PoliceOfficer -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/PoliceOfficer">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Pedestrian"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Police Officer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/PoliceVehicle -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/PoliceVehicle">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/EmergencyVehicle"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Police Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/RigidBus -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/RigidBus">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Bus"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Rigid Bus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/RoadMarking -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/RoadMarking">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/scene/v02/FeatureOfInterest"/>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Road Marking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/RollingContainer -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/RollingContainer">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/MovableObject"/>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Rolling Container</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Sequence -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Sequence">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/scene/v02/Scene"/>
+        <rdfs:label>Sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Sign -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Sign">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/scene/v02/FeatureOfInterest"/>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Sign</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Smoke -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Smoke">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/scene/v02/FeatureOfInterest"/>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Smoke</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/StopLineMarking -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/StopLineMarking">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/RoadMarking"/>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Stop Line Marking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/TrafficCone -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/TrafficCone">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/MovableObject"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Traffic Cone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Trailer -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Trailer">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Vehicle"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Trailer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Truck -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Truck">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Vehicle"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Truck</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/Vehicle -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/Vehicle">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/scene/v02/FeatureOfInterest"/>
+        <rdfs:isDefinedBy>Lyft</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:label>Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/VehicleWithRider -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/VehicleWithRider">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Vehicle"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Vehicle with Rider</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/VehicleWithoutRider -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/drivingscene/v02/VehicleWithoutRider">
+        <rdfs:subClassOf rdf:resource="http://semantic.bosch.com/drivingscene/v02/Vehicle"/>
+        <rdfs:isDefinedBy>NuScenes</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Pandaset</rdfs:isDefinedBy>
+        <rdfs:label>Vehicle without Rider</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/scene/v02/FeatureOfInterest -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/scene/v02/FeatureOfInterest">
+        <rdfs:comment>The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:label>Feature Of Interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.bosch.com/scene/v02/Scene -->
+
+    <owl:Class rdf:about="http://semantic.bosch.com/scene/v02/Scene">
+        <rdfs:comment>An observable volume of space and time. More colloquially, a Scene typically refers to a situation in which some event occurs (e.g. lane change maneuver) within some context (e.g. on the highway)</rdfs:comment>
+        <rdfs:label>Scene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a066bab0-a7ef-4702-a098-f1b4f5a8fcb3 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a066bab0-a7ef-4702-a098-f1b4f5a8fcb3">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, a066bab0-a7ef-4702-a098-f1b4f5a8fcb3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a10fd49d-d527-4c61-8fa1-53198a0dda7a -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a10fd49d-d527-4c61-8fa1-53198a0dda7a">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, a10fd49d-d527-4c61-8fa1-53198a0dda7a</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a156181a-a196-4314-bae8-e87e8fbd3825 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a156181a-a196-4314-bae8-e87e8fbd3825">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, a156181a-a196-4314-bae8-e87e8fbd3825</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a159e087-c9e2-4920-9517-9a51403fd485 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a159e087-c9e2-4920-9517-9a51403fd485">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, a159e087-c9e2-4920-9517-9a51403fd485</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a1b67811-0d5e-4a3a-8251-22a51cbae777 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a1b67811-0d5e-4a3a-8251-22a51cbae777">
+        <rdfs:label>Parked, a1b67811-0d5e-4a3a-8251-22a51cbae777</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a1cd249b-2154-4f24-954a-bbcf522fb410 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a1cd249b-2154-4f24-954a-bbcf522fb410">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, a1cd249b-2154-4f24-954a-bbcf522fb410</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a2ea1b44-a9dd-4e64-ad65-0b06b80a2dc3 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a2ea1b44-a9dd-4e64-ad65-0b06b80a2dc3">
+        <rdfs:label>VehicleMoving, a2ea1b44-a9dd-4e64-ad65-0b06b80a2dc3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a33a9805-cfff-464d-8dbb-8ff34b17b890 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a33a9805-cfff-464d-8dbb-8ff34b17b890">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, a33a9805-cfff-464d-8dbb-8ff34b17b890</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a47b0c1b-487e-4704-8c0b-7ff9e09d2853 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a47b0c1b-487e-4704-8c0b-7ff9e09d2853">
+        <rdfs:label>RoadSign, a47b0c1b-487e-4704-8c0b-7ff9e09d2853</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a4e897e5-bcde-47cf-9f68-413b34c4befe -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a4e897e5-bcde-47cf-9f68-413b34c4befe">
+        <rdfs:label>Parked, a4e897e5-bcde-47cf-9f68-413b34c4befe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a4e9732e-c56e-4c66-8b0a-384ce1c0692d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a4e9732e-c56e-4c66-8b0a-384ce1c0692d">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, a4e9732e-c56e-4c66-8b0a-384ce1c0692d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a6ab3f60-5b65-46f0-a054-a4c43ad458ad -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a6ab3f60-5b65-46f0-a054-a4c43ad458ad">
+        <rdfs:label>Parked, a6ab3f60-5b65-46f0-a054-a4c43ad458ad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a6cd38a7-7ca8-4842-b06e-8d3a8fe8ba72 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a6cd38a7-7ca8-4842-b06e-8d3a8fe8ba72">
+        <rdfs:label>VehicleMoving, a6cd38a7-7ca8-4842-b06e-8d3a8fe8ba72</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a6d39135-ae8a-4f37-b032-fc3a5c40e73b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a6d39135-ae8a-4f37-b032-fc3a5c40e73b">
+        <rdfs:label>Parked, a6d39135-ae8a-4f37-b032-fc3a5c40e73b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a73969da-811c-494b-a38d-0aa78d86a60b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a73969da-811c-494b-a38d-0aa78d86a60b">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, a73969da-811c-494b-a38d-0aa78d86a60b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a83b5c6c-b793-4b99-85fd-bc7704d82259 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a83b5c6c-b793-4b99-85fd-bc7704d82259">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, a83b5c6c-b793-4b99-85fd-bc7704d82259</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a8b4dcb1-783a-432d-a0ca-98fa0867297c -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a8b4dcb1-783a-432d-a0ca-98fa0867297c">
+        <rdfs:label>PickupTruck, a8b4dcb1-783a-432d-a0ca-98fa0867297c</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a94b94a3-3141-4eb8-bfd9-cc153109bed9 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a94b94a3-3141-4eb8-bfd9-cc153109bed9">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, a94b94a3-3141-4eb8-bfd9-cc153109bed9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a9819f62-1402-4440-8489-4c3c874a84f9 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a9819f62-1402-4440-8489-4c3c874a84f9">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, a9819f62-1402-4440-8489-4c3c874a84f9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/a9f78ce1-8de2-403b-976c-118cbd3136b9 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/a9f78ce1-8de2-403b-976c-118cbd3136b9">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Pedestrian"/>
+        <rdfs:label>Pedestrian, a9f78ce1-8de2-403b-976c-118cbd3136b9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/aa0bd43c-3e92-4ac1-871f-5485b1f404d2 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/aa0bd43c-3e92-4ac1-871f-5485b1f404d2">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, aa0bd43c-3e92-4ac1-871f-5485b1f404d2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ab08864d-0f86-4b5d-b1bd-2389066e344a -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ab08864d-0f86-4b5d-b1bd-2389066e344a">
+        <rdf:type rdf:resource="http://semantic.bosch.com/scene/v02/Scene"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a066bab0-a7ef-4702-a098-f1b4f5a8fcb3"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a10fd49d-d527-4c61-8fa1-53198a0dda7a"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a156181a-a196-4314-bae8-e87e8fbd3825"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a159e087-c9e2-4920-9517-9a51403fd485"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a1b67811-0d5e-4a3a-8251-22a51cbae777"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a1cd249b-2154-4f24-954a-bbcf522fb410"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a2ea1b44-a9dd-4e64-ad65-0b06b80a2dc3"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a33a9805-cfff-464d-8dbb-8ff34b17b890"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a47b0c1b-487e-4704-8c0b-7ff9e09d2853"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a4e897e5-bcde-47cf-9f68-413b34c4befe"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a4e9732e-c56e-4c66-8b0a-384ce1c0692d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a6ab3f60-5b65-46f0-a054-a4c43ad458ad"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a6cd38a7-7ca8-4842-b06e-8d3a8fe8ba72"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a6d39135-ae8a-4f37-b032-fc3a5c40e73b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a73969da-811c-494b-a38d-0aa78d86a60b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a83b5c6c-b793-4b99-85fd-bc7704d82259"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a8b4dcb1-783a-432d-a0ca-98fa0867297c"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a94b94a3-3141-4eb8-bfd9-cc153109bed9"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a9819f62-1402-4440-8489-4c3c874a84f9"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/a9f78ce1-8de2-403b-976c-118cbd3136b9"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/aa0bd43c-3e92-4ac1-871f-5485b1f404d2"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ab8c1cc2-40ad-4d60-adc7-77e812b16665"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/abfebe46-0176-4263-9d45-9afacb91a207"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/acb6b22d-fb75-492c-9ff1-2496a43819a5"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/acc2ffd3-5bab-4693-8d2b-06273476a69f"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ada24e6b-8980-427b-8806-b1c50b82682d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ae1cc476-0961-411c-946d-fffbfddecca1"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ae76cbf0-16f3-4935-ac4e-143dbc9b8329"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/b0c42613-a0ba-410e-ab44-f98139191e8e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/b1c76e29-cf5b-44b0-95e7-418926d8579c"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/b255cb00-6a67-4661-b412-507bfb5a188a"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/b2d7d6b4-a219-4aae-8479-c857c47a9149"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/b3a7824e-1fdb-411a-919d-e461774edd2e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/b3c23c8f-ed4e-42ed-afba-53a02a9ea98d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/b90e84ed-6ba0-4090-b1eb-4bc1ba02d6c6"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/bade857d-08a8-4cd1-86e1-8ab537190e34"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/bbc40b63-e4ca-4bb1-bce1-b98f0e151b7d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/bcfd2faa-8969-4d2f-acdd-3ff198c6cc83"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/bd237ee8-a5e7-4d22-8c6c-b06ad4874e73"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/bd29c719-28f5-4e87-96f7-6ca27e0bbea8"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/bd3498ad-d77b-4fc8-8d9b-fdf2efb73eff"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/bd54a7ec-383b-4f5d-aac7-4cee716a9ac7"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/beceef9f-bcb7-45a6-a728-1c44a9bc2426"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/bf03763a-973e-4d3a-a9d8-e525f9033308"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c031d5f1-8066-4fc3-8d50-27f254ec622c"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c037074a-f057-4abf-8dc1-08f48dcf61c2"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c0a072c3-bf39-42d2-9891-eda6e8e1e70b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c2462533-f1de-48e1-b8cf-9238216962a4"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c2d09ec1-4724-4ca3-bdba-bf753fae8db0"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c4c88810-e536-4935-826c-4eb7b1cd5c31"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c6cd49db-bc46-4e1c-90c3-9cb76b16c2aa"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c819db00-760a-404a-8fe3-1f24b1a96fee"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c8243967-94dd-431b-b93e-b0855d73bf0c"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c8697ea3-4012-4f05-907d-11fa0809af27"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c9213c31-6b75-4659-87ee-e82905942626"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c93bf711-4655-4470-89d6-7641c294fcce"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c9d7b286-4c82-4457-ad18-bd794e7ab51b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/c9e93b55-43fd-48a7-898b-14fc34ba9173"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ca5bcae8-712f-4236-ac72-339ad9632830"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/cad95c40-3ce7-4ad9-9f66-ff391a75c22e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/cb195645-0126-4258-a792-22ae9b1e0cd6"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/cc27fe98-3bac-4c47-bbb3-d100f390cbd7"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/cc3b4c86-e28d-4d5a-80c0-0bf824062354"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/cc63482d-1787-4d15-852e-52f07e3aacf9"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/cc905b70-0e27-4b40-93c5-74a2d293bd75"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/cd8c6fb2-603b-4690-a1ab-9f4e382c63bf"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ce56b876-38d5-4649-87ab-d46cd224aff1"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/cfb54dbe-7691-4115-8536-40c08ca1f345"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/d1d19fe0-7bb1-4da3-a7d8-3bcc43852b89"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/d1e19c19-e619-47f7-be64-bb4c771e52b1"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/d2c94153-ccbb-476c-b4eb-e280a4aee44d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/d2d67010-8e21-4b84-8a57-b7e4e5464bc8"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/d3833faf-0459-4bc0-88bb-4faee814386e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/d5677e23-2eb0-4064-a49b-b82bfe62a24f"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/d9d754f1-41dc-48cd-b3b8-3c69429c28cd"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/db7631c6-4c88-4b46-a2db-4b70dbeaeb52"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/db8ddd29-b412-46c0-ac8f-4cf8f1e53769"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/dc2d60a1-9192-440c-ac2e-71cc509be190"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/dd656ef2-b829-421e-860a-fba725602496"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/dd8e08b7-8498-4f6c-96cd-e645702e024d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/dfea52e5-a9e8-4457-a007-4984af684fde"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/e055442c-5f86-4fdf-be3f-46b44899c321"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/e056073b-fbc4-4dce-9676-cfeb0b2d6b76"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/e113a4b1-aff5-4cc7-aaaa-219baede1101"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/e1df2e19-b5e1-4ce9-9f44-5ed82d4dde31"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/e2e0ea8a-e5b7-48d8-b3f2-8a74449f53f8"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/e2ee7127-ddf9-4b2b-988a-48eb2c1e0876"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/e4abb03c-41cd-4603-a01c-aa28c8cc3dbc"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/e5559d2c-afce-4957-8c05-64cba2540629"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/e64ec2f9-2848-4f88-8452-5a180980ba7e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/e7701559-d9ca-4f17-8548-47f05721a1de"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/e7e5fb6b-9352-4707-ad6b-a653384fe925"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/e835464b-badc-433d-86a4-e6fc203af9b6"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/e9a9e605-7646-4692-8884-5835cf04f30e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/eaecf19f-742f-41e2-83e9-5a8aa93110eb"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/eb1ddb24-a69d-49db-ad27-58e16291edba"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ec3fec58-42c0-4340-aebb-7eefbfa10ed9"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ecbf8902-2bb6-45fb-b1d0-51c7379a8f70"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ed1bfa85-7063-45a5-8d60-85aead4269bf"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ed40d7e3-1c0c-4d76-bf1a-b3f52df37edf"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ee68fda8-e2da-4573-81fd-7df2b7b64b47"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/eef609ff-227b-42af-a4c2-5ab80fd1a068"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ef6f1322-f538-45d2-8a7e-0fa4a8e6424b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/f1cfb689-3a02-4b5e-bbc3-46e602d341aa"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/f21a1dd0-a976-4c69-a3f0-bf90419467a2"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/f2b80df6-7ae1-4932-9fc9-2df573c06358"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/f35334a6-7912-4e3a-8d24-713939fae158"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/f3d96727-9804-43a4-a09c-a50e024a902d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/f42e70b3-351e-463a-b988-3a57be833c1d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/f489b2c0-0336-4e80-b94d-7216ecb7f700"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/f4979db8-4cc1-41b5-990c-697f35cc6f43"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/f4c732d0-1ab4-4f13-9f54-652f922c44ac"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/f51855ce-de57-4226-ae8f-41a56aa98000"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/f51d4e0e-6720-4d31-9a94-77e43b998ded"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/f6659615-0958-458c-a210-85e185e0e0cb"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/fc1c5c60-a24b-4b75-b229-3db85cc121ab"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/fc27181e-726f-4728-83f2-847b587e4f77"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/fc3d873b-9b0c-4445-bcd0-5d0d00c3755c"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/fc54da10-1b89-4ee9-b23d-930ee673e5c3"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/fd9d7f01-bdd1-43b5-925b-de0ad1366695"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/fe45b80d-7799-4cb0-99fa-8e3fecbe1433"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/fecebe64-c3e4-442a-ad7c-6fbfb8689502"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ff39bc9d-b6b9-4edf-96ea-dee4896c85c3"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ff5f67f4-8d8f-4eb1-9e1d-93193a138789"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ff7998e0-953d-4fdb-8be2-0085b4b15be7"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/ffcb1db9-1535-409e-bdeb-a67b09491a80"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/0a09f46e-589f-49c7-b664-3adbfa768819"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/0a38c7d0-4dcf-4bc5-bf34-d9fa39b85978"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/0a3d4eef-8189-4458-88ca-523057cc328b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/0b459241-e82e-4ce8-a020-297562349ca4"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/0c2e1183-b15b-4020-b8e7-a79bb8e100e0"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/0ce16162-fcf1-46d8-84bb-dbcba9bfd044"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/0030ed6b-39cf-4ade-97bb-bd2fe0f98633"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/02a34a9d-d814-4c9c-a8ed-a39641043411"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/02c5b075-0bf0-40e5-8f89-bbedb9f25c11"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/027b5fd4-7c4f-45de-9ce6-e842abef8954"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/03b04fce-ad21-4a44-9628-ededad8521c7"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/0335bf90-b99d-46cf-9085-99a81750aeeb"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/04d45177-5dd2-4ea0-84b9-9cc12122ef59"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/0435f1da-3abe-47da-90a5-e58e0ded53d2"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/059457ce-59a8-49f3-b853-32d660731b2d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/071d5147-0335-4a25-a31e-d610fd39a959"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/078902c4-d6b5-4836-8e7e-33cd58e43b94"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/08fc4309-3016-4b5d-bbc1-117da6c81cda"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/081f0b72-6b84-4527-a30f-63d62aeb98a2"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/0936afd8-fdc8-4526-825a-9cb144f4fff2"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/095c3597-7cab-49c2-ab1d-87f2b536a37b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/096fb73d-e4c0-4485-bb32-3ef6ee2da1d9"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/1bc2642b-ef4b-4a24-9d93-ab4914d2a086"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/1c27e315-8946-4802-917a-11ad5d8499c0"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/1e1a0df0-148b-4cb4-9484-f05129785066"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/1e47bf4e-a15c-4b01-9530-df11c521c0ef"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/1e615d99-c7b6-4b55-8d77-84fc7fd3cc9a"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/1f2d2d47-4f31-4ec1-912f-d851e8bb4312"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/10d38043-60bb-430d-9e81-64ad209edd60"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/13d93c82-bc03-4567-92d9-5642552183d8"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/142a1d3e-ceeb-40ec-af5c-2c98a2067db0"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/145c4c69-6ede-4d0d-b274-126a00d82feb"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/1491f8a4-de6b-4aa8-98c0-0057d740cec7"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/15e516fb-5e23-4fa9-9d30-71e3f08937db"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/1546e681-d08c-4ccb-aac0-a8a831629611"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/16d7c1de-f8d5-4572-ac15-987f37f5e686"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/16093e4c-e9fa-45c3-8308-5be260b70243"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/17a603fa-5e04-4263-9007-d585ab413624"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/181d0f75-4262-4b80-81b9-ad87640e8aaa"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/19c4c6e8-f1ac-4da8-a41b-7c59a12cc09a"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/19726361-a9b0-4463-ba8a-f20a881290c6"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/198dbd49-c9ac-40f9-98d4-e7ebd216e5a1"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/1981999a-8fba-4c0c-9ee1-1418b4d5a313"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/2a24192f-c597-492c-b1d1-3f1f45cc9d40"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/2af7f17b-d753-4b6c-9c84-bd5a4203d637"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/2b0d278d-b558-4758-95ab-ac259bef8b42"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/2b853cf9-caaf-433e-adf3-ea3e9c62642f"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/2e5ff8c9-4db5-4079-a7aa-8b3e1f1e2ee2"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/2f2000e8-b045-40de-b9cb-382bb4370930"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/2fae67c2-a22b-4f4e-b437-bed424f5a9f5"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/20381719-bd39-4a13-88ca-179339f6da67"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/22791cad-61e5-4e39-aeed-bc51918b22fe"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/23c730e2-ecf8-480d-bd38-7ac71b8bc59d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/23c7c3d6-02de-422d-882c-06d18809a62b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/23f7d741-abca-41c8-a268-ee763be20097"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/23085527-5bc1-4459-bcc5-71cffe7cf541"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/243939c9-2111-4654-bfcc-098fdfd3863b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/2445f1b0-5e9b-49c9-9e55-ee7ff113d942"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/247128a9-cb2d-4b65-968e-967c1630f07b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/266427b0-4028-4bab-b0c8-1ee2154c38b1"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/270b276a-2988-43e3-b8d2-d70416a4c16e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/27928ccb-c092-4bb8-b6d9-14ce112ea30e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/29bf2b57-bdab-4c23-922c-86e059aa2324"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/29002543-a19c-4dad-8a4e-eb047f24a612"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/293698c1-f8c4-4709-af23-ee46b2d5bb68"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/3a10dec8-e00c-4fb8-b2c9-78f75d3f034d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/3ac02b12-92bb-412f-8b8e-77dcabf960c2"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/3acf2ce0-387c-4354-9e98-216b7f1f3005"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/3b2e175e-d8b6-454b-a078-fd92eb2c7f22"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/3b9e41b9-7fa8-413b-b2b0-ad25d8caca18"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/3b9efdc6-bc6a-46f8-b7a0-ccef7d30d7bb"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/3f6300ad-7a44-4421-b056-b27030f92ffd"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/3ff4a4a4-5da1-4519-8c69-3b8e7ab92aca"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/3089acde-b38a-4ca2-96f4-e567e7fa6986"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/315caf0c-4c3a-4fa5-b461-030c5fdfaf98"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/319adc2d-5caa-4571-82ba-258c1ef05111"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/324b87e2-3e2b-434b-b464-aba670dbbde5"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/334dd758-de71-4d88-9d97-6b81dd4f93dc"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/336a83bf-48c3-426e-8f84-31d83c38f6f7"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/340f1ef3-12ab-4aa3-9014-27f7e559d7c0"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/35cb9368-65dc-4496-ac58-21235a2f815d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/355aedfb-5927-41ee-863c-1bbf24e75c85"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/38f095a1-eeee-4a44-9f30-13471480cbb3"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/387e5c46-ba2c-496f-b7c2-89b721f3e1eb"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/39bfed76-af7d-4ac2-af63-fd61031caf3f"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/4af52c29-6ad2-4520-b9e5-9dde8e486ed1"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/4ccb0169-c8f3-4bde-af0a-bebcf11b5927"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/4d20687e-39c8-4e69-b40f-0058b087786e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/4d31601d-c37d-4746-9928-e24c8a6d4db7"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/4d69c67e-fa23-4f8d-ab51-f7200806fefd"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/40406273-bd10-4c92-b468-3d0f3848f411"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/40926c4e-5087-4df2-b1c1-f39b356a5ee3"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/41a0838f-4706-42cc-b50e-5177e451aa1e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/41a93f6b-dd5a-468e-818e-5f1bb8a961e8"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/4384704d-a4d0-4880-8b03-7f91ce4fdfdf"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/45a68b9a-0739-46b4-8961-aeef67e21e7d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/4577aa45-9c72-4c6a-a7db-1303198a1cf2"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/46b64f1d-8c2a-4c5d-bb03-3983eaf5dafd"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/46fd5111-195b-458c-93f8-fe4b0a4916b3"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/47960c1c-031e-48ee-b954-137c44439da4"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/48cde2ff-f634-435f-99af-82872d592a6a"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/48d4605c-e4da-4602-81a7-8a3396bcc1f0"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/4963d3f4-11b6-490b-8efe-6128fa493e4e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/5acd25c4-09be-48e3-ab9b-b04520bbe741"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/5c524216-a727-40bc-9d80-da367cc3ee8a"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/5cd15033-98ed-4998-bd45-b51fdcb2512a"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/5ceef8fe-c116-42f2-84e2-d67c36a268f7"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/5db3452b-65d5-4024-beb6-f538187bdf58"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/5e2c9949-50d8-47ea-9cf9-318019af01a2"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/5e38804f-0f89-409b-a745-cd72f241ae97"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/5e9d0afc-5cdf-43ab-9771-6fd128ad1bb2"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/5ee2fabf-eb62-4636-8378-01dadb0f595e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/5f1d7204-0e42-4870-acfe-e8ee5022c518"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/50e2e691-3dc7-4812-b6cb-2a8a663e5037"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/50128655-a124-47f1-8d82-45a7fe2d35c9"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/51bd0626-26ec-45c4-9e22-ff727a2905da"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/51d0176e-b124-4f06-b4f0-e8fea294e1de"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/514869fd-888c-4e6e-a134-437a4d69469c"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/53bb64a5-4357-4c55-861e-f1cec2820ab4"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/53fa3379-c745-4f20-985f-4ee86d6bad6e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/54c35862-8698-4cda-b1d1-ee1ff07d22ed"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/5576f4eb-f71c-4826-8b61-c94689723212"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/573be0ef-1594-4fac-be46-560d3644ac46"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/59dd35d1-45d7-4065-bf47-f840dc3f11ae"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/5938faae-8bb3-4fbd-a326-3a4c6f775b84"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/6ab17084-e122-4291-a292-fa1cf445d8fa"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/6b06a167-fb33-405a-9069-15a7a9f9bf81"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/6ba53533-7009-4b5d-906e-beaa7f886dac"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/6bc960c7-c243-4fe3-a313-98ff821d67cf"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/6c30188e-8074-4723-91cf-56d4b5925558"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/6f2d0dce-215f-413f-af21-febb9bf7109c"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/6fc727fa-badf-4f3c-9ede-dbad38bdddc0"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/6ff7f896-c2a3-4828-ad32-4de145c7f617"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/62561504-dec4-407b-aad1-828de2b61783"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/63e368bc-39bd-46dd-8fbd-03d486d74bb6"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/682c80f9-2857-4274-8322-6809e3942b23"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/694b055d-7128-4187-a667-e022eb2a1101"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/7a67d0d8-79b8-4998-8840-dd356b14a012"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/7b06fbb4-88d3-490b-81d0-6b617a8b8d37"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/7b1a197a-be08-4436-8279-27165659f9ef"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/7c0d8a54-02e8-4ee0-9b19-548a88825fe6"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/7c895876-118e-4ac9-99e2-44e83a82bfc0"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/7de94ed3-32fe-4e0b-b295-3805e5ebee1c"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/7dfc1b8a-4bad-40ce-b3ac-2bc1b008ed0f"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/7f66572d-b97e-44d4-a0fe-b5580a7234eb"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/70d6a52d-82fe-4ab8-8350-6e4d50d45221"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/707d5969-ce9e-4fa5-80b0-945efa26a3a7"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/71b24197-908d-4902-95ea-11c3fe494f5c"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/71f258c0-ff06-4b54-bb43-f85ec4ec1179"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/72a42037-3c56-4282-98ed-38704b9b60ce"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/73c72c4b-b9a9-483c-8246-c87a34fff526"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/74cf32c6-d380-4396-9aa5-813ca569924b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/74e0c163-21e4-43cb-a231-cee64ac032bf"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/740c4b42-9e9b-4a1d-84ec-6e223e7f42d1"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/741b4cfb-5405-422a-b890-800e29951ff4"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/7415ee7f-6c04-4c1a-9b99-7d72a4eddbb6"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/75f75aa6-97db-4a1e-a2a9-b78d7e8d2b0b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/7520e91d-7e11-4cac-9eca-4ee717aed828"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/76bdbf46-37f6-40eb-9c43-0bb754814789"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/766a4613-a168-4943-a8bd-cdfd661d26f7"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/77cc4287-61be-47fb-aaee-df8bf842cd52"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/77ce0c1d-91d0-491f-bc09-18f6a7991d6e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/77f98965-e1c8-40d9-808d-723181215dd5"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/778f660f-a99c-4c47-bf3d-057ecc80765a"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/78a3f996-13c7-46c5-85fc-8c99897306c8"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/78f84240-5395-4356-8724-f509f16ef15c"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/78883f27-1ec1-4c73-b286-136908e94755"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/791e455b-5e4a-434f-b053-2cd8528c6cee"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/797dc6bc-c9c1-482c-b7b3-90f1336b121b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/8a85b5cb-d15f-4eee-ae48-a39f72d45bfc"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/8c351593-9c2e-4e57-ad3c-438e449294f2"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/8e79073b-e9f1-490e-8dde-25b376ffc058"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/8ec035fd-d8b7-4e97-a352-4697e82689d9"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/8ee849fa-6b47-413a-8bef-1ce69935c970"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/8f82bd1f-1e9e-4064-b977-5f3cd0ae75f9"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/8ff59362-18ef-4738-ba12-770e73ea1539"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/80fabbfd-d3a6-4a98-9c76-db6024ccdaf6"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/80fe4e2a-6ca6-4e4d-b81e-69d14e74ee0e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/812d58ed-9283-42b4-865e-d5c2dad823aa"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/82357745-ed79-4bf3-a597-188ece78a198"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/83a603ad-d2d3-4b14-8835-092e1c8a774e"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/8405f010-78d9-4856-97a2-ab57d0f54783"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/868932f1-e8a2-4742-893d-1a7e30aba14d"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/869fe209-d342-4186-b93a-15c18520c2a0"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/87ea645a-3bf1-4091-85e5-5d311d45168c"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/87fee437-7e18-4cd7-bfda-7af55bb2bbf5"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/88d3dbfc-2acb-4df2-9107-49eafa0cdd2f"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/88d6538d-7991-46a8-affd-c982cb6d1361"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/88726e7f-fa54-4d67-90f7-ca781f9832d0"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/89e94960-2bdb-4521-b570-0f264a4ec266"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/89579c98-0e0e-4991-bfe7-eb4b85f1ab85"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/9c4d7f4f-946b-4b5e-920c-ec8e0967d040"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/9c5e5d98-01fe-4eae-bca6-4ecefd0257bd"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/9c65ea00-1479-4046-a3d3-863fa09ab07b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/90383ae9-1fd4-4e76-af18-15386d600d12"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/9114b514-3605-4d30-b36c-6dcc579472d7"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/912bfcf4-949d-4301-8010-f740c0da9b9b"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/9192bf77-3980-45fc-a387-cc89ae7a4aed"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/93d06a67-8e5d-410d-a5f8-c7d55acf994f"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/93d33a21-1690-4004-882f-8702c47e8908"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/930a32ab-26cf-4563-a0aa-c533a6fd9adc"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/93686154-cfff-4581-b5cf-1c206c1d7e91"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/96a3d08f-d85d-4910-9b11-f1c4930f6ada"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/96e8f57c-c1ec-484d-830b-01833419e7db"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/9644c35b-0afa-402f-a757-e0963beec3c3"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/9712a6df-3e7a-4489-8d30-dd64e8ef5fa2"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/976944dd-ec3c-4aa4-8dbf-61d8f8655dea"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/977c1908-4c50-47c4-92cf-b99d7f5c8d5a"/>
+        <ns2:includes rdf:resource="http://semantic.bosch.com/drivingscene/v02/data/98ff13d1-b168-4ea3-9e29-d578d5221634"/>
+        <ns2:includesType rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <ns2:includesType rdf:resource="http://semantic.bosch.com/drivingscene/v02/Pedestrian"/>
+        <ns2:includesType rdf:resource="http://semantic.bosch.com/drivingscene/v02/PedestrianWithObject"/>
+        <ns2:includesType rdf:resource="http://semantic.bosch.com/drivingscene/v02/RollingContainer"/>
+        <ns2:includesType rdf:resource="http://semantic.bosch.com/drivingscene/v02/Vehicle"/>
+        <rdfs:label>ab08864d-0f86-4b5d-b1bd-2389066e344a</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ab8c1cc2-40ad-4d60-adc7-77e812b16665 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ab8c1cc2-40ad-4d60-adc7-77e812b16665">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, ab8c1cc2-40ad-4d60-adc7-77e812b16665</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/abfebe46-0176-4263-9d45-9afacb91a207 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/abfebe46-0176-4263-9d45-9afacb91a207">
+        <rdfs:label>MediumSizedTruck, abfebe46-0176-4263-9d45-9afacb91a207</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/acb6b22d-fb75-492c-9ff1-2496a43819a5 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/acb6b22d-fb75-492c-9ff1-2496a43819a5">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, acb6b22d-fb75-492c-9ff1-2496a43819a5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/acc2ffd3-5bab-4693-8d2b-06273476a69f -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/acc2ffd3-5bab-4693-8d2b-06273476a69f">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, acc2ffd3-5bab-4693-8d2b-06273476a69f</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ada24e6b-8980-427b-8806-b1c50b82682d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ada24e6b-8980-427b-8806-b1c50b82682d">
+        <rdfs:label>MediumSizedTruck, ada24e6b-8980-427b-8806-b1c50b82682d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ae1cc476-0961-411c-946d-fffbfddecca1 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ae1cc476-0961-411c-946d-fffbfddecca1">
+        <rdfs:label>PickupTruck, ae1cc476-0961-411c-946d-fffbfddecca1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ae76cbf0-16f3-4935-ac4e-143dbc9b8329 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ae76cbf0-16f3-4935-ac4e-143dbc9b8329">
+        <rdfs:label>Parked, ae76cbf0-16f3-4935-ac4e-143dbc9b8329</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/af2a1002-fe47-47e3-a731-13ff36cae0a6 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/af2a1002-fe47-47e3-a731-13ff36cae0a6"/>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/b0c42613-a0ba-410e-ab44-f98139191e8e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/b0c42613-a0ba-410e-ab44-f98139191e8e">
+        <rdfs:label>Parked, b0c42613-a0ba-410e-ab44-f98139191e8e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/b1c76e29-cf5b-44b0-95e7-418926d8579c -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/b1c76e29-cf5b-44b0-95e7-418926d8579c">
+        <rdfs:label>Standing, b1c76e29-cf5b-44b0-95e7-418926d8579c</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/b255cb00-6a67-4661-b412-507bfb5a188a -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/b255cb00-6a67-4661-b412-507bfb5a188a">
+        <rdfs:label>Parked, b255cb00-6a67-4661-b412-507bfb5a188a</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/b2d7d6b4-a219-4aae-8479-c857c47a9149 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/b2d7d6b4-a219-4aae-8479-c857c47a9149">
+        <rdfs:label>Stopped, b2d7d6b4-a219-4aae-8479-c857c47a9149</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/b3a7824e-1fdb-411a-919d-e461774edd2e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/b3a7824e-1fdb-411a-919d-e461774edd2e">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, b3a7824e-1fdb-411a-919d-e461774edd2e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/b3c23c8f-ed4e-42ed-afba-53a02a9ea98d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/b3c23c8f-ed4e-42ed-afba-53a02a9ea98d">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, b3c23c8f-ed4e-42ed-afba-53a02a9ea98d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/b90e84ed-6ba0-4090-b1eb-4bc1ba02d6c6 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/b90e84ed-6ba0-4090-b1eb-4bc1ba02d6c6">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, b90e84ed-6ba0-4090-b1eb-4bc1ba02d6c6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/bade857d-08a8-4cd1-86e1-8ab537190e34 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/bade857d-08a8-4cd1-86e1-8ab537190e34">
+        <rdfs:label>Parked, bade857d-08a8-4cd1-86e1-8ab537190e34</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/bbc40b63-e4ca-4bb1-bce1-b98f0e151b7d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/bbc40b63-e4ca-4bb1-bce1-b98f0e151b7d">
+        <rdfs:label>Walking, bbc40b63-e4ca-4bb1-bce1-b98f0e151b7d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/bcfd2faa-8969-4d2f-acdd-3ff198c6cc83 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/bcfd2faa-8969-4d2f-acdd-3ff198c6cc83">
+        <rdfs:label>Parked, bcfd2faa-8969-4d2f-acdd-3ff198c6cc83</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/bd237ee8-a5e7-4d22-8c6c-b06ad4874e73 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/bd237ee8-a5e7-4d22-8c6c-b06ad4874e73">
+        <rdfs:label>RoadSign, bd237ee8-a5e7-4d22-8c6c-b06ad4874e73</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/bd29c719-28f5-4e87-96f7-6ca27e0bbea8 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/bd29c719-28f5-4e87-96f7-6ca27e0bbea8">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, bd29c719-28f5-4e87-96f7-6ca27e0bbea8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/bd3498ad-d77b-4fc8-8d9b-fdf2efb73eff -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/bd3498ad-d77b-4fc8-8d9b-fdf2efb73eff">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, bd3498ad-d77b-4fc8-8d9b-fdf2efb73eff</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/bd54a7ec-383b-4f5d-aac7-4cee716a9ac7 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/bd54a7ec-383b-4f5d-aac7-4cee716a9ac7">
+        <rdfs:label>VehicleMoving, bd54a7ec-383b-4f5d-aac7-4cee716a9ac7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/beceef9f-bcb7-45a6-a728-1c44a9bc2426 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/beceef9f-bcb7-45a6-a728-1c44a9bc2426">
+        <rdfs:label>Parked, beceef9f-bcb7-45a6-a728-1c44a9bc2426</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/bf03763a-973e-4d3a-a9d8-e525f9033308 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/bf03763a-973e-4d3a-a9d8-e525f9033308">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, bf03763a-973e-4d3a-a9d8-e525f9033308</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c031d5f1-8066-4fc3-8d50-27f254ec622c -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c031d5f1-8066-4fc3-8d50-27f254ec622c">
+        <rdfs:label>VehicleMoving, c031d5f1-8066-4fc3-8d50-27f254ec622c</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c037074a-f057-4abf-8dc1-08f48dcf61c2 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c037074a-f057-4abf-8dc1-08f48dcf61c2">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, c037074a-f057-4abf-8dc1-08f48dcf61c2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c0a072c3-bf39-42d2-9891-eda6e8e1e70b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c0a072c3-bf39-42d2-9891-eda6e8e1e70b">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, c0a072c3-bf39-42d2-9891-eda6e8e1e70b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c2462533-f1de-48e1-b8cf-9238216962a4 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c2462533-f1de-48e1-b8cf-9238216962a4">
+        <rdfs:label>VehicleMoving, c2462533-f1de-48e1-b8cf-9238216962a4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c2d09ec1-4724-4ca3-bdba-bf753fae8db0 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c2d09ec1-4724-4ca3-bdba-bf753fae8db0">
+        <rdfs:label>VehicleMoving, c2d09ec1-4724-4ca3-bdba-bf753fae8db0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c4c88810-e536-4935-826c-4eb7b1cd5c31 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c4c88810-e536-4935-826c-4eb7b1cd5c31">
+        <rdfs:label>Parked, c4c88810-e536-4935-826c-4eb7b1cd5c31</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c6cd49db-bc46-4e1c-90c3-9cb76b16c2aa -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c6cd49db-bc46-4e1c-90c3-9cb76b16c2aa">
+        <rdfs:label>Parked, c6cd49db-bc46-4e1c-90c3-9cb76b16c2aa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c819db00-760a-404a-8fe3-1f24b1a96fee -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c819db00-760a-404a-8fe3-1f24b1a96fee">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Pedestrian"/>
+        <rdfs:label>Pedestrian, c819db00-760a-404a-8fe3-1f24b1a96fee</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c8243967-94dd-431b-b93e-b0855d73bf0c -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c8243967-94dd-431b-b93e-b0855d73bf0c">
+        <rdfs:label>VehicleMoving, c8243967-94dd-431b-b93e-b0855d73bf0c</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c8697ea3-4012-4f05-907d-11fa0809af27 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c8697ea3-4012-4f05-907d-11fa0809af27">
+        <rdfs:label>RoadSign, c8697ea3-4012-4f05-907d-11fa0809af27</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c9213c31-6b75-4659-87ee-e82905942626 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c9213c31-6b75-4659-87ee-e82905942626">
+        <rdfs:label>RoadSign, c9213c31-6b75-4659-87ee-e82905942626</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c93bf711-4655-4470-89d6-7641c294fcce -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c93bf711-4655-4470-89d6-7641c294fcce">
+        <rdfs:label>Parked, c93bf711-4655-4470-89d6-7641c294fcce</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c9d7b286-4c82-4457-ad18-bd794e7ab51b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c9d7b286-4c82-4457-ad18-bd794e7ab51b">
+        <rdfs:label>VehicleMoving, c9d7b286-4c82-4457-ad18-bd794e7ab51b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/c9e93b55-43fd-48a7-898b-14fc34ba9173 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/c9e93b55-43fd-48a7-898b-14fc34ba9173">
+        <rdfs:label>VehicleMoving, c9e93b55-43fd-48a7-898b-14fc34ba9173</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ca5bcae8-712f-4236-ac72-339ad9632830 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ca5bcae8-712f-4236-ac72-339ad9632830">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Vehicle"/>
+        <rdfs:label>Vehicle, ca5bcae8-712f-4236-ac72-339ad9632830</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/cad95c40-3ce7-4ad9-9f66-ff391a75c22e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/cad95c40-3ce7-4ad9-9f66-ff391a75c22e">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, cad95c40-3ce7-4ad9-9f66-ff391a75c22e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/cb195645-0126-4258-a792-22ae9b1e0cd6 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/cb195645-0126-4258-a792-22ae9b1e0cd6">
+        <rdfs:label>Parked, cb195645-0126-4258-a792-22ae9b1e0cd6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/cc27fe98-3bac-4c47-bbb3-d100f390cbd7 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/cc27fe98-3bac-4c47-bbb3-d100f390cbd7">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, cc27fe98-3bac-4c47-bbb3-d100f390cbd7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/cc3b4c86-e28d-4d5a-80c0-0bf824062354 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/cc3b4c86-e28d-4d5a-80c0-0bf824062354">
+        <rdfs:label>RoadSign, cc3b4c86-e28d-4d5a-80c0-0bf824062354</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/cc63482d-1787-4d15-852e-52f07e3aacf9 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/cc63482d-1787-4d15-852e-52f07e3aacf9">
+        <rdfs:label>VehicleMoving, cc63482d-1787-4d15-852e-52f07e3aacf9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/cc905b70-0e27-4b40-93c5-74a2d293bd75 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/cc905b70-0e27-4b40-93c5-74a2d293bd75">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, cc905b70-0e27-4b40-93c5-74a2d293bd75</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/cd8c6fb2-603b-4690-a1ab-9f4e382c63bf -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/cd8c6fb2-603b-4690-a1ab-9f4e382c63bf">
+        <rdfs:label>Parked, cd8c6fb2-603b-4690-a1ab-9f4e382c63bf</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ce56b876-38d5-4649-87ab-d46cd224aff1 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ce56b876-38d5-4649-87ab-d46cd224aff1">
+        <rdfs:label>RoadSign, ce56b876-38d5-4649-87ab-d46cd224aff1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/cfb54dbe-7691-4115-8536-40c08ca1f345 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/cfb54dbe-7691-4115-8536-40c08ca1f345">
+        <rdfs:label>Parked, cfb54dbe-7691-4115-8536-40c08ca1f345</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/d1d19fe0-7bb1-4da3-a7d8-3bcc43852b89 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/d1d19fe0-7bb1-4da3-a7d8-3bcc43852b89">
+        <rdfs:label>Parked, d1d19fe0-7bb1-4da3-a7d8-3bcc43852b89</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/d1e19c19-e619-47f7-be64-bb4c771e52b1 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/d1e19c19-e619-47f7-be64-bb4c771e52b1">
+        <rdfs:label>Parked, d1e19c19-e619-47f7-be64-bb4c771e52b1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/d2c94153-ccbb-476c-b4eb-e280a4aee44d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/d2c94153-ccbb-476c-b4eb-e280a4aee44d">
+        <rdfs:label>Parked, d2c94153-ccbb-476c-b4eb-e280a4aee44d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/d2d67010-8e21-4b84-8a57-b7e4e5464bc8 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/d2d67010-8e21-4b84-8a57-b7e4e5464bc8">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, d2d67010-8e21-4b84-8a57-b7e4e5464bc8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/d3833faf-0459-4bc0-88bb-4faee814386e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/d3833faf-0459-4bc0-88bb-4faee814386e">
+        <rdfs:label>Parked, d3833faf-0459-4bc0-88bb-4faee814386e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/d5677e23-2eb0-4064-a49b-b82bfe62a24f -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/d5677e23-2eb0-4064-a49b-b82bfe62a24f">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, d5677e23-2eb0-4064-a49b-b82bfe62a24f</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/d896beca-a402-42d9-951e-01510748ad70 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/d896beca-a402-42d9-951e-01510748ad70"/>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/d9d754f1-41dc-48cd-b3b8-3c69429c28cd -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/d9d754f1-41dc-48cd-b3b8-3c69429c28cd">
+        <rdfs:label>PickupTruck, d9d754f1-41dc-48cd-b3b8-3c69429c28cd</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/db7631c6-4c88-4b46-a2db-4b70dbeaeb52 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/db7631c6-4c88-4b46-a2db-4b70dbeaeb52">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, db7631c6-4c88-4b46-a2db-4b70dbeaeb52</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/db8ddd29-b412-46c0-ac8f-4cf8f1e53769 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/db8ddd29-b412-46c0-ac8f-4cf8f1e53769">
+        <rdfs:label>VehicleMoving, db8ddd29-b412-46c0-ac8f-4cf8f1e53769</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/dc2d60a1-9192-440c-ac2e-71cc509be190 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/dc2d60a1-9192-440c-ac2e-71cc509be190">
+        <rdfs:label>Parked, dc2d60a1-9192-440c-ac2e-71cc509be190</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/dd656ef2-b829-421e-860a-fba725602496 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/dd656ef2-b829-421e-860a-fba725602496">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, dd656ef2-b829-421e-860a-fba725602496</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/dd8e08b7-8498-4f6c-96cd-e645702e024d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/dd8e08b7-8498-4f6c-96cd-e645702e024d">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, dd8e08b7-8498-4f6c-96cd-e645702e024d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/dfea52e5-a9e8-4457-a007-4984af684fde -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/dfea52e5-a9e8-4457-a007-4984af684fde">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, dfea52e5-a9e8-4457-a007-4984af684fde</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/e055442c-5f86-4fdf-be3f-46b44899c321 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/e055442c-5f86-4fdf-be3f-46b44899c321">
+        <rdfs:label>PickupTruck, e055442c-5f86-4fdf-be3f-46b44899c321</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/e056073b-fbc4-4dce-9676-cfeb0b2d6b76 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/e056073b-fbc4-4dce-9676-cfeb0b2d6b76">
+        <rdfs:label>Parked, e056073b-fbc4-4dce-9676-cfeb0b2d6b76</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/e113a4b1-aff5-4cc7-aaaa-219baede1101 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/e113a4b1-aff5-4cc7-aaaa-219baede1101">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, e113a4b1-aff5-4cc7-aaaa-219baede1101</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/e1df2e19-b5e1-4ce9-9f44-5ed82d4dde31 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/e1df2e19-b5e1-4ce9-9f44-5ed82d4dde31">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, e1df2e19-b5e1-4ce9-9f44-5ed82d4dde31</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/e2e0ea8a-e5b7-48d8-b3f2-8a74449f53f8 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/e2e0ea8a-e5b7-48d8-b3f2-8a74449f53f8">
+        <rdfs:label>Parked, e2e0ea8a-e5b7-48d8-b3f2-8a74449f53f8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/e2ee7127-ddf9-4b2b-988a-48eb2c1e0876 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/e2ee7127-ddf9-4b2b-988a-48eb2c1e0876">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, e2ee7127-ddf9-4b2b-988a-48eb2c1e0876</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/e4abb03c-41cd-4603-a01c-aa28c8cc3dbc -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/e4abb03c-41cd-4603-a01c-aa28c8cc3dbc">
+        <rdfs:label>Parked, e4abb03c-41cd-4603-a01c-aa28c8cc3dbc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/e5559d2c-afce-4957-8c05-64cba2540629 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/e5559d2c-afce-4957-8c05-64cba2540629">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, e5559d2c-afce-4957-8c05-64cba2540629</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/e64ec2f9-2848-4f88-8452-5a180980ba7e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/e64ec2f9-2848-4f88-8452-5a180980ba7e">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, e64ec2f9-2848-4f88-8452-5a180980ba7e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/e7701559-d9ca-4f17-8548-47f05721a1de -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/e7701559-d9ca-4f17-8548-47f05721a1de">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, e7701559-d9ca-4f17-8548-47f05721a1de</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/e7e5fb6b-9352-4707-ad6b-a653384fe925 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/e7e5fb6b-9352-4707-ad6b-a653384fe925">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Pedestrian"/>
+        <rdfs:label>Pedestrian, e7e5fb6b-9352-4707-ad6b-a653384fe925</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/e835464b-badc-433d-86a4-e6fc203af9b6 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/e835464b-badc-433d-86a4-e6fc203af9b6">
+        <rdfs:label>Parked, e835464b-badc-433d-86a4-e6fc203af9b6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/e9a9e605-7646-4692-8884-5835cf04f30e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/e9a9e605-7646-4692-8884-5835cf04f30e">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, e9a9e605-7646-4692-8884-5835cf04f30e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/eaecf19f-742f-41e2-83e9-5a8aa93110eb -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/eaecf19f-742f-41e2-83e9-5a8aa93110eb">
+        <rdfs:label>Parked, eaecf19f-742f-41e2-83e9-5a8aa93110eb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/eb1ddb24-a69d-49db-ad27-58e16291edba -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/eb1ddb24-a69d-49db-ad27-58e16291edba">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, eb1ddb24-a69d-49db-ad27-58e16291edba</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ec3fec58-42c0-4340-aebb-7eefbfa10ed9 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ec3fec58-42c0-4340-aebb-7eefbfa10ed9">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, ec3fec58-42c0-4340-aebb-7eefbfa10ed9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ecbf8902-2bb6-45fb-b1d0-51c7379a8f70 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ecbf8902-2bb6-45fb-b1d0-51c7379a8f70">
+        <rdfs:label>Parked, ecbf8902-2bb6-45fb-b1d0-51c7379a8f70</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ed1bfa85-7063-45a5-8d60-85aead4269bf -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ed1bfa85-7063-45a5-8d60-85aead4269bf">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, ed1bfa85-7063-45a5-8d60-85aead4269bf</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ed40d7e3-1c0c-4d76-bf1a-b3f52df37edf -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ed40d7e3-1c0c-4d76-bf1a-b3f52df37edf">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, ed40d7e3-1c0c-4d76-bf1a-b3f52df37edf</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ee68fda8-e2da-4573-81fd-7df2b7b64b47 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ee68fda8-e2da-4573-81fd-7df2b7b64b47">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, ee68fda8-e2da-4573-81fd-7df2b7b64b47</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/eef609ff-227b-42af-a4c2-5ab80fd1a068 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/eef609ff-227b-42af-a4c2-5ab80fd1a068">
+        <rdfs:label>Parked, eef609ff-227b-42af-a4c2-5ab80fd1a068</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ef6f1322-f538-45d2-8a7e-0fa4a8e6424b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ef6f1322-f538-45d2-8a7e-0fa4a8e6424b">
+        <rdfs:label>Parked, ef6f1322-f538-45d2-8a7e-0fa4a8e6424b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/f1cfb689-3a02-4b5e-bbc3-46e602d341aa -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/f1cfb689-3a02-4b5e-bbc3-46e602d341aa">
+        <rdfs:label>RoadSign, f1cfb689-3a02-4b5e-bbc3-46e602d341aa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/f21a1dd0-a976-4c69-a3f0-bf90419467a2 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/f21a1dd0-a976-4c69-a3f0-bf90419467a2">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, f21a1dd0-a976-4c69-a3f0-bf90419467a2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/f2b80df6-7ae1-4932-9fc9-2df573c06358 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/f2b80df6-7ae1-4932-9fc9-2df573c06358">
+        <rdfs:label>Parked, f2b80df6-7ae1-4932-9fc9-2df573c06358</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/f35334a6-7912-4e3a-8d24-713939fae158 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/f35334a6-7912-4e3a-8d24-713939fae158">
+        <rdfs:label>VehicleMoving, f35334a6-7912-4e3a-8d24-713939fae158</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/f3d96727-9804-43a4-a09c-a50e024a902d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/f3d96727-9804-43a4-a09c-a50e024a902d">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, f3d96727-9804-43a4-a09c-a50e024a902d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/f42e70b3-351e-463a-b988-3a57be833c1d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/f42e70b3-351e-463a-b988-3a57be833c1d">
+        <rdfs:label>Walking, f42e70b3-351e-463a-b988-3a57be833c1d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/f489b2c0-0336-4e80-b94d-7216ecb7f700 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/f489b2c0-0336-4e80-b94d-7216ecb7f700">
+        <rdfs:label>MediumSizedTruck, f489b2c0-0336-4e80-b94d-7216ecb7f700</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/f4979db8-4cc1-41b5-990c-697f35cc6f43 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/f4979db8-4cc1-41b5-990c-697f35cc6f43">
+        <rdfs:label>Parked, f4979db8-4cc1-41b5-990c-697f35cc6f43</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/f4c732d0-1ab4-4f13-9f54-652f922c44ac -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/f4c732d0-1ab4-4f13-9f54-652f922c44ac">
+        <rdfs:label>Parked, f4c732d0-1ab4-4f13-9f54-652f922c44ac</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/f51855ce-de57-4226-ae8f-41a56aa98000 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/f51855ce-de57-4226-ae8f-41a56aa98000">
+        <rdfs:label>RoadSign, f51855ce-de57-4226-ae8f-41a56aa98000</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/f51d4e0e-6720-4d31-9a94-77e43b998ded -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/f51d4e0e-6720-4d31-9a94-77e43b998ded">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, f51d4e0e-6720-4d31-9a94-77e43b998ded</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/f6659615-0958-458c-a210-85e185e0e0cb -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/f6659615-0958-458c-a210-85e185e0e0cb">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/RollingContainer"/>
+        <rdfs:label>RollingContainer, f6659615-0958-458c-a210-85e185e0e0cb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/fc1c5c60-a24b-4b75-b229-3db85cc121ab -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/fc1c5c60-a24b-4b75-b229-3db85cc121ab">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, fc1c5c60-a24b-4b75-b229-3db85cc121ab</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/fc27181e-726f-4728-83f2-847b587e4f77 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/fc27181e-726f-4728-83f2-847b587e4f77">
+        <rdfs:label>Parked, fc27181e-726f-4728-83f2-847b587e4f77</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/fc3d873b-9b0c-4445-bcd0-5d0d00c3755c -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/fc3d873b-9b0c-4445-bcd0-5d0d00c3755c">
+        <rdfs:label>Parked, fc3d873b-9b0c-4445-bcd0-5d0d00c3755c</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/fc54da10-1b89-4ee9-b23d-930ee673e5c3 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/fc54da10-1b89-4ee9-b23d-930ee673e5c3">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, fc54da10-1b89-4ee9-b23d-930ee673e5c3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/fd9d7f01-bdd1-43b5-925b-de0ad1366695 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/fd9d7f01-bdd1-43b5-925b-de0ad1366695">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, fd9d7f01-bdd1-43b5-925b-de0ad1366695</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/fe45b80d-7799-4cb0-99fa-8e3fecbe1433 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/fe45b80d-7799-4cb0-99fa-8e3fecbe1433">
+        <rdfs:label>Parked, fe45b80d-7799-4cb0-99fa-8e3fecbe1433</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/fecebe64-c3e4-442a-ad7c-6fbfb8689502 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/fecebe64-c3e4-442a-ad7c-6fbfb8689502">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, fecebe64-c3e4-442a-ad7c-6fbfb8689502</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ff39bc9d-b6b9-4edf-96ea-dee4896c85c3 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ff39bc9d-b6b9-4edf-96ea-dee4896c85c3">
+        <rdfs:label>VehicleMoving, ff39bc9d-b6b9-4edf-96ea-dee4896c85c3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ff5f67f4-8d8f-4eb1-9e1d-93193a138789 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ff5f67f4-8d8f-4eb1-9e1d-93193a138789">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, ff5f67f4-8d8f-4eb1-9e1d-93193a138789</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ff7998e0-953d-4fdb-8be2-0085b4b15be7 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ff7998e0-953d-4fdb-8be2-0085b4b15be7">
+        <rdfs:label>LyingDown, ff7998e0-953d-4fdb-8be2-0085b4b15be7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/ffcb1db9-1535-409e-bdeb-a67b09491a80 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/ffcb1db9-1535-409e-bdeb-a67b09491a80">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, ffcb1db9-1535-409e-bdeb-a67b09491a80</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/0a09f46e-589f-49c7-b664-3adbfa768819 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/0a09f46e-589f-49c7-b664-3adbfa768819">
+        <rdfs:label>Parked, 0a09f46e-589f-49c7-b664-3adbfa768819</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/0a38c7d0-4dcf-4bc5-bf34-d9fa39b85978 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/0a38c7d0-4dcf-4bc5-bf34-d9fa39b85978">
+        <rdfs:label>Parked, 0a38c7d0-4dcf-4bc5-bf34-d9fa39b85978</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/0a3d4eef-8189-4458-88ca-523057cc328b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/0a3d4eef-8189-4458-88ca-523057cc328b">
+        <rdfs:label>RoadSign, 0a3d4eef-8189-4458-88ca-523057cc328b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/0b459241-e82e-4ce8-a020-297562349ca4 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/0b459241-e82e-4ce8-a020-297562349ca4">
+        <rdfs:label>Parked, 0b459241-e82e-4ce8-a020-297562349ca4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/0c2e1183-b15b-4020-b8e7-a79bb8e100e0 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/0c2e1183-b15b-4020-b8e7-a79bb8e100e0">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 0c2e1183-b15b-4020-b8e7-a79bb8e100e0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/0ce16162-fcf1-46d8-84bb-dbcba9bfd044 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/0ce16162-fcf1-46d8-84bb-dbcba9bfd044">
+        <rdfs:label>VehicleMoving, 0ce16162-fcf1-46d8-84bb-dbcba9bfd044</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/0002794b-581e-4ea8-9bc2-79606a38f9e4 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/0002794b-581e-4ea8-9bc2-79606a38f9e4"/>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/0030ed6b-39cf-4ade-97bb-bd2fe0f98633 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/0030ed6b-39cf-4ade-97bb-bd2fe0f98633">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 0030ed6b-39cf-4ade-97bb-bd2fe0f98633</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/02a34a9d-d814-4c9c-a8ed-a39641043411 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/02a34a9d-d814-4c9c-a8ed-a39641043411">
+        <rdfs:label>PickupTruck, 02a34a9d-d814-4c9c-a8ed-a39641043411</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/02c5b075-0bf0-40e5-8f89-bbedb9f25c11 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/02c5b075-0bf0-40e5-8f89-bbedb9f25c11">
+        <rdfs:label>PickupTruck, 02c5b075-0bf0-40e5-8f89-bbedb9f25c11</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/027b5fd4-7c4f-45de-9ce6-e842abef8954 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/027b5fd4-7c4f-45de-9ce6-e842abef8954">
+        <rdfs:label>Parked, 027b5fd4-7c4f-45de-9ce6-e842abef8954</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/03b04fce-ad21-4a44-9628-ededad8521c7 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/03b04fce-ad21-4a44-9628-ededad8521c7">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 03b04fce-ad21-4a44-9628-ededad8521c7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/0335bf90-b99d-46cf-9085-99a81750aeeb -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/0335bf90-b99d-46cf-9085-99a81750aeeb">
+        <rdfs:label>Parked, 0335bf90-b99d-46cf-9085-99a81750aeeb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/04d45177-5dd2-4ea0-84b9-9cc12122ef59 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/04d45177-5dd2-4ea0-84b9-9cc12122ef59">
+        <rdfs:label>VehicleMoving, 04d45177-5dd2-4ea0-84b9-9cc12122ef59</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/0435f1da-3abe-47da-90a5-e58e0ded53d2 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/0435f1da-3abe-47da-90a5-e58e0ded53d2">
+        <rdfs:label>Parked, 0435f1da-3abe-47da-90a5-e58e0ded53d2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/059457ce-59a8-49f3-b853-32d660731b2d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/059457ce-59a8-49f3-b853-32d660731b2d">
+        <rdfs:label>VehicleMoving, 059457ce-59a8-49f3-b853-32d660731b2d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/071d5147-0335-4a25-a31e-d610fd39a959 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/071d5147-0335-4a25-a31e-d610fd39a959">
+        <rdfs:label>VehicleMoving, 071d5147-0335-4a25-a31e-d610fd39a959</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/078902c4-d6b5-4836-8e7e-33cd58e43b94 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/078902c4-d6b5-4836-8e7e-33cd58e43b94">
+        <rdfs:label>VehicleMoving, 078902c4-d6b5-4836-8e7e-33cd58e43b94</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/08fc4309-3016-4b5d-bbc1-117da6c81cda -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/08fc4309-3016-4b5d-bbc1-117da6c81cda">
+        <rdfs:label>VehicleMoving, 08fc4309-3016-4b5d-bbc1-117da6c81cda</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/081f0b72-6b84-4527-a30f-63d62aeb98a2 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/081f0b72-6b84-4527-a30f-63d62aeb98a2">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 081f0b72-6b84-4527-a30f-63d62aeb98a2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/0936afd8-fdc8-4526-825a-9cb144f4fff2 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/0936afd8-fdc8-4526-825a-9cb144f4fff2">
+        <rdfs:label>VehicleMoving, 0936afd8-fdc8-4526-825a-9cb144f4fff2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/095c3597-7cab-49c2-ab1d-87f2b536a37b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/095c3597-7cab-49c2-ab1d-87f2b536a37b">
+        <rdfs:label>Parked, 095c3597-7cab-49c2-ab1d-87f2b536a37b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/096fb73d-e4c0-4485-bb32-3ef6ee2da1d9 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/096fb73d-e4c0-4485-bb32-3ef6ee2da1d9">
+        <rdfs:label>Parked, 096fb73d-e4c0-4485-bb32-3ef6ee2da1d9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/1bc2642b-ef4b-4a24-9d93-ab4914d2a086 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/1bc2642b-ef4b-4a24-9d93-ab4914d2a086">
+        <rdfs:label>PickupTruck, 1bc2642b-ef4b-4a24-9d93-ab4914d2a086</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/1c27e315-8946-4802-917a-11ad5d8499c0 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/1c27e315-8946-4802-917a-11ad5d8499c0">
+        <rdfs:label>Parked, 1c27e315-8946-4802-917a-11ad5d8499c0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/1e1a0df0-148b-4cb4-9484-f05129785066 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/1e1a0df0-148b-4cb4-9484-f05129785066">
+        <rdfs:label>Parked, 1e1a0df0-148b-4cb4-9484-f05129785066</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/1e47bf4e-a15c-4b01-9530-df11c521c0ef -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/1e47bf4e-a15c-4b01-9530-df11c521c0ef">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 1e47bf4e-a15c-4b01-9530-df11c521c0ef</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/1e615d99-c7b6-4b55-8d77-84fc7fd3cc9a -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/1e615d99-c7b6-4b55-8d77-84fc7fd3cc9a">
+        <rdfs:label>VehicleMoving, 1e615d99-c7b6-4b55-8d77-84fc7fd3cc9a</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/1f2d2d47-4f31-4ec1-912f-d851e8bb4312 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/1f2d2d47-4f31-4ec1-912f-d851e8bb4312">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 1f2d2d47-4f31-4ec1-912f-d851e8bb4312</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/10d38043-60bb-430d-9e81-64ad209edd60 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/10d38043-60bb-430d-9e81-64ad209edd60">
+        <rdfs:label>Parked, 10d38043-60bb-430d-9e81-64ad209edd60</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/13d93c82-bc03-4567-92d9-5642552183d8 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/13d93c82-bc03-4567-92d9-5642552183d8">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 13d93c82-bc03-4567-92d9-5642552183d8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/142a1d3e-ceeb-40ec-af5c-2c98a2067db0 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/142a1d3e-ceeb-40ec-af5c-2c98a2067db0">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 142a1d3e-ceeb-40ec-af5c-2c98a2067db0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/145c4c69-6ede-4d0d-b274-126a00d82feb -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/145c4c69-6ede-4d0d-b274-126a00d82feb">
+        <rdfs:label>VehicleMoving, 145c4c69-6ede-4d0d-b274-126a00d82feb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/1491f8a4-de6b-4aa8-98c0-0057d740cec7 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/1491f8a4-de6b-4aa8-98c0-0057d740cec7">
+        <rdfs:label>VehicleMoving, 1491f8a4-de6b-4aa8-98c0-0057d740cec7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/15e516fb-5e23-4fa9-9d30-71e3f08937db -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/15e516fb-5e23-4fa9-9d30-71e3f08937db">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 15e516fb-5e23-4fa9-9d30-71e3f08937db</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/1546e681-d08c-4ccb-aac0-a8a831629611 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/1546e681-d08c-4ccb-aac0-a8a831629611">
+        <rdfs:label>MediumSizedTruck, 1546e681-d08c-4ccb-aac0-a8a831629611</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/16d7c1de-f8d5-4572-ac15-987f37f5e686 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/16d7c1de-f8d5-4572-ac15-987f37f5e686">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 16d7c1de-f8d5-4572-ac15-987f37f5e686</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/16093e4c-e9fa-45c3-8308-5be260b70243 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/16093e4c-e9fa-45c3-8308-5be260b70243">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 16093e4c-e9fa-45c3-8308-5be260b70243</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/17a603fa-5e04-4263-9007-d585ab413624 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/17a603fa-5e04-4263-9007-d585ab413624">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/PedestrianWithObject"/>
+        <rdfs:label>PedestrianWithObject, 17a603fa-5e04-4263-9007-d585ab413624</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/181d0f75-4262-4b80-81b9-ad87640e8aaa -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/181d0f75-4262-4b80-81b9-ad87640e8aaa">
+        <rdfs:label>Parked, 181d0f75-4262-4b80-81b9-ad87640e8aaa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/19c4c6e8-f1ac-4da8-a41b-7c59a12cc09a -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/19c4c6e8-f1ac-4da8-a41b-7c59a12cc09a">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 19c4c6e8-f1ac-4da8-a41b-7c59a12cc09a</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/19726361-a9b0-4463-ba8a-f20a881290c6 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/19726361-a9b0-4463-ba8a-f20a881290c6">
+        <rdfs:label>Parked, 19726361-a9b0-4463-ba8a-f20a881290c6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/198dbd49-c9ac-40f9-98d4-e7ebd216e5a1 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/198dbd49-c9ac-40f9-98d4-e7ebd216e5a1">
+        <rdfs:label>VehicleMoving, 198dbd49-c9ac-40f9-98d4-e7ebd216e5a1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/1981999a-8fba-4c0c-9ee1-1418b4d5a313 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/1981999a-8fba-4c0c-9ee1-1418b4d5a313">
+        <rdfs:label>Parked, 1981999a-8fba-4c0c-9ee1-1418b4d5a313</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/2a24192f-c597-492c-b1d1-3f1f45cc9d40 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/2a24192f-c597-492c-b1d1-3f1f45cc9d40">
+        <rdfs:label>VehicleMoving, 2a24192f-c597-492c-b1d1-3f1f45cc9d40</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/2af7f17b-d753-4b6c-9c84-bd5a4203d637 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/2af7f17b-d753-4b6c-9c84-bd5a4203d637">
+        <rdfs:label>Parked, 2af7f17b-d753-4b6c-9c84-bd5a4203d637</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/2b0d278d-b558-4758-95ab-ac259bef8b42 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/2b0d278d-b558-4758-95ab-ac259bef8b42">
+        <rdfs:label>VehicleMoving, 2b0d278d-b558-4758-95ab-ac259bef8b42</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/2b853cf9-caaf-433e-adf3-ea3e9c62642f -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/2b853cf9-caaf-433e-adf3-ea3e9c62642f">
+        <rdfs:label>VehicleMoving, 2b853cf9-caaf-433e-adf3-ea3e9c62642f</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/2e5ff8c9-4db5-4079-a7aa-8b3e1f1e2ee2 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/2e5ff8c9-4db5-4079-a7aa-8b3e1f1e2ee2">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 2e5ff8c9-4db5-4079-a7aa-8b3e1f1e2ee2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/2f2000e8-b045-40de-b9cb-382bb4370930 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/2f2000e8-b045-40de-b9cb-382bb4370930">
+        <rdfs:label>Parked, 2f2000e8-b045-40de-b9cb-382bb4370930</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/2fae67c2-a22b-4f4e-b437-bed424f5a9f5 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/2fae67c2-a22b-4f4e-b437-bed424f5a9f5">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 2fae67c2-a22b-4f4e-b437-bed424f5a9f5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/20381719-bd39-4a13-88ca-179339f6da67 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/20381719-bd39-4a13-88ca-179339f6da67">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 20381719-bd39-4a13-88ca-179339f6da67</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/22791cad-61e5-4e39-aeed-bc51918b22fe -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/22791cad-61e5-4e39-aeed-bc51918b22fe">
+        <rdfs:label>VehicleMoving, 22791cad-61e5-4e39-aeed-bc51918b22fe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/23c730e2-ecf8-480d-bd38-7ac71b8bc59d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/23c730e2-ecf8-480d-bd38-7ac71b8bc59d">
+        <rdfs:label>Parked, 23c730e2-ecf8-480d-bd38-7ac71b8bc59d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/23c7c3d6-02de-422d-882c-06d18809a62b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/23c7c3d6-02de-422d-882c-06d18809a62b">
+        <rdfs:label>Parked, 23c7c3d6-02de-422d-882c-06d18809a62b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/23f7d741-abca-41c8-a268-ee763be20097 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/23f7d741-abca-41c8-a268-ee763be20097">
+        <rdfs:label>VehicleMoving, 23f7d741-abca-41c8-a268-ee763be20097</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/23085527-5bc1-4459-bcc5-71cffe7cf541 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/23085527-5bc1-4459-bcc5-71cffe7cf541">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 23085527-5bc1-4459-bcc5-71cffe7cf541</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/243939c9-2111-4654-bfcc-098fdfd3863b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/243939c9-2111-4654-bfcc-098fdfd3863b">
+        <rdfs:label>Parked, 243939c9-2111-4654-bfcc-098fdfd3863b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/2445f1b0-5e9b-49c9-9e55-ee7ff113d942 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/2445f1b0-5e9b-49c9-9e55-ee7ff113d942">
+        <rdfs:label>VehicleMoving, 2445f1b0-5e9b-49c9-9e55-ee7ff113d942</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/247128a9-cb2d-4b65-968e-967c1630f07b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/247128a9-cb2d-4b65-968e-967c1630f07b">
+        <rdfs:label>Parked, 247128a9-cb2d-4b65-968e-967c1630f07b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/266427b0-4028-4bab-b0c8-1ee2154c38b1 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/266427b0-4028-4bab-b0c8-1ee2154c38b1">
+        <rdfs:label>VehicleMoving, 266427b0-4028-4bab-b0c8-1ee2154c38b1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/270b276a-2988-43e3-b8d2-d70416a4c16e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/270b276a-2988-43e3-b8d2-d70416a4c16e">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 270b276a-2988-43e3-b8d2-d70416a4c16e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/27928ccb-c092-4bb8-b6d9-14ce112ea30e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/27928ccb-c092-4bb8-b6d9-14ce112ea30e">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 27928ccb-c092-4bb8-b6d9-14ce112ea30e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/29bf2b57-bdab-4c23-922c-86e059aa2324 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/29bf2b57-bdab-4c23-922c-86e059aa2324">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 29bf2b57-bdab-4c23-922c-86e059aa2324</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/29002543-a19c-4dad-8a4e-eb047f24a612 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/29002543-a19c-4dad-8a4e-eb047f24a612">
+        <rdfs:label>Parked, 29002543-a19c-4dad-8a4e-eb047f24a612</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/293698c1-f8c4-4709-af23-ee46b2d5bb68 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/293698c1-f8c4-4709-af23-ee46b2d5bb68">
+        <rdfs:label>RoadSign, 293698c1-f8c4-4709-af23-ee46b2d5bb68</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/3a10dec8-e00c-4fb8-b2c9-78f75d3f034d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/3a10dec8-e00c-4fb8-b2c9-78f75d3f034d">
+        <rdfs:label>Parked, 3a10dec8-e00c-4fb8-b2c9-78f75d3f034d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/3ac02b12-92bb-412f-8b8e-77dcabf960c2 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/3ac02b12-92bb-412f-8b8e-77dcabf960c2">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 3ac02b12-92bb-412f-8b8e-77dcabf960c2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/3acf2ce0-387c-4354-9e98-216b7f1f3005 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/3acf2ce0-387c-4354-9e98-216b7f1f3005">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 3acf2ce0-387c-4354-9e98-216b7f1f3005</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/3b2e175e-d8b6-454b-a078-fd92eb2c7f22 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/3b2e175e-d8b6-454b-a078-fd92eb2c7f22">
+        <rdfs:label>VehicleMoving, 3b2e175e-d8b6-454b-a078-fd92eb2c7f22</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/3b9e41b9-7fa8-413b-b2b0-ad25d8caca18 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/3b9e41b9-7fa8-413b-b2b0-ad25d8caca18">
+        <rdfs:label>Parked, 3b9e41b9-7fa8-413b-b2b0-ad25d8caca18</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/3b9efdc6-bc6a-46f8-b7a0-ccef7d30d7bb -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/3b9efdc6-bc6a-46f8-b7a0-ccef7d30d7bb">
+        <rdfs:label>Parked, 3b9efdc6-bc6a-46f8-b7a0-ccef7d30d7bb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/3f6300ad-7a44-4421-b056-b27030f92ffd -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/3f6300ad-7a44-4421-b056-b27030f92ffd">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 3f6300ad-7a44-4421-b056-b27030f92ffd</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/3ff4a4a4-5da1-4519-8c69-3b8e7ab92aca -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/3ff4a4a4-5da1-4519-8c69-3b8e7ab92aca">
+        <rdfs:label>Parked, 3ff4a4a4-5da1-4519-8c69-3b8e7ab92aca</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/3089acde-b38a-4ca2-96f4-e567e7fa6986 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/3089acde-b38a-4ca2-96f4-e567e7fa6986">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 3089acde-b38a-4ca2-96f4-e567e7fa6986</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/315caf0c-4c3a-4fa5-b461-030c5fdfaf98 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/315caf0c-4c3a-4fa5-b461-030c5fdfaf98">
+        <rdfs:label>VehicleMoving, 315caf0c-4c3a-4fa5-b461-030c5fdfaf98</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/319adc2d-5caa-4571-82ba-258c1ef05111 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/319adc2d-5caa-4571-82ba-258c1ef05111">
+        <rdfs:label>PickupTruck, 319adc2d-5caa-4571-82ba-258c1ef05111</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/324b87e2-3e2b-434b-b464-aba670dbbde5 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/324b87e2-3e2b-434b-b464-aba670dbbde5">
+        <rdfs:label>VehicleMoving, 324b87e2-3e2b-434b-b464-aba670dbbde5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/334dd758-de71-4d88-9d97-6b81dd4f93dc -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/334dd758-de71-4d88-9d97-6b81dd4f93dc">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 334dd758-de71-4d88-9d97-6b81dd4f93dc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/336a83bf-48c3-426e-8f84-31d83c38f6f7 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/336a83bf-48c3-426e-8f84-31d83c38f6f7">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 336a83bf-48c3-426e-8f84-31d83c38f6f7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/340f1ef3-12ab-4aa3-9014-27f7e559d7c0 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/340f1ef3-12ab-4aa3-9014-27f7e559d7c0">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 340f1ef3-12ab-4aa3-9014-27f7e559d7c0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/35cb9368-65dc-4496-ac58-21235a2f815d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/35cb9368-65dc-4496-ac58-21235a2f815d">
+        <rdfs:label>Walking, 35cb9368-65dc-4496-ac58-21235a2f815d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/355aedfb-5927-41ee-863c-1bbf24e75c85 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/355aedfb-5927-41ee-863c-1bbf24e75c85">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 355aedfb-5927-41ee-863c-1bbf24e75c85</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/38f095a1-eeee-4a44-9f30-13471480cbb3 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/38f095a1-eeee-4a44-9f30-13471480cbb3">
+        <rdfs:label>Parked, 38f095a1-eeee-4a44-9f30-13471480cbb3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/387e5c46-ba2c-496f-b7c2-89b721f3e1eb -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/387e5c46-ba2c-496f-b7c2-89b721f3e1eb">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 387e5c46-ba2c-496f-b7c2-89b721f3e1eb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/39bfed76-af7d-4ac2-af63-fd61031caf3f -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/39bfed76-af7d-4ac2-af63-fd61031caf3f">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 39bfed76-af7d-4ac2-af63-fd61031caf3f</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/4af52c29-6ad2-4520-b9e5-9dde8e486ed1 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/4af52c29-6ad2-4520-b9e5-9dde8e486ed1">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 4af52c29-6ad2-4520-b9e5-9dde8e486ed1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/4ccb0169-c8f3-4bde-af0a-bebcf11b5927 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/4ccb0169-c8f3-4bde-af0a-bebcf11b5927">
+        <rdfs:label>MediumSizedTruck, 4ccb0169-c8f3-4bde-af0a-bebcf11b5927</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/4d20687e-39c8-4e69-b40f-0058b087786e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/4d20687e-39c8-4e69-b40f-0058b087786e">
+        <rdfs:label>Parked, 4d20687e-39c8-4e69-b40f-0058b087786e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/4d31601d-c37d-4746-9928-e24c8a6d4db7 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/4d31601d-c37d-4746-9928-e24c8a6d4db7">
+        <rdfs:label>MediumSizedTruck, 4d31601d-c37d-4746-9928-e24c8a6d4db7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/4d69c67e-fa23-4f8d-ab51-f7200806fefd -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/4d69c67e-fa23-4f8d-ab51-f7200806fefd">
+        <rdfs:label>VehicleMoving, 4d69c67e-fa23-4f8d-ab51-f7200806fefd</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/40406273-bd10-4c92-b468-3d0f3848f411 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/40406273-bd10-4c92-b468-3d0f3848f411">
+        <rdfs:label>Parked, 40406273-bd10-4c92-b468-3d0f3848f411</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/40926c4e-5087-4df2-b1c1-f39b356a5ee3 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/40926c4e-5087-4df2-b1c1-f39b356a5ee3">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 40926c4e-5087-4df2-b1c1-f39b356a5ee3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/41a0838f-4706-42cc-b50e-5177e451aa1e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/41a0838f-4706-42cc-b50e-5177e451aa1e">
+        <rdfs:label>Parked, 41a0838f-4706-42cc-b50e-5177e451aa1e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/41a93f6b-dd5a-468e-818e-5f1bb8a961e8 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/41a93f6b-dd5a-468e-818e-5f1bb8a961e8">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 41a93f6b-dd5a-468e-818e-5f1bb8a961e8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/4384704d-a4d0-4880-8b03-7f91ce4fdfdf -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/4384704d-a4d0-4880-8b03-7f91ce4fdfdf">
+        <rdfs:label>VehicleMoving, 4384704d-a4d0-4880-8b03-7f91ce4fdfdf</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/45a68b9a-0739-46b4-8961-aeef67e21e7d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/45a68b9a-0739-46b4-8961-aeef67e21e7d">
+        <rdfs:label>Parked, 45a68b9a-0739-46b4-8961-aeef67e21e7d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/4577aa45-9c72-4c6a-a7db-1303198a1cf2 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/4577aa45-9c72-4c6a-a7db-1303198a1cf2">
+        <rdfs:label>Parked, 4577aa45-9c72-4c6a-a7db-1303198a1cf2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/46b64f1d-8c2a-4c5d-bb03-3983eaf5dafd -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/46b64f1d-8c2a-4c5d-bb03-3983eaf5dafd">
+        <rdfs:label>Walking, 46b64f1d-8c2a-4c5d-bb03-3983eaf5dafd</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/46fd5111-195b-458c-93f8-fe4b0a4916b3 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/46fd5111-195b-458c-93f8-fe4b0a4916b3">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 46fd5111-195b-458c-93f8-fe4b0a4916b3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/47960c1c-031e-48ee-b954-137c44439da4 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/47960c1c-031e-48ee-b954-137c44439da4">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 47960c1c-031e-48ee-b954-137c44439da4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/48cde2ff-f634-435f-99af-82872d592a6a -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/48cde2ff-f634-435f-99af-82872d592a6a">
+        <rdfs:label>PickupTruck, 48cde2ff-f634-435f-99af-82872d592a6a</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/48d4605c-e4da-4602-81a7-8a3396bcc1f0 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/48d4605c-e4da-4602-81a7-8a3396bcc1f0">
+        <rdfs:label>Parked, 48d4605c-e4da-4602-81a7-8a3396bcc1f0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/4963d3f4-11b6-490b-8efe-6128fa493e4e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/4963d3f4-11b6-490b-8efe-6128fa493e4e">
+        <rdfs:label>Parked, 4963d3f4-11b6-490b-8efe-6128fa493e4e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/5acd25c4-09be-48e3-ab9b-b04520bbe741 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/5acd25c4-09be-48e3-ab9b-b04520bbe741">
+        <rdfs:label>PickupTruck, 5acd25c4-09be-48e3-ab9b-b04520bbe741</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/5c524216-a727-40bc-9d80-da367cc3ee8a -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/5c524216-a727-40bc-9d80-da367cc3ee8a">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 5c524216-a727-40bc-9d80-da367cc3ee8a</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/5cd15033-98ed-4998-bd45-b51fdcb2512a -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/5cd15033-98ed-4998-bd45-b51fdcb2512a">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 5cd15033-98ed-4998-bd45-b51fdcb2512a</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/5ceef8fe-c116-42f2-84e2-d67c36a268f7 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/5ceef8fe-c116-42f2-84e2-d67c36a268f7">
+        <rdfs:label>MediumSizedTruck, 5ceef8fe-c116-42f2-84e2-d67c36a268f7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/5db3452b-65d5-4024-beb6-f538187bdf58 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/5db3452b-65d5-4024-beb6-f538187bdf58">
+        <rdfs:label>PickupTruck, 5db3452b-65d5-4024-beb6-f538187bdf58</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/5e2c9949-50d8-47ea-9cf9-318019af01a2 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/5e2c9949-50d8-47ea-9cf9-318019af01a2">
+        <rdfs:label>Stopped, 5e2c9949-50d8-47ea-9cf9-318019af01a2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/5e38804f-0f89-409b-a745-cd72f241ae97 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/5e38804f-0f89-409b-a745-cd72f241ae97">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 5e38804f-0f89-409b-a745-cd72f241ae97</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/5e9d0afc-5cdf-43ab-9771-6fd128ad1bb2 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/5e9d0afc-5cdf-43ab-9771-6fd128ad1bb2">
+        <rdfs:label>VehicleMoving, 5e9d0afc-5cdf-43ab-9771-6fd128ad1bb2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/5ee2fabf-eb62-4636-8378-01dadb0f595e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/5ee2fabf-eb62-4636-8378-01dadb0f595e">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 5ee2fabf-eb62-4636-8378-01dadb0f595e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/5f1d7204-0e42-4870-acfe-e8ee5022c518 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/5f1d7204-0e42-4870-acfe-e8ee5022c518">
+        <rdfs:label>MediumSizedTruck, 5f1d7204-0e42-4870-acfe-e8ee5022c518</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/50e2e691-3dc7-4812-b6cb-2a8a663e5037 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/50e2e691-3dc7-4812-b6cb-2a8a663e5037">
+        <rdfs:label>Parked, 50e2e691-3dc7-4812-b6cb-2a8a663e5037</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/50128655-a124-47f1-8d82-45a7fe2d35c9 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/50128655-a124-47f1-8d82-45a7fe2d35c9">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 50128655-a124-47f1-8d82-45a7fe2d35c9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/51bd0626-26ec-45c4-9e22-ff727a2905da -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/51bd0626-26ec-45c4-9e22-ff727a2905da">
+        <rdfs:label>VehicleMoving, 51bd0626-26ec-45c4-9e22-ff727a2905da</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/51d0176e-b124-4f06-b4f0-e8fea294e1de -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/51d0176e-b124-4f06-b4f0-e8fea294e1de">
+        <rdfs:label>Parked, 51d0176e-b124-4f06-b4f0-e8fea294e1de</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/514869fd-888c-4e6e-a134-437a4d69469c -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/514869fd-888c-4e6e-a134-437a4d69469c">
+        <rdfs:label>VehicleMoving, 514869fd-888c-4e6e-a134-437a4d69469c</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/53bb64a5-4357-4c55-861e-f1cec2820ab4 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/53bb64a5-4357-4c55-861e-f1cec2820ab4">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 53bb64a5-4357-4c55-861e-f1cec2820ab4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/53fa3379-c745-4f20-985f-4ee86d6bad6e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/53fa3379-c745-4f20-985f-4ee86d6bad6e">
+        <rdfs:label>Parked, 53fa3379-c745-4f20-985f-4ee86d6bad6e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/54c35862-8698-4cda-b1d1-ee1ff07d22ed -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/54c35862-8698-4cda-b1d1-ee1ff07d22ed">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 54c35862-8698-4cda-b1d1-ee1ff07d22ed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/5576f4eb-f71c-4826-8b61-c94689723212 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/5576f4eb-f71c-4826-8b61-c94689723212">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 5576f4eb-f71c-4826-8b61-c94689723212</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/573be0ef-1594-4fac-be46-560d3644ac46 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/573be0ef-1594-4fac-be46-560d3644ac46">
+        <rdfs:label>Parked, 573be0ef-1594-4fac-be46-560d3644ac46</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/59dd35d1-45d7-4065-bf47-f840dc3f11ae -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/59dd35d1-45d7-4065-bf47-f840dc3f11ae">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 59dd35d1-45d7-4065-bf47-f840dc3f11ae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/5938faae-8bb3-4fbd-a326-3a4c6f775b84 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/5938faae-8bb3-4fbd-a326-3a4c6f775b84">
+        <rdfs:label>VehicleMoving, 5938faae-8bb3-4fbd-a326-3a4c6f775b84</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/6ab17084-e122-4291-a292-fa1cf445d8fa -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/6ab17084-e122-4291-a292-fa1cf445d8fa">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 6ab17084-e122-4291-a292-fa1cf445d8fa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/6b06a167-fb33-405a-9069-15a7a9f9bf81 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/6b06a167-fb33-405a-9069-15a7a9f9bf81">
+        <rdfs:label>Standing, 6b06a167-fb33-405a-9069-15a7a9f9bf81</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/6ba53533-7009-4b5d-906e-beaa7f886dac -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/6ba53533-7009-4b5d-906e-beaa7f886dac">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 6ba53533-7009-4b5d-906e-beaa7f886dac</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/6bc960c7-c243-4fe3-a313-98ff821d67cf -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/6bc960c7-c243-4fe3-a313-98ff821d67cf">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 6bc960c7-c243-4fe3-a313-98ff821d67cf</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/6c30188e-8074-4723-91cf-56d4b5925558 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/6c30188e-8074-4723-91cf-56d4b5925558">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 6c30188e-8074-4723-91cf-56d4b5925558</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/6f2d0dce-215f-413f-af21-febb9bf7109c -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/6f2d0dce-215f-413f-af21-febb9bf7109c">
+        <rdfs:label>Parked, 6f2d0dce-215f-413f-af21-febb9bf7109c</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/6fc727fa-badf-4f3c-9ede-dbad38bdddc0 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/6fc727fa-badf-4f3c-9ede-dbad38bdddc0">
+        <rdfs:label>VehicleMoving, 6fc727fa-badf-4f3c-9ede-dbad38bdddc0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/6ff7f896-c2a3-4828-ad32-4de145c7f617 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/6ff7f896-c2a3-4828-ad32-4de145c7f617">
+        <rdfs:label>Parked, 6ff7f896-c2a3-4828-ad32-4de145c7f617</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/62561504-dec4-407b-aad1-828de2b61783 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/62561504-dec4-407b-aad1-828de2b61783">
+        <rdfs:label>Parked, 62561504-dec4-407b-aad1-828de2b61783</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/63e368bc-39bd-46dd-8fbd-03d486d74bb6 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/63e368bc-39bd-46dd-8fbd-03d486d74bb6">
+        <rdfs:label>Parked, 63e368bc-39bd-46dd-8fbd-03d486d74bb6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/682c80f9-2857-4274-8322-6809e3942b23 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/682c80f9-2857-4274-8322-6809e3942b23">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 682c80f9-2857-4274-8322-6809e3942b23</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/694b055d-7128-4187-a667-e022eb2a1101 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/694b055d-7128-4187-a667-e022eb2a1101">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 694b055d-7128-4187-a667-e022eb2a1101</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/7a67d0d8-79b8-4998-8840-dd356b14a012 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/7a67d0d8-79b8-4998-8840-dd356b14a012">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Pedestrian"/>
+        <rdfs:label>Pedestrian, 7a67d0d8-79b8-4998-8840-dd356b14a012</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/7b06fbb4-88d3-490b-81d0-6b617a8b8d37 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/7b06fbb4-88d3-490b-81d0-6b617a8b8d37">
+        <rdfs:label>Parked, 7b06fbb4-88d3-490b-81d0-6b617a8b8d37</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/7b1a197a-be08-4436-8279-27165659f9ef -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/7b1a197a-be08-4436-8279-27165659f9ef">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 7b1a197a-be08-4436-8279-27165659f9ef</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/7c0d8a54-02e8-4ee0-9b19-548a88825fe6 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/7c0d8a54-02e8-4ee0-9b19-548a88825fe6">
+        <rdfs:label>Parked, 7c0d8a54-02e8-4ee0-9b19-548a88825fe6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/7c895876-118e-4ac9-99e2-44e83a82bfc0 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/7c895876-118e-4ac9-99e2-44e83a82bfc0">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 7c895876-118e-4ac9-99e2-44e83a82bfc0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/7de94ed3-32fe-4e0b-b295-3805e5ebee1c -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/7de94ed3-32fe-4e0b-b295-3805e5ebee1c">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 7de94ed3-32fe-4e0b-b295-3805e5ebee1c</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/7dfc1b8a-4bad-40ce-b3ac-2bc1b008ed0f -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/7dfc1b8a-4bad-40ce-b3ac-2bc1b008ed0f">
+        <rdfs:label>VehicleMoving, 7dfc1b8a-4bad-40ce-b3ac-2bc1b008ed0f</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/7f66572d-b97e-44d4-a0fe-b5580a7234eb -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/7f66572d-b97e-44d4-a0fe-b5580a7234eb">
+        <rdfs:label>Parked, 7f66572d-b97e-44d4-a0fe-b5580a7234eb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/70d6a52d-82fe-4ab8-8350-6e4d50d45221 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/70d6a52d-82fe-4ab8-8350-6e4d50d45221">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 70d6a52d-82fe-4ab8-8350-6e4d50d45221</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/707d5969-ce9e-4fa5-80b0-945efa26a3a7 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/707d5969-ce9e-4fa5-80b0-945efa26a3a7">
+        <rdfs:label>Parked, 707d5969-ce9e-4fa5-80b0-945efa26a3a7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/71b24197-908d-4902-95ea-11c3fe494f5c -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/71b24197-908d-4902-95ea-11c3fe494f5c">
+        <rdfs:label>Parked, 71b24197-908d-4902-95ea-11c3fe494f5c</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/71f258c0-ff06-4b54-bb43-f85ec4ec1179 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/71f258c0-ff06-4b54-bb43-f85ec4ec1179">
+        <rdfs:label>Parked, 71f258c0-ff06-4b54-bb43-f85ec4ec1179</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/72a42037-3c56-4282-98ed-38704b9b60ce -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/72a42037-3c56-4282-98ed-38704b9b60ce">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 72a42037-3c56-4282-98ed-38704b9b60ce</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/73c72c4b-b9a9-483c-8246-c87a34fff526 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/73c72c4b-b9a9-483c-8246-c87a34fff526">
+        <rdfs:label>Parked, 73c72c4b-b9a9-483c-8246-c87a34fff526</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/74cf32c6-d380-4396-9aa5-813ca569924b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/74cf32c6-d380-4396-9aa5-813ca569924b">
+        <rdfs:label>Parked, 74cf32c6-d380-4396-9aa5-813ca569924b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/74e0c163-21e4-43cb-a231-cee64ac032bf -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/74e0c163-21e4-43cb-a231-cee64ac032bf">
+        <rdfs:label>Parked, 74e0c163-21e4-43cb-a231-cee64ac032bf</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/740c4b42-9e9b-4a1d-84ec-6e223e7f42d1 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/740c4b42-9e9b-4a1d-84ec-6e223e7f42d1">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 740c4b42-9e9b-4a1d-84ec-6e223e7f42d1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/741b4cfb-5405-422a-b890-800e29951ff4 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/741b4cfb-5405-422a-b890-800e29951ff4">
+        <rdfs:label>Parked, 741b4cfb-5405-422a-b890-800e29951ff4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/7415ee7f-6c04-4c1a-9b99-7d72a4eddbb6 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/7415ee7f-6c04-4c1a-9b99-7d72a4eddbb6">
+        <rdfs:label>Parked, 7415ee7f-6c04-4c1a-9b99-7d72a4eddbb6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/75f75aa6-97db-4a1e-a2a9-b78d7e8d2b0b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/75f75aa6-97db-4a1e-a2a9-b78d7e8d2b0b">
+        <rdfs:label>PickupTruck, 75f75aa6-97db-4a1e-a2a9-b78d7e8d2b0b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/7520e91d-7e11-4cac-9eca-4ee717aed828 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/7520e91d-7e11-4cac-9eca-4ee717aed828">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 7520e91d-7e11-4cac-9eca-4ee717aed828</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/76bdbf46-37f6-40eb-9c43-0bb754814789 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/76bdbf46-37f6-40eb-9c43-0bb754814789">
+        <rdfs:label>Walking, 76bdbf46-37f6-40eb-9c43-0bb754814789</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/766a4613-a168-4943-a8bd-cdfd661d26f7 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/766a4613-a168-4943-a8bd-cdfd661d26f7">
+        <rdfs:label>Parked, 766a4613-a168-4943-a8bd-cdfd661d26f7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/77cc4287-61be-47fb-aaee-df8bf842cd52 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/77cc4287-61be-47fb-aaee-df8bf842cd52">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 77cc4287-61be-47fb-aaee-df8bf842cd52</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/77ce0c1d-91d0-491f-bc09-18f6a7991d6e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/77ce0c1d-91d0-491f-bc09-18f6a7991d6e">
+        <rdfs:label>VehicleMoving, 77ce0c1d-91d0-491f-bc09-18f6a7991d6e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/77f98965-e1c8-40d9-808d-723181215dd5 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/77f98965-e1c8-40d9-808d-723181215dd5">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Pedestrian"/>
+        <rdfs:label>Pedestrian, 77f98965-e1c8-40d9-808d-723181215dd5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/778f660f-a99c-4c47-bf3d-057ecc80765a -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/778f660f-a99c-4c47-bf3d-057ecc80765a">
+        <rdfs:label>Walking, 778f660f-a99c-4c47-bf3d-057ecc80765a</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/78a3f996-13c7-46c5-85fc-8c99897306c8 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/78a3f996-13c7-46c5-85fc-8c99897306c8">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 78a3f996-13c7-46c5-85fc-8c99897306c8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/78f84240-5395-4356-8724-f509f16ef15c -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/78f84240-5395-4356-8724-f509f16ef15c">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 78f84240-5395-4356-8724-f509f16ef15c</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/78883f27-1ec1-4c73-b286-136908e94755 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/78883f27-1ec1-4c73-b286-136908e94755">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 78883f27-1ec1-4c73-b286-136908e94755</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/791e455b-5e4a-434f-b053-2cd8528c6cee -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/791e455b-5e4a-434f-b053-2cd8528c6cee">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/PedestrianWithObject"/>
+        <rdfs:label>PedestrianWithObject, 791e455b-5e4a-434f-b053-2cd8528c6cee</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/797dc6bc-c9c1-482c-b7b3-90f1336b121b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/797dc6bc-c9c1-482c-b7b3-90f1336b121b">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 797dc6bc-c9c1-482c-b7b3-90f1336b121b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/8a85b5cb-d15f-4eee-ae48-a39f72d45bfc -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/8a85b5cb-d15f-4eee-ae48-a39f72d45bfc">
+        <rdfs:label>VehicleMoving, 8a85b5cb-d15f-4eee-ae48-a39f72d45bfc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/8c351593-9c2e-4e57-ad3c-438e449294f2 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/8c351593-9c2e-4e57-ad3c-438e449294f2">
+        <rdfs:label>Parked, 8c351593-9c2e-4e57-ad3c-438e449294f2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/8e79073b-e9f1-490e-8dde-25b376ffc058 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/8e79073b-e9f1-490e-8dde-25b376ffc058">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 8e79073b-e9f1-490e-8dde-25b376ffc058</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/8ec035fd-d8b7-4e97-a352-4697e82689d9 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/8ec035fd-d8b7-4e97-a352-4697e82689d9">
+        <rdfs:label>VehicleMoving, 8ec035fd-d8b7-4e97-a352-4697e82689d9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/8ee849fa-6b47-413a-8bef-1ce69935c970 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/8ee849fa-6b47-413a-8bef-1ce69935c970">
+        <rdfs:label>Parked, 8ee849fa-6b47-413a-8bef-1ce69935c970</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/8f82bd1f-1e9e-4064-b977-5f3cd0ae75f9 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/8f82bd1f-1e9e-4064-b977-5f3cd0ae75f9">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 8f82bd1f-1e9e-4064-b977-5f3cd0ae75f9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/8ff59362-18ef-4738-ba12-770e73ea1539 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/8ff59362-18ef-4738-ba12-770e73ea1539">
+        <rdfs:label>Parked, 8ff59362-18ef-4738-ba12-770e73ea1539</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/80fabbfd-d3a6-4a98-9c76-db6024ccdaf6 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/80fabbfd-d3a6-4a98-9c76-db6024ccdaf6">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 80fabbfd-d3a6-4a98-9c76-db6024ccdaf6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/80fe4e2a-6ca6-4e4d-b81e-69d14e74ee0e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/80fe4e2a-6ca6-4e4d-b81e-69d14e74ee0e">
+        <rdfs:label>PickupTruck, 80fe4e2a-6ca6-4e4d-b81e-69d14e74ee0e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/812d58ed-9283-42b4-865e-d5c2dad823aa -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/812d58ed-9283-42b4-865e-d5c2dad823aa">
+        <rdfs:label>VehicleMoving, 812d58ed-9283-42b4-865e-d5c2dad823aa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/82357745-ed79-4bf3-a597-188ece78a198 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/82357745-ed79-4bf3-a597-188ece78a198">
+        <rdfs:label>Parked, 82357745-ed79-4bf3-a597-188ece78a198</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/83a603ad-d2d3-4b14-8835-092e1c8a774e -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/83a603ad-d2d3-4b14-8835-092e1c8a774e">
+        <rdfs:label>Parked, 83a603ad-d2d3-4b14-8835-092e1c8a774e</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/8405f010-78d9-4856-97a2-ab57d0f54783 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/8405f010-78d9-4856-97a2-ab57d0f54783">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 8405f010-78d9-4856-97a2-ab57d0f54783</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/868932f1-e8a2-4742-893d-1a7e30aba14d -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/868932f1-e8a2-4742-893d-1a7e30aba14d">
+        <rdfs:label>Parked, 868932f1-e8a2-4742-893d-1a7e30aba14d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/869fe209-d342-4186-b93a-15c18520c2a0 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/869fe209-d342-4186-b93a-15c18520c2a0">
+        <rdfs:label>Parked, 869fe209-d342-4186-b93a-15c18520c2a0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/87ea645a-3bf1-4091-85e5-5d311d45168c -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/87ea645a-3bf1-4091-85e5-5d311d45168c">
+        <rdfs:label>RoadSign, 87ea645a-3bf1-4091-85e5-5d311d45168c</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/87fee437-7e18-4cd7-bfda-7af55bb2bbf5 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/87fee437-7e18-4cd7-bfda-7af55bb2bbf5">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 87fee437-7e18-4cd7-bfda-7af55bb2bbf5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/88d3dbfc-2acb-4df2-9107-49eafa0cdd2f -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/88d3dbfc-2acb-4df2-9107-49eafa0cdd2f">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Pedestrian"/>
+        <rdfs:label>Pedestrian, 88d3dbfc-2acb-4df2-9107-49eafa0cdd2f</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/88d6538d-7991-46a8-affd-c982cb6d1361 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/88d6538d-7991-46a8-affd-c982cb6d1361">
+        <rdfs:label>VehicleMoving, 88d6538d-7991-46a8-affd-c982cb6d1361</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/88726e7f-fa54-4d67-90f7-ca781f9832d0 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/88726e7f-fa54-4d67-90f7-ca781f9832d0">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 88726e7f-fa54-4d67-90f7-ca781f9832d0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/89e94960-2bdb-4521-b570-0f264a4ec266 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/89e94960-2bdb-4521-b570-0f264a4ec266">
+        <rdfs:label>Parked, 89e94960-2bdb-4521-b570-0f264a4ec266</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/89579c98-0e0e-4991-bfe7-eb4b85f1ab85 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/89579c98-0e0e-4991-bfe7-eb4b85f1ab85">
+        <rdfs:label>Parked, 89579c98-0e0e-4991-bfe7-eb4b85f1ab85</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/9c4d7f4f-946b-4b5e-920c-ec8e0967d040 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/9c4d7f4f-946b-4b5e-920c-ec8e0967d040">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/PedestrianWithObject"/>
+        <rdfs:label>PedestrianWithObject, 9c4d7f4f-946b-4b5e-920c-ec8e0967d040</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/9c5e5d98-01fe-4eae-bca6-4ecefd0257bd -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/9c5e5d98-01fe-4eae-bca6-4ecefd0257bd">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 9c5e5d98-01fe-4eae-bca6-4ecefd0257bd</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/9c65ea00-1479-4046-a3d3-863fa09ab07b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/9c65ea00-1479-4046-a3d3-863fa09ab07b">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 9c65ea00-1479-4046-a3d3-863fa09ab07b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/90383ae9-1fd4-4e76-af18-15386d600d12 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/90383ae9-1fd4-4e76-af18-15386d600d12">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 90383ae9-1fd4-4e76-af18-15386d600d12</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/9114b514-3605-4d30-b36c-6dcc579472d7 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/9114b514-3605-4d30-b36c-6dcc579472d7">
+        <rdfs:label>RoadSign, 9114b514-3605-4d30-b36c-6dcc579472d7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/912bfcf4-949d-4301-8010-f740c0da9b9b -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/912bfcf4-949d-4301-8010-f740c0da9b9b">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 912bfcf4-949d-4301-8010-f740c0da9b9b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/9192bf77-3980-45fc-a387-cc89ae7a4aed -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/9192bf77-3980-45fc-a387-cc89ae7a4aed">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 9192bf77-3980-45fc-a387-cc89ae7a4aed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/93d06a67-8e5d-410d-a5f8-c7d55acf994f -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/93d06a67-8e5d-410d-a5f8-c7d55acf994f">
+        <rdfs:label>Parked, 93d06a67-8e5d-410d-a5f8-c7d55acf994f</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/93d33a21-1690-4004-882f-8702c47e8908 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/93d33a21-1690-4004-882f-8702c47e8908">
+        <rdfs:label>VehicleMoving, 93d33a21-1690-4004-882f-8702c47e8908</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/930a32ab-26cf-4563-a0aa-c533a6fd9adc -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/930a32ab-26cf-4563-a0aa-c533a6fd9adc">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 930a32ab-26cf-4563-a0aa-c533a6fd9adc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/93686154-cfff-4581-b5cf-1c206c1d7e91 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/93686154-cfff-4581-b5cf-1c206c1d7e91">
+        <rdfs:label>Parked, 93686154-cfff-4581-b5cf-1c206c1d7e91</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/96a3d08f-d85d-4910-9b11-f1c4930f6ada -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/96a3d08f-d85d-4910-9b11-f1c4930f6ada">
+        <rdfs:label>Parked, 96a3d08f-d85d-4910-9b11-f1c4930f6ada</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/96e8f57c-c1ec-484d-830b-01833419e7db -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/96e8f57c-c1ec-484d-830b-01833419e7db">
+        <rdfs:label>Parked, 96e8f57c-c1ec-484d-830b-01833419e7db</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/9644c35b-0afa-402f-a757-e0963beec3c3 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/9644c35b-0afa-402f-a757-e0963beec3c3">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 9644c35b-0afa-402f-a757-e0963beec3c3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/9712a6df-3e7a-4489-8d30-dd64e8ef5fa2 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/9712a6df-3e7a-4489-8d30-dd64e8ef5fa2">
+        <rdfs:label>Parked, 9712a6df-3e7a-4489-8d30-dd64e8ef5fa2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/976944dd-ec3c-4aa4-8dbf-61d8f8655dea -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/976944dd-ec3c-4aa4-8dbf-61d8f8655dea">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 976944dd-ec3c-4aa4-8dbf-61d8f8655dea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/977c1908-4c50-47c4-92cf-b99d7f5c8d5a -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/977c1908-4c50-47c4-92cf-b99d7f5c8d5a">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 977c1908-4c50-47c4-92cf-b99d7f5c8d5a</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://semantic.bosch.com/drivingscene/v02/data/98ff13d1-b168-4ea3-9e29-d578d5221634 -->
+
+    <owl:NamedIndividual rdf:about="http://semantic.bosch.com/drivingscene/v02/data/98ff13d1-b168-4ea3-9e29-d578d5221634">
+        <rdf:type rdf:resource="http://semantic.bosch.com/drivingscene/v02/Car"/>
+        <rdfs:label>Car, 98ff13d1-b168-4ea3-9e29-d578d5221634</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

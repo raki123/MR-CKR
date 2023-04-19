@@ -1,0 +1,87 @@
+@prefix exch: <http://example.org/exchange/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://dkm.fbk.eu/ckr/meta#hasAxiomType> a owl:AnnotationProperty .
+
+exch:ADDCar a owl:Class .
+
+exch:ADDChild a owl:Class .
+
+exch:ADDGlidingOnWheels a owl:Class .
+
+exch:ADDHuman a owl:Class .
+
+exch:ADDRollingContainer a owl:Class .
+
+exch:ADDSign a owl:Class .
+
+exch:ADDSmoke a owl:Class .
+
+exch:ADDStopLineMarking a owl:Class .
+
+exch:DELCar a owl:Class .
+
+exch:DELChild a owl:Class .
+
+exch:DELGlidingOnWheels a owl:Class .
+
+exch:DELHuman a owl:Class .
+
+exch:DELRollingContainer a owl:Class .
+
+exch:DELSign a owl:Class .
+
+exch:DELSmoke a owl:Class .
+
+exch:DELStopLineMarking a owl:Class .
+
+exch:DONTADDCar a owl:Class .
+
+exch:DONTADDChild a owl:Class .
+
+exch:DONTADDGlidingOnWheels a owl:Class .
+
+exch:DONTADDHuman a owl:Class .
+
+exch:DONTADDRollingContainer a owl:Class .
+
+exch:DONTADDSign a owl:Class .
+
+exch:DONTADDSmoke a owl:Class .
+
+exch:DONTADDStopLineMarking a owl:Class .
+
+exch:DONTDELCar a owl:Class .
+
+exch:DONTDELChild a owl:Class .
+
+exch:DONTDELGlidingOnWheels a owl:Class .
+
+exch:DONTDELHuman a owl:Class .
+
+exch:DONTDELRollingContainer a owl:Class .
+
+exch:DONTDELSign a owl:Class .
+
+exch:DONTDELSmoke a owl:Class .
+
+exch:DONTDELStopLineMarking a owl:Class .
+
+exch:EXCar a owl:Class .
+
+exch:EXChild a owl:Class .
+
+exch:EXGlidingOnWheels a owl:Class .
+
+exch:EXHuman a owl:Class .
+
+exch:EXRollingContainer a owl:Class .
+
+exch:EXSign a owl:Class .
+
+exch:EXSmoke a owl:Class .
+
+exch:EXStopLineMarking a owl:Class .
+
+exch:Named a owl:Class .
+

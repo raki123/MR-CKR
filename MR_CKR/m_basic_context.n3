@@ -1,0 +1,599 @@
+@prefix exch: <http://example.org/exchange/> .
+@prefix ns1: <http://semantic.bosch.com/drivingscene/v02/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dkm.fbk.eu/ckr/meta#hasAxiomType> a owl:AnnotationProperty .
+
+<http://semantic.bosch.com/drivingscene/v02/data/0030ed6b-39cf-4ade-97bb-bd2fe0f98633> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/03b04fce-ad21-4a44-9628-ededad8521c7> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/081f0b72-6b84-4527-a30f-63d62aeb98a2> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/0c2e1183-b15b-4020-b8e7-a79bb8e100e0> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/13d93c82-bc03-4567-92d9-5642552183d8> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/142a1d3e-ceeb-40ec-af5c-2c98a2067db0> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/15e516fb-5e23-4fa9-9d30-71e3f08937db> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/16093e4c-e9fa-45c3-8308-5be260b70243> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/16d7c1de-f8d5-4572-ac15-987f37f5e686> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/17a603fa-5e04-4263-9007-d585ab413624> a exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/19c4c6e8-f1ac-4da8-a41b-7c59a12cc09a> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/1e47bf4e-a15c-4b01-9530-df11c521c0ef> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/1f2d2d47-4f31-4ec1-912f-d851e8bb4312> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/20381719-bd39-4a13-88ca-179339f6da67> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/23085527-5bc1-4459-bcc5-71cffe7cf541> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/270b276a-2988-43e3-b8d2-d70416a4c16e> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/27928ccb-c092-4bb8-b6d9-14ce112ea30e> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/29bf2b57-bdab-4c23-922c-86e059aa2324> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/2e5ff8c9-4db5-4079-a7aa-8b3e1f1e2ee2> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/2fae67c2-a22b-4f4e-b437-bed424f5a9f5> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/3089acde-b38a-4ca2-96f4-e567e7fa6986> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/334dd758-de71-4d88-9d97-6b81dd4f93dc> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/336a83bf-48c3-426e-8f84-31d83c38f6f7> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/340f1ef3-12ab-4aa3-9014-27f7e559d7c0> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/355aedfb-5927-41ee-863c-1bbf24e75c85> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/387e5c46-ba2c-496f-b7c2-89b721f3e1eb> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/39bfed76-af7d-4ac2-af63-fd61031caf3f> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/3ac02b12-92bb-412f-8b8e-77dcabf960c2> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/3acf2ce0-387c-4354-9e98-216b7f1f3005> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/3f6300ad-7a44-4421-b056-b27030f92ffd> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/40926c4e-5087-4df2-b1c1-f39b356a5ee3> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/41a93f6b-dd5a-468e-818e-5f1bb8a961e8> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/46fd5111-195b-458c-93f8-fe4b0a4916b3> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/47960c1c-031e-48ee-b954-137c44439da4> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/4af52c29-6ad2-4520-b9e5-9dde8e486ed1> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/50128655-a124-47f1-8d82-45a7fe2d35c9> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/53bb64a5-4357-4c55-861e-f1cec2820ab4> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/54c35862-8698-4cda-b1d1-ee1ff07d22ed> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/5576f4eb-f71c-4826-8b61-c94689723212> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/59dd35d1-45d7-4065-bf47-f840dc3f11ae> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/5c524216-a727-40bc-9d80-da367cc3ee8a> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/5cd15033-98ed-4998-bd45-b51fdcb2512a> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/5e38804f-0f89-409b-a745-cd72f241ae97> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/5ee2fabf-eb62-4636-8378-01dadb0f595e> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/682c80f9-2857-4274-8322-6809e3942b23> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/694b055d-7128-4187-a667-e022eb2a1101> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/6ab17084-e122-4291-a292-fa1cf445d8fa> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/6ba53533-7009-4b5d-906e-beaa7f886dac> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/6bc960c7-c243-4fe3-a313-98ff821d67cf> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/6c30188e-8074-4723-91cf-56d4b5925558> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/70d6a52d-82fe-4ab8-8350-6e4d50d45221> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/72a42037-3c56-4282-98ed-38704b9b60ce> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/740c4b42-9e9b-4a1d-84ec-6e223e7f42d1> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/7520e91d-7e11-4cac-9eca-4ee717aed828> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/77cc4287-61be-47fb-aaee-df8bf842cd52> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/77f98965-e1c8-40d9-808d-723181215dd5> a exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/78883f27-1ec1-4c73-b286-136908e94755> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/78a3f996-13c7-46c5-85fc-8c99897306c8> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/78f84240-5395-4356-8724-f509f16ef15c> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/791e455b-5e4a-434f-b053-2cd8528c6cee> a exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/797dc6bc-c9c1-482c-b7b3-90f1336b121b> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/7a67d0d8-79b8-4998-8840-dd356b14a012> a exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/7b1a197a-be08-4436-8279-27165659f9ef> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/7c895876-118e-4ac9-99e2-44e83a82bfc0> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/7de94ed3-32fe-4e0b-b295-3805e5ebee1c> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/80fabbfd-d3a6-4a98-9c76-db6024ccdaf6> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/8405f010-78d9-4856-97a2-ab57d0f54783> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/87fee437-7e18-4cd7-bfda-7af55bb2bbf5> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/88726e7f-fa54-4d67-90f7-ca781f9832d0> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/88d3dbfc-2acb-4df2-9107-49eafa0cdd2f> a exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/8e79073b-e9f1-490e-8dde-25b376ffc058> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/8f82bd1f-1e9e-4064-b977-5f3cd0ae75f9> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/90383ae9-1fd4-4e76-af18-15386d600d12> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/912bfcf4-949d-4301-8010-f740c0da9b9b> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/9192bf77-3980-45fc-a387-cc89ae7a4aed> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/930a32ab-26cf-4563-a0aa-c533a6fd9adc> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/9644c35b-0afa-402f-a757-e0963beec3c3> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/976944dd-ec3c-4aa4-8dbf-61d8f8655dea> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/977c1908-4c50-47c4-92cf-b99d7f5c8d5a> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/98ff13d1-b168-4ea3-9e29-d578d5221634> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/9c4d7f4f-946b-4b5e-920c-ec8e0967d040> a exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/9c5e5d98-01fe-4eae-bca6-4ecefd0257bd> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/9c65ea00-1479-4046-a3d3-863fa09ab07b> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/a066bab0-a7ef-4702-a098-f1b4f5a8fcb3> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/a10fd49d-d527-4c61-8fa1-53198a0dda7a> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/a156181a-a196-4314-bae8-e87e8fbd3825> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/a159e087-c9e2-4920-9517-9a51403fd485> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/a1cd249b-2154-4f24-954a-bbcf522fb410> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/a33a9805-cfff-464d-8dbb-8ff34b17b890> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/a4e9732e-c56e-4c66-8b0a-384ce1c0692d> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/a73969da-811c-494b-a38d-0aa78d86a60b> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/a83b5c6c-b793-4b99-85fd-bc7704d82259> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/a94b94a3-3141-4eb8-bfd9-cc153109bed9> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/a9819f62-1402-4440-8489-4c3c874a84f9> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/a9f78ce1-8de2-403b-976c-118cbd3136b9> a exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/aa0bd43c-3e92-4ac1-871f-5485b1f404d2> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/ab8c1cc2-40ad-4d60-adc7-77e812b16665> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/acb6b22d-fb75-492c-9ff1-2496a43819a5> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/acc2ffd3-5bab-4693-8d2b-06273476a69f> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/b3a7824e-1fdb-411a-919d-e461774edd2e> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/b3c23c8f-ed4e-42ed-afba-53a02a9ea98d> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/b90e84ed-6ba0-4090-b1eb-4bc1ba02d6c6> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/bd29c719-28f5-4e87-96f7-6ca27e0bbea8> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/bd3498ad-d77b-4fc8-8d9b-fdf2efb73eff> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/bf03763a-973e-4d3a-a9d8-e525f9033308> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/c037074a-f057-4abf-8dc1-08f48dcf61c2> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/c0a072c3-bf39-42d2-9891-eda6e8e1e70b> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/c819db00-760a-404a-8fe3-1f24b1a96fee> a exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/ca5bcae8-712f-4236-ac72-339ad9632830> a exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/cad95c40-3ce7-4ad9-9f66-ff391a75c22e> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/cc27fe98-3bac-4c47-bbb3-d100f390cbd7> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/cc905b70-0e27-4b40-93c5-74a2d293bd75> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/d2d67010-8e21-4b84-8a57-b7e4e5464bc8> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/d5677e23-2eb0-4064-a49b-b82bfe62a24f> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/db7631c6-4c88-4b46-a2db-4b70dbeaeb52> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/dd656ef2-b829-421e-860a-fba725602496> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/dd8e08b7-8498-4f6c-96cd-e645702e024d> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/dfea52e5-a9e8-4457-a007-4984af684fde> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/e113a4b1-aff5-4cc7-aaaa-219baede1101> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/e1df2e19-b5e1-4ce9-9f44-5ed82d4dde31> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/e2ee7127-ddf9-4b2b-988a-48eb2c1e0876> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/e5559d2c-afce-4957-8c05-64cba2540629> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/e64ec2f9-2848-4f88-8452-5a180980ba7e> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/e7701559-d9ca-4f17-8548-47f05721a1de> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/e7e5fb6b-9352-4707-ad6b-a653384fe925> a exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/e9a9e605-7646-4692-8884-5835cf04f30e> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/eb1ddb24-a69d-49db-ad27-58e16291edba> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/ec3fec58-42c0-4340-aebb-7eefbfa10ed9> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/ed1bfa85-7063-45a5-8d60-85aead4269bf> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/ed40d7e3-1c0c-4d76-bf1a-b3f52df37edf> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/ee68fda8-e2da-4573-81fd-7df2b7b64b47> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/f21a1dd0-a976-4c69-a3f0-bf90419467a2> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/f3d96727-9804-43a4-a09c-a50e024a902d> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/f51d4e0e-6720-4d31-9a94-77e43b998ded> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/f6659615-0958-458c-a210-85e185e0e0cb> a exch:EXRollingContainer,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/fc1c5c60-a24b-4b75-b229-3db85cc121ab> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/fc54da10-1b89-4ee9-b23d-930ee673e5c3> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/fd9d7f01-bdd1-43b5-925b-de0ad1366695> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/fecebe64-c3e4-442a-ad7c-6fbfb8689502> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/ff5f67f4-8d8f-4eb1-9e1d-93193a138789> a exch:EXCar,
+        exch:Named .
+
+<http://semantic.bosch.com/drivingscene/v02/data/ffcb1db9-1535-409e-bdeb-a67b09491a80> a exch:EXCar,
+        exch:Named .
+
+exch:ADDCar a owl:Class ;
+    rdfs:subClassOf ns1:Car .
+
+exch:ADDChild a owl:Class ;
+    rdfs:subClassOf ns1:Child .
+
+exch:ADDGlidingOnWheels a owl:Class ;
+    rdfs:subClassOf ns1:GlidingOnWheels .
+
+exch:ADDHuman a owl:Class ;
+    rdfs:subClassOf ns1:Human .
+
+exch:ADDRollingContainer a owl:Class ;
+    rdfs:subClassOf ns1:RollingContainer .
+
+exch:ADDSign a owl:Class ;
+    rdfs:subClassOf ns1:Sign .
+
+exch:ADDSmoke a owl:Class ;
+    rdfs:subClassOf ns1:Smoke .
+
+exch:ADDStopLineMarking a owl:Class ;
+    rdfs:subClassOf ns1:StopLineMarking .
+
+exch:DELCar a owl:Class .
+
+exch:DELChild a owl:Class .
+
+exch:DELGlidingOnWheels a owl:Class .
+
+exch:DELHuman a owl:Class .
+
+exch:DELRollingContainer a owl:Class .
+
+exch:DELSign a owl:Class .
+
+exch:DELSmoke a owl:Class .
+
+exch:DELStopLineMarking a owl:Class .
+
+exch:DONTADDCar a owl:Class .
+
+exch:DONTADDChild a owl:Class .
+
+exch:DONTADDGlidingOnWheels a owl:Class .
+
+exch:DONTADDHuman a owl:Class .
+
+exch:DONTADDRollingContainer a owl:Class .
+
+exch:DONTADDSign a owl:Class .
+
+exch:DONTADDSmoke a owl:Class .
+
+exch:DONTADDStopLineMarking a owl:Class .
+
+exch:EXChild a owl:Class .
+
+exch:EXGlidingOnWheels a owl:Class .
+
+exch:EXHuman a owl:Class .
+
+exch:EXSign a owl:Class .
+
+exch:EXSmoke a owl:Class .
+
+exch:EXStopLineMarking a owl:Class .
+
+exch:DONTDELCar a owl:Class .
+
+exch:DONTDELChild a owl:Class .
+
+exch:DONTDELGlidingOnWheels a owl:Class .
+
+exch:DONTDELHuman a owl:Class .
+
+exch:DONTDELRollingContainer a owl:Class .
+
+exch:DONTDELSign a owl:Class .
+
+exch:DONTDELSmoke a owl:Class .
+
+exch:DONTDELStopLineMarking a owl:Class .
+
+exch:EXRollingContainer a owl:Class .
+
+ns1:Car a owl:Class .
+
+ns1:Child a owl:Class .
+
+ns1:GlidingOnWheels a owl:Class .
+
+ns1:Human a owl:Class .
+
+ns1:RollingContainer a owl:Class .
+
+ns1:Sign a owl:Class .
+
+ns1:Smoke a owl:Class .
+
+ns1:StopLineMarking a owl:Class .
+
+exch:EXCar a owl:Class .
+
+exch:Named a owl:Class .
+
+[] rdfs:subClassOf ns1:Car ;
+    owl:intersectionOf ( exch:EXCar exch:DONTDELCar ) .
+
+[] rdfs:subClassOf ns1:Child ;
+    owl:intersectionOf ( exch:EXChild exch:DONTDELChild ) .
+
+[] rdfs:subClassOf ns1:GlidingOnWheels ;
+    owl:intersectionOf ( exch:EXGlidingOnWheels exch:DONTDELGlidingOnWheels ) .
+
+[] rdfs:subClassOf ns1:Human ;
+    owl:intersectionOf ( exch:EXHuman exch:DONTDELHuman ) .
+
+[] rdfs:subClassOf ns1:RollingContainer ;
+    owl:intersectionOf ( exch:EXRollingContainer exch:DONTDELRollingContainer ) .
+
+[] rdfs:subClassOf ns1:Sign ;
+    owl:intersectionOf ( exch:EXSign exch:DONTDELSign ) .
+
+[] rdfs:subClassOf ns1:Smoke ;
+    owl:intersectionOf ( exch:EXSmoke exch:DONTDELSmoke ) .
+
+[] rdfs:subClassOf ns1:StopLineMarking ;
+    owl:intersectionOf ( exch:EXStopLineMarking exch:DONTDELStopLineMarking ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDCar exch:DONTADDCar ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDChild exch:DONTADDChild ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDGlidingOnWheels exch:DONTADDGlidingOnWheels ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDHuman exch:DONTADDHuman ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDRollingContainer exch:DONTADDRollingContainer ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDSign exch:DONTADDSign ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDSmoke exch:DONTADDSmoke ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:ADDStopLineMarking exch:DONTADDStopLineMarking ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELCar exch:DONTDELCar ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELChild exch:DONTDELChild ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELGlidingOnWheels exch:DONTDELGlidingOnWheels ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELHuman exch:DONTDELHuman ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELRollingContainer exch:DONTDELRollingContainer ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELSign exch:DONTDELSign ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELSmoke exch:DONTDELSmoke ) .
+
+[] rdfs:subClassOf owl:Nothing ;
+    owl:intersectionOf ( exch:DELStopLineMarking exch:DONTDELStopLineMarking ) .
+
